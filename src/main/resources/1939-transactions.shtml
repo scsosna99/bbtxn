@@ -1,0 +1,1550 @@
+
+<!DOCTYPE html>
+<html data-version="klecko-" data-root="/home/br/build" itemscope itemtype="https://schema.org/WebSite" lang="en" class="no-js" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+    <link rel="dns-prefetch" href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061" />
+
+<!-- no:cookie fast load the css.           -->
+<link rel="preconnect" href="https://d2p3bygnnzw9w3.cloudfront.net" crossorigin>
+<link rel="preconnect" href="https://d3k2oh6evki4b7.cloudfront.net" crossorigin>
+ <style>html,body{margin:0;padding:0;font:14px/1.25 "Helvetica Neue",helvetica,arial,sans-serif;color:#000}body{position:relative;background:#c9cbcd;z-index:0;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none}a img{border:0}ul,li,ol{margin:0;padding:0;list-style-type:none}table th,table td{border:0}iframe{max-width:100%}code{background:#eee}a,button,input,select,textarea,label,summary{touch-action:manipulation;-ms-touch-action:manipulation}::selection{background:#ff0;text-shadow:none}html.no-js .hasmore,html.no-js .js,html.js .no-js,html.no-js button,html.is_build .hide_build,html.is_dev .hide_dev,html.is_live .hide_live{display:none!important}.js-select{visibility:hidden}a[href]{color:#34d}a[href]:visited{color:#848}a[href]:hover{color:#5E44B3}a[href]:active{color:#b12}a[href^="tel:"]:before{content:"\260E";display:inline-block;margin-right:0}a[href^="mailto:"]:before{content:"\2709";display:inline-block;margin-right:0}.icon_group a[href^="tel:"]:before,.icon_group a[href^="mailto:"]:before{content:""}.screen_only{display:initial}.user_logged_in .not_logged_in,.logged_in,.sr_cpi_control,.print_only{display:none}#perflog,#modernizr,.user_logged_in .logged_in{display:block}h2{color:#000;margin-bottom:5px;font-size:1.5em}img.right{float:right;margin:0 0 5px 5px}img.left{float:left;margin:0 15px 15px 0}sup{font-size:.75em;position:relative;top:-0.4em;vertical-align:baseline}#wrap{width:100%;background:#fff;position:relative}#wrap>div,#wrap>ul{width:100%;position:relative;clear:both}.hidden,#content .hidden,.gutterad,.more,.print_only,#warnings.hide,#nag_devs{display:none}#inner_nav.hidden{visibility:hidden}.float_wrap{overflow:hidden}#header{overflow:visible;background:#efedee;border-bottom:3px solid #cf2036}#header img{height:25px;float:left;padding:8px 0 8px 2%;max-width:71%;max-width:calc(95% - 80px)}#header #nav_trigger{display:block;cursor:pointer;float:right;padding:7px 2% 7px 1%;height:30px}#header #nav_trigger a{color:#cf2036;font-size:20px;font-weight:bold;text-decoration:none;display:inline-block}#header #nav_trigger a:before{color:#cf2036;content:"\2630 ";font-weight:normal}#header #nav{display:none;clear:both;width:88%;background:#fff;padding:7px 6% 0;border-bottom:3px solid #cf2036;border-top:3px solid #cf2036;overflow:hidden;font-size:12px}#header #nav .usertools{font-weight:bold;font-size:12px;margin:0 0 4px;padding:7px 6% 0;border-top:1px solid #c9cbcd}#header #nav .breadcrumbs{font-size:12px;padding:7px 6%;border-top:1px solid #c9cbcd}#header #main_nav{color:#454041;overflow:hidden}#header #main_nav>li{border-top:1px solid #c9cbcd}#header #main_nav>li:first-child{border-top:none}#header #main_nav>li>a{display:block;padding:8px 0 8px 6%;font-weight:bold;text-decoration:none;font-size:1.4em}html.no-touchevents #header #main_nav>li:active{background-color:#454041}#header #main_nav>li:active>a{color:#efedee}#header #main_nav li.current{background-color:#cf2036}#header #main_nav li.current>a{color:#efedee}#header #nav_trigger.open{background:#cf2036}#header #nav_trigger.open a{color:#fff}#header #nav_trigger.open a:before{color:#fff}#header #nav.open{display:block}#header #main_nav .nm{display:none}#header .social{margin:15px 0;display:none}#header.open_search{margin-bottom:50px}#header #subnav{display:none}#header .search{margin-top:10px;clear:both;padding:0 2% 6px}#header .search input,#header .search input:active,#header .search input:focus{height:32px;font-size:20px}.search input[type="search"]{padding:4px 5px;border:#747678 1px solid;width:73%;margin-right:2%}.search input[type="search"].prefilled{background-color:#ffa}.search input[type="submit"]{float:right;background:#cf2036;color:white;border:1px solid #747678;padding:0;border-radius:5px;height:24px;width:25%;width:calc(25% 0 2px)}.search input[type="submit"]:hover{text-decoration:underline}.search input[type="submit"]:active{background-color:#454041}.search .ac-outline{width:73%;margin-right:2%}.search .ac-outline input[type="search"]{width:100%;margin:0}@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width:400px){#header .search input,#header .search input:active,#header .search input:focus{height:32px;font-size:20px}}#wrap>#info{width:96%;margin:0 auto;padding-bottom:10px}#info .opener,#info .opener:active,#inner_nav div .opener{color:#900;font-weight:bold;clear:both;width:100%;text-align:left;padding:10px 0;border:none;background:transparent}#info button#meta_more_button{border:1px solid #c9cbcd;background-color:#efedee;padding:.5em;margin:.5em 0;text-align:center;width:100%;max-width:400px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:none}#info button#meta_more_button.show{display:inline-block}#info #meta>div>p:nth-child(n+6){display:none}#info.open #meta>div>p:nth-child(n+6){display:block}#info #meta .opener{display:none}#info #meta{margin-top:10px;overflow:hidden}#info #meta p{font-size:.93em;margin:3px 0}#info #meta>div{}#info #meta>div.media-item{float:right;margin-left:10px;width:70px}#info #meta>div.media-item.country{width:100px;height:75px}#info #meta>div.media-item.country .flag{width:100%;height:100%;background-size:100%}#info .media-item img{width:100%;height:auto;border:1px solid black;box-sizing:border-box}#info .media-item img.additional{display:none}#info .media-item.logo img,.bbr #info .media-item img{border:none}#info #meta .media-item p{margin:3px 0;font-size:.785em;font-style:italic}#info #meta .media-item.loader p{visibility:hidden}#info h1{margin-top:0;margin-bottom:5px;line-height:1.1em;font-size:1.5em}#info h1+p{margin-top:5px}#info #bling{margin:6px 1% 6px 0;color:#fff;height:24px;overflow:hidden;float:left;width:88%;display:grid;grid-gap:5px 4px;grid-template-columns:repeat(auto-fill,minmax(100px,1fr))}#info.teams #bling{width:100%}#info #bling li{padding:4px 1.25%;text-align:center;position:relative;height:15px;background:#82081b;font-size:.85em;word-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:5px;display:inline-block;width:27%;margin-bottom:5px}#info.teams #bling li{width:45%}#bling li a{color:inherit}#info #bling li.bling_hof{background-color:#ffdb1c;color:#000}#info #bling li.bling_all_star{background-color:#c9cbcd;color:#454041}#info #bling li.bling_hof,#info.teams #bling li.bling_all_star,#info.teams #bling li.bling_champ{grid-column-end:span 2}#info.open #bling{height:auto;width:100%;margin-right:0;float:none;overflow:visible}@supports(display:grid){#info #bling li,#info.open #bling li,#info.teams #bling li{width:auto!important;margin-bottom:0!important}}.uni_holder{margin:3px 0;float:none;width:100%;position:relative}#info .uni_holder{float:left}#bling+.uni_holder{width:11%}#info.open #bling+.uni_holder{width:100%;overflow:visible;float:none;margin-bottom:5px}.uni_holder>a{display:inline-block;position:relative;height:auto;width:28px;margin-bottom:3px;margin-right:.3em;text-decoration:none;overflow:hidden}.uni_holder svg{height:28px;width:28px}.uni_holder svg.jersey{height:35px}.uni_holder svg text{font-size:1.8em;font-weight:bold}.uni_holder svg text.string{font-size:1.3em}.uni_holder svg.jersey text{font-size:1.5em}.uni_holder svg.jersey text.string{font-size:.7em}#info #bling+.uni_holder>a{display:none}#info .uni_holder>a.default,#info.open .uni_holder>a,#info #bling+.uni_holder>a.default{display:inline-block}#info .uni_holder .counter{display:none;position:absolute;height:14px;width:18px;border-radius:50%;color:#fff;font-weight:bold;font-size:10px;top:-4px;left:18px;background:black;text-align:center;border:none;padding:4px 0 0;cursor:pointer;text-overflow:inherit}#info .uni_holder .counter:after{content:'';padding:0;font-size:0}#info #bling+.uni_holder .counter{display:block}#info.open #bling+.uni_holder .counter{display:none}#info.open #bling+.uni_holder>a{display:inline-block}#info.open .uni_holder>a{display:inline-block;width:33px}#info.open .uni_holder svg{height:33px;width:33px}#info.open .uni_holder svg.jersey{height:41px}.stats_pullout{overflow:hidden;text-align:center;width:96%;margin:0 auto 15px 0;padding-top:6px}.stats_pullout>div{float:left}.stats_pullout>div:first-child{text-align:left}.stats_pullout>div.p2,.stats_pullout>div.p3{display:none}.stats_pullout>div>div{float:left;margin-left:15px}.stats_pullout>div>div.p2{display:none}.stats_pullout>div:first-child>div{margin-left:0}.stats_pullout h4{color:#900;margin:2px 0;font-size:.785714286em;text-align:center}.stats_pullout p{margin:2px 0;font-size:1.1em}.stats_pullout .caption{clear:both;text-align:left}@media screen and (min-width:520px){.stats_pullout>div.p2{display:block}}@media screen and (min-width:600px){.stats_pullout>div{border-left:1px solid #c9cbcd;margin-left:10px}.stats_pullout>div:first-child{border-left:none;margin-left:0}}@media screen and (min-width:736px){.stats_pullout>div.p2{display:none}}@media screen and (min-width:800px){.stats_pullout>div.p2{display:block}.stats_pullout>div>div.p2{display:block}}.opener{cursor:pointer;position:relative;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.opener:after{content:"\25BC";font-size:.75em;padding-left:5px;display:inline-block;text-decoration:none}.opener.open:after{content:"\25B2"}.toggler.open{}.toggleable{display:none}.toggleable.open{display:block}tr.toggleable.open{display:table-row}table.toggleable.open{display:table}span.toggleable.open{display:inline}.hoverer{cursor:pointer}.hoverer:after{content:"\25BC";position:absolute;top:7px;right:0}html.no-touchevents .hoverer:hover:after{content:"\25B2"}ul.news{padding:0 10px}ul.news li{margin-bottom:3px}.section_content ul.news_stories>li{margin:5px 10px 0 0;float:none}ul.news_stories.more{display:none}ul.news_stories.more.open{display:block}.bullets{padding-left:20px}.bullets>li{margin-left:0;margin-bottom:6px}ul.bullets>li{list-style-type:disc}ol.bullets>li{list-style-type:decimal}.bullets-inline>li{display:inline-block;margin-right:9px;margin-bottom:10px}.bullets-inline>li:after{content:"\00B7";margin-left:9px}.bullets-inline>li:last-child:after{content:"";margin-left:0}.bullets-inline>li.logged_in{display:none}.user_logged_in .bullets-inline>li.logged_in{display:inline-block}.desc{font-style:italic;font-size:.93em}.hilite{background-color:#ffa}.callout{margin:10px 0;padding:10px 15px;border:1px solid #aaa;background:#454041;color:#c9cbcd;font-size:1.1em}.callout a{color:#b3beff}.callout a:visited,.callout a:active{color:#a4adff}.callout a:hover,.callout a:visited:hover,.callout a:active:hover{color:#c4cfff}.callout.light{border-color:#404542;background:#c9cbcd;color:#404452}.callout.light a{color:#34d}.callout.light a:hover{color:#5e44b3}.note{color:#444;font-size:.92em}.header{font-weight:bold;font-size:1.16em}.pagelog{width:90%;overflow:scroll}.preformatted-desc{width:90%;overflow:auto}#info .adblock{display:none}.adblock{overflow:hidden}.adblock>p{font-size:.93em;margin:2px 0}.adblock img{display:block;margin:0 auto}.adblock{background-color:white;text-align:center}.adblock.ad728{display:none}.adblock.ad300{padding:10px}.adblock.grouped{float:left;padding:0}.adblock.ad300.grouped{float:none;padding:10px}.adblock.rails{display:none}#div-gpt-ad-728x90-BTF-1{max-height:340px}@media screen and (min-width:481px){.adblock.ad300{padding:10px 0}}@media screen and (min-width:800px){.adblock.ad728{display:block;float:none;margin-bottom:10px}.adblock.ad300{display:none}.adblock.grouped.ad728{display:none}.adblock.grouped.ad300{float:left;width:320px;background:none;padding:0;display:block}}@media screen and (min-width:1810px){.adblock.rails{display:block;height:600px;width:160px;background-color:transparent;border:1px #555 dotted;position:absolute;top:96px}.adblock.rails.left{left:0}.adblock.rails.right{right:0}}@media screen and (max-width:330px){.adblock{padding:0}.adblock.grouped{padding:0}.adblock.ad300.grouped{padding:0}}.button{background-color:#82081b;padding:10px 15px;color:white;text-decoration:none;display:inline-block;text-align:center;font-size:1.1em;margin:10px 0;border-radius:5px;cursor:pointer}.button:active,.button:visited,a.button,a.button:visited,a.button:hover{color:white}.button.alt{background:#cf2036;border:#747678 1px solid;display:block}button.tooltip,button.modal{background:transparent;border:none;text-align:left;padding:0;color:#900}.button2{display:inline-block;border:1px solid #c9cbcd;border-radius:3px;background-color:#efedee;font-size:.93em;font-weight:normal;margin:0 8px 0 0;padding:8px 12px;width:auto;text-align:center}#meta .button2{font-size:.785714286em;margin:0 6px 0 0;padding:8px 7px}.button2[href]{text-decoration:none}.button2.next{text-align:right}.button2.prev{text-align:left}.button2.index,.button2.index:hover,.button2.index:active,.button2.index:visited{background-color:#454041;color:#fff}.button2.index:hover{color:#ccc}.button2.current{text-align:left;background-color:#fff;border:none;font-weight:bold;padding-left:0;padding-right:0;margin-left:-8px;margin-right:0}.button2:last-child{margin-right:0}.button2.next:after{content:"\203A\203A";padding-left:6px;color:black}.button2.prev:before{content:"\2039\2039";padding-right:6px;color:black}#info_box div.prevnext{margin-left:1em}.prevnext{margin:10px 0 15px 0}#content .prevnext>*{margin:.25em}#header #main_nav>li>div{display:none;width:98%;position:absolute;top:100%;left:0;z-index:200;border-top:1px solid #454041;padding:1%;background:#fff;font-size:14px;font-weight:normal;box-shadow:0 6px 12px -3px #454041;color:black}#header #main_nav>li.drophover>div{display:block;line-height:initial}#main_nav div.name{font-weight:bold;margin:3px;width:auto}div.col1{width:90%;margin:5px 2% 5px 0;clear:both}div.col2{width:45%;margin:5px 2% 5px 0;float:left}div.col3{width:30%;margin:5px 1% 5px 0;float:left}div.col4{width:22%;margin:5px 1% 5px 0;float:left}div.col2:nth-child(4){clear:both}#main_nav td{padding:3px}#main_nav .end_links{clear:both}#main_nav .list{margin:0 0 8px;padding:3px;overflow-x:hidden;text-overflow:ellipsis}#main_nav div.list span{font-weight:bold;display:inline-block}#header_leaders div.list span{min-width:70px}#main_nav .game_summary td{padding:1px}.ac-outline{display:inline-block}.ac-wrapper{position:relative}.ac-prompt{position:absolute;font-size:16px;color:#454041;top:0;left:0;overflow:hidden;background:transparent}.ac-input:focus,.ac-input:active,.ac-hint:focus,.ac-input,.ac-hint{font-size:16px;background-color:#fff;width:100%;outline:0;border:0;margin:0;padding:0}.ac-input:focus,.ac-input:active,.ac-input{background-color:transparent}.ac-input{vertical-align:top;position:relative;color:#454041}.ac-hint{position:absolute;top:0;left:0;border-color:transparent;box-shadow:none;color:#747678}.ac-dropdown{position:absolute;visibility:hidden;padding:.5em 0;font-size:16px;background-color:#fff;z-index:100;cursor:default;overflow-x:hidden;overflow-y:scroll;width:calc(100% - 2px);min-width:380px;border:#aaa 1px solid;border-top:none}.ac-dropdown>div:first-of-type>.ac-results-header{padding-top:0}.ac-results-header{font-size:1em;padding:.35em .5em;font-weight:700}.ac-suggestion{cursor:pointer;padding:.35em 1em;font-size:1em;line-height:1em;border-top:1px solid #fff;border-bottom:1px solid #fff}.ac-suggestion p{margin:0}.ac-suggestion.active,.ac-suggestion.active .search-results-item{color:#b12;font-weight:bold}.search-results-item em{font-style:normal;border-bottom:1px dotted}.ac-suggestion.ac-is-under-cursor,html.no-touchevents .ac-suggestion:hover{border-top:1px solid #aaa!important;border-bottom:1px solid #aaa!important;background-color:#ffa!important}.ac-suggestion .subhead{margin-left:.5em;padding-top:.25em;display:block;font-size:.75em}.ac-suggestion-other-search{font-size:1em;line-height:1.2em;padding-left:.5em;color:#34d}.player_select_name{font-size:16px}.player_select_name button{font-size:2em;margin-left:10px;vertical-align:middle}.player_select_name strong{display:inline-block}.pi_forms .group input[type="search"]{max-width:none;height:auto;font-size:16px;padding-bottom:3px}.pi_forms .ac-outline{width:100%;max-width:520px}@media screen and (max-width:480px){.ac-dropdown{min-width:310px}#desc_container{font-size:12px}}@media screen and (max-width:723px){.no_mobile{display:none}}@media screen and (min-width:374px){#info h1 span{display:inline-block}#info h1 span.header_end{display:inline}}@media screen and (min-width:481px){#header #nav_trigger a{font-size:24px}#header img{height:28px}#info #meta>div.media-item{width:92px}#info #meta>div.media-item.logo{width:118px}#info #meta>div.media-item.country{width:140px;height:105px}#info #meta>div>p:nth-child(6){display:block}#info #meta>div>p:nth-child(7){display:block}#info h1{font-size:1.7em}.button2,.button2.current{padding:8px 12px;margin:0 20px 0 0}}@media screen and (min-width:600px){#info #bling{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}#info.open #bling li{width:19.5%}#meta .button2{font-size:.93em;margin:0 20px 0 0;padding:8px 12px}}@media screen and (min-width:736px){.mobile_only{display:none}#wrap>#header{width:100%;padding-left:0;padding-right:0;border-bottom:none}#wrap>#srcom{width:99%;margin:0 auto}#wrap>#info{width:65%;width:calc(99% - 322px);margin:0 auto;padding-right:320px;min-height:270px}#info .adblock{display:block;position:absolute;top:0;right:0;height:270px;width:300px;padding:0}h2{font-size:1.8em;line-height:1.2em}#info h1{font-size:2em;line-height:1.1em}#info #meta{min-height:auto}#info#general #meta{min-height:auto}#info.open #bling li{width:28%}}@media screen and (min-width:800px){#info #meta>div{float:left;width:100%}#info #meta>div.media-item{float:left;margin-left:0;margin-right:10px}#info #meta>div.media-item+div{width:85%;width:calc(100% - 102px)}#info #meta>div.media-item.logo+div{width:calc(100% - 128px)}#info #meta>div.media-item.country+div{width:calc(100% - 160px)}#info #meta>div>p.opener{max-width:75%}#info.open.teams #bling li{width:45%}}@media screen and (min-width:1020px){#header #nav_trigger{display:none}#wrap>#header{border-bottom:2px solid #cf2036;overflow:visible;height:126px;background:#fff}#header img{position:absolute;top:22px;height:auto;max-height:55px;max-width:35%}#header #nav{display:block;width:100%;padding:0;margin:0;clear:none;background:#efedee;border-top:1px solid #c9cbcd;border-bottom:none;overflow:visible;height:30px;position:absolute;bottom:0}#header #nav>*{display:none}#header #nav>#main_nav{display:block;color:#454041;text-align:left;margin-bottom:0;border:none;overflow:visible}#header #main_nav ul{border:none;position:relative}#header #main_nav>li{border:none;width:auto;white-space:nowrap;float:left;color:#454041;font-size:1.16666667em;font-weight:bold;height:14px;padding:8px 2.2%;line-height:12px}#header #main_nav>li>a{color:#454041;padding:0;position:relative;font-size:1em}#header #main_nav>li.current>a{color:#fff}#header #main_nav>li.nm{display:block}#header #main_nav>li.m{display:none}#header #main_nav>li.hasmore>a:after{content:"";display:none}#header #main_nav>li.hasmore.drophover>a:after{content:"";display:none}#header #main_nav li:nth-child(even){border:none}#header #main_nav>li.drophover,#header #main_nav>li:not(.hasmore):hover,#inner_nav>ul>li.drophover{background:#454041}#header #main_nav>li.drophover>a,#header #main_nav>li:not(.hasmore):hover>a,#inner_nav>ul>li.drophover>a{color:#fff}#header #main_nav>li.drophover>span,#header #main_nav>li:not(.hasmore):hover>span,#inner_nav>ul>li.drophover>span{color:#fff}#header #main_nav>li>div>ul{overflow:hidden;margin-top:10px;margin-bottom:10px}#header #main_nav>li>div>ul>li{width:18%;margin-right:2%;margin-bottom:8px;float:left}html.no-touchevents .hasmore>div{position:absolute;left:-999em}html.no-touchevents .hasmore.drophover>div{z-index:69;left:0;box-shadow:0 6px 12px -3px #454041}#header #subnav{display:block;color:#c9cbcd;background-color:#454041;width:100%;padding:0;height:22px}#header #subnav>li{font-size:.785714286em;float:left;padding:6px 10px 2px;margin-top:4px;vertical-align:top;position:relative;border-left:1px solid #747678;line-height:.2em;height:8px}#header #subnav>li:first-child{display:block;border-left:none}#header #subnav>li:nth-child(n+10){float:right;border-left:none;border-right:1px solid #747678}#header #subnav>li:last-child{display:none}#header #subnav>li:last-child(2){border-right:none}#header #subnav>li.current a{color:#fff}#header #subnav li a{color:#c9cbcd;text-decoration:none}#header #subnav li a:hover{color:#fff;text-decoration:underline}#header #subnav li svg{vertical-align:top;margin-top:-6px}#header .search{position:relative;float:right;padding:0;width:60%;max-width:700px;clear:none;margin-right:12px;margin-top:17px}#wrap #info{overflow:hidden;margin-bottom:8px}#info #meta{margin-top:0;margin-bottom:10px;padding-top:15px;float:left;width:100%}#info.players #meta,#info.teams #meta,#info.schools #meta{width:70%;width:calc(100% - 265px)}#info #bling,#info.open #bling,#info.teams #bling{float:right;width:250px;height:auto;margin-top:10px;margin-right:0;grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}#info #bling li,#info.open #bling li{width:45%}#info.teams #bling li,#info.open.teams #bling li{width:92%}#info .opener{}#info #meta>div>p.opener{display:none}#info #meta>div>p:nth-child(6){display:none}#info #meta>div>p:nth-child(7){display:none}#info.teams #meta>div>p:nth-child(n+6){display:block}#info.teams #meta>div>p:nth-child(n+11){display:none}#info.teams.open #meta>div>p:nth-child(n+11){display:block}#info.leagues #meta>div>p:nth-child(n+6){display:block}#info.leagues #meta>div>p:nth-child(n+11){display:none}#info.leagues.open #meta>div>p:nth-child(n+11){display:block}#info .adblock>div{margin-top:2px}.uni_holder{float:right;clear:right;width:250px;margin-top:10px}.uni_holder>a{border-width:5px;float:none;width:42px;margin-right:.3em}.uni_holder svg{height:42px;width:42px}.uni_holder svg.jersey{height:52px}#info .uni_holder{float:right}#info .uni_holder>a,#info #bling+.uni_holder>a{display:inline-block}#bling+.uni_holder,#info.open #bling+.uni_holder{margin-top:0;width:250px;float:right}#info #bling+.uni_holder .counter{display:none}#info.open .uni_holder>a{width:42px}#info.open .uni_holder svg{height:42px;width:42px}#info.open .uni_holder svg.jersey{height:52px}.stats_pullout>div.p3{display:block}#bling li:after{content:"";position:absolute;top:-110%;left:-210%;width:150%;height:200%;opacity:0;transform:rotate(10deg);background:rgba(255,255,255,0.13);background:linear-gradient(to right,rgba(255,255,255,0.13) 0,rgba(255,255,255,0.13) 77%,rgba(255,255,255,0.5) 92%,rgba(255,255,255,0.0) 100%)}#bling li:hover:after{opacity:1;top:-63%;left:-26%;transition-property:left,top,opacity;transition-duration:.7s,0.7s,0.15s;transition-timing-function:ease}#bling li:active:after{opacity:0}.adblock.ad728{display:block;float:left}.adblock.grouped.ad300{display:none}}@media screen and (min-width:1160px){#header #main_nav>li{padding:8px 2.5%}#info #meta>div.media-item{margin-right:20px;width:92px}#info #meta>div.media-item.logo{margin-right:10px;width:125px}#info #meta>div.media-item.country{width:160px;height:120px}#info #meta>div.media-item.logo>img{height:125px;width:125px}#info #meta>div.media-item+div{width:calc(100% - 112px)}#info #meta>div.media-item.logo+div{width:calc(100% - 135px)}#info #meta>div.media-item.country+div{width:calc(100% - 180px)}#info #meta>div.media-item.multiple:hover img.additional{display:block}#info #meta>div.media-item.multiple:hover{position:fixed;z-index:200;width:auto;background-color:rgba(200,200,200,0.8);padding:5px;border:1px solid black}#info #meta>div.media-item.multiple:hover+div{margin-left:112px}#info #meta>div.media-item.multiple:hover img{width:92px;float:left;margin-right:10px}#info #meta>div.media-item.multiple:hover img:last-child{margin-right:0}#info #meta>div.media-item.multiple:hover:after{content:'Order may not be chronological';font display:block;background:rgba(200,200,200,1);float:right;clear:left;padding:2px 5px;font-size:.83em}.stats_pullout>div>div{margin-left:21px}.stats_pullout p{font-size:1em}}@media screen and (min-width:1478px){#wrap{width:1450px;border-left:1px solid #747678;border-right:1px solid #747678;box-shadow:0 0 27px #454041;margin:0 auto}.sr_expanded>#wrap{width:100%;border:0;box-shadow:none}#header #subnav>li:last-child{display:block}#info #meta>div>p:nth-child(6){display:block}#info #meta>div>p:nth-child(7){display:block}}.f-i,#footer,#content,#inner_nav,#srcom{display:none}</style>
+<link rel="preload"    href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/css/br/sr-min.css" as="style" crossorigin onload="this.rel='stylesheet'">
+<noscript><link href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/css/br/sr-min.css"  rel="stylesheet" type="text/css" /></noscript>
+<link rel="preload"    href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/js/br/sr-min.js" as="script" crossorigin>
+<link rel="preload"    href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/icons/sr_icons-min.svg?br" as="fetch" crossorigin>
+<link rel="preload"    href="https://d3k2oh6evki4b7.cloudfront.net/short/inc/main_nav_menu.json" as="fetch" crossorigin>
+<link rel="preload"    href="https://d2p3bygnnzw9w3.cloudfront.net/req/201604190/images/chosen-sprite.png" as="image" crossorigin>
+<link rel="preconnect" href="https://www.google-analytics.com"  crossorigin>
+<link rel="preconnect" href="https://www.googletagservices.com" crossorigin>
+
+
+<script class="allowed">var sr_is_production = true;
+function vjs_ready(e){"loading"!=document.readyState?e():document.addEventListener("DOMContentLoaded",e)}var log_performance=!1,is_new_jscss_version=!1,sr_detect_operaMini=navigator.userAgent.indexOf("Opera Mini")>-1;sr_detect_operaMini&&((el=document.querySelector("html")).className=el.className.concat(" operamini"));var sr_detect_firefox=navigator.userAgent.indexOf("Firefox")>-1;sr_detect_firefox&&((el=document.querySelector("html")).className=el.className.concat(" firefox"));var sr_detect_firefoxMobile=navigator.userAgent.indexOf("Firefox")>-1&&(navigator.userAgent.indexOf("Mobile")>-1||navigator.userAgent.indexOf("Tablet")>-1);sr_detect_firefoxMobile&&((el=document.querySelector("html")).className=el.className.concat(" firefox-mobile"));var sr_detect_ie=function(){var e=window.navigator.userAgent;if(e.indexOf("Trident/7.0")>0)return 11;if(e.indexOf("Trident/6.0")>0)return 10;if(e.indexOf("Trident/5.0")>0)return 9;for(var t=3,n=document.createElement("div"),r=n.getElementsByTagName("i");n.innerHTML="\x3c!--[if gt IE "+ ++t+"]><i></i><![endif]--\x3e",r[0];);return t>4&&t}(),sr_detect_edge=!sr_detect_ie&&!!window.StyleMedia,sr_detect_safari=/Safari/.test(navigator.userAgent)&&/Apple Computer/.test(navigator.vendor),el=document.querySelector("html"),className="no-js";el.classList?el.classList.remove(className):el.className=el.className.replace(new RegExp("(^|\\b)"+className.split(" ").join("|")+"(\\b|)","gi")," "),el.className=el.className.concat(" js"),function(e,t,n){function r(e,t){return typeof e===t}function o(){return"function"!=typeof t.createElement?t.createElement(arguments[0]):x?t.createElementNS.call(t,"http://www.w3.org/2000/svg",arguments[0]):t.createElement.apply(t,arguments)}function i(){var e=t.body;return e||(e=o(x?"svg":"body"),e.fake=!0),e}function a(e,n,r,a){var s,l,c,d,u="modernizr",f=o("div"),m=i();if(parseInt(r,10))for(;r--;)c=o("div"),c.id=a?a[r]:u+(r+1),f.appendChild(c);return s=o("style"),s.type="text/css",s.id="s"+u,(m.fake?m:f).appendChild(s),m.appendChild(f),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(t.createTextNode(e)),f.id=u,m.fake&&(m.style.background="",m.style.overflow="hidden",d=M.style.overflow,M.style.overflow="hidden",M.appendChild(m)),l=n(f,e),m.fake?(m.parentNode.removeChild(m),M.style.overflow=d,M.offsetHeight):f.parentNode.removeChild(f),!!l}function s(e){return e.replace(/([a-z])-([a-z])/g,function(e,t,n){return t+n.toUpperCase()}).replace(/^-/,"")}function l(e,t){return!!~(""+e).indexOf(t)}function c(e,t){return function(){return e.apply(t,arguments)}}function d(e,t,n){var o;for(var i in e)if(e[i]in t)return!1===n?e[i]:(o=t[e[i]],r(o,"function")?c(o,n||t):o);return!1}function u(e){return e.replace(/([A-Z])/g,function(e,t){return"-"+t.toLowerCase()}).replace(/^ms-/,"-ms-")}function f(t,n,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,t,n);var i=e.console;null!==o?r&&(o=o.getPropertyValue(r)):i&&i[i.error?"error":"log"].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}else o=!n&&t.currentStyle&&t.currentStyle[r];return o}function m(t,r){var o=t.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(u(t[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+u(t[o])+":"+r+")");return i=i.join(" or "),a("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==f(e,null,"position")})}return n}function p(e,t,i,a){function c(){u&&(delete k.style,delete k.modElem)}if(a=!r(a,"undefined")&&a,!r(i,"undefined")){var d=m(e,i);if(!r(d,"undefined"))return d}for(var u,f,p,v,h,g=["modernizr","tspan","samp"];!k.style&&g.length;)u=!0,k.modElem=o(g.shift()),k.style=k.modElem.style;for(p=e.length,f=0;p>f;f++)if(v=e[f],h=k.style[v],l(v,"-")&&(v=s(v)),k.style[v]!==n){if(a||r(i,"undefined"))return c(),"pfx"!=t||v;try{k.style[v]=i}catch(e){}if(k.style[v]!=h)return c(),"pfx"!=t||v}return c(),!1}function v(e,t,n,o,i){var a=e.charAt(0).toUpperCase()+e.slice(1),s=(e+" "+N.join(a+" ")+a).split(" ");return r(t,"string")||r(t,"undefined")?p(s,t,o,i):(s=(e+" "+T.join(a+" ")+a).split(" "),d(s,t,n))}function h(e,t,r){return v(e,n,n,t,r)}var g=[],_=[],y={_version:"3.5.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,t){var n=this;setTimeout(function(){t(n[e])},0)},addTest:function(e,t,n){_.push({name:e,fn:t,options:n})},addAsyncTest:function(e){_.push({name:null,fn:e})}},b=function(){};b.prototype=y,(b=new b).addTest("cors","XMLHttpRequest"in e&&"withCredentials"in new XMLHttpRequest),b.addTest("cookies",function(){try{t.cookie="cookietest=1";var e=-1!=t.cookie.indexOf("cookietest=");return t.cookie="cookietest=1; expires=Thu, 01-Jan-1970 00:00:01 GMT",e}catch(e){return!1}}),b.addTest("localstorage",function(){var e="modernizr";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(e){return!1}}),b.addTest("sessionstorage",function(){var e="modernizr";try{return sessionStorage.setItem(e,e),sessionStorage.removeItem(e),!0}catch(e){return!1}});var w=y._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];y._prefixes=w;var M=t.documentElement,x="svg"===M.nodeName.toLowerCase();x||function(e,t){function n(e,t){var n=e.createElement("p"),r=e.getElementsByTagName("head")[0]||e.documentElement;return n.innerHTML="x<style>"+t+"</style>",r.insertBefore(n.lastChild,r.firstChild)}function r(){var e=w.elements;return"string"==typeof e?e.split(" "):e}function o(e){var t=b[e[_]];return t||(t={},y++,e[_]=y,b[y]=t),t}function i(e,n,r){if(n||(n=t),p)return n.createElement(e);r||(r=o(n));var i;return!(i=r.cache[e]?r.cache[e].cloneNode():g.test(e)?(r.cache[e]=r.createElem(e)).cloneNode():r.createElem(e)).canHaveChildren||h.test(e)||i.tagUrn?i:r.frag.appendChild(i)}function a(e,t){t.cache||(t.cache={},t.createElem=e.createElement,t.createFrag=e.createDocumentFragment,t.frag=t.createFrag()),e.createElement=function(n){return w.shivMethods?i(n,e,t):t.createElem(n)},e.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+r().join().replace(/[\w\-:]+/g,function(e){return t.createElem(e),t.frag.createElement(e),'c("'+e+'")'})+");return n}")(w,t.frag)}function s(e){e||(e=t);var r=o(e);return!w.shivCSS||m||r.hasCSS||(r.hasCSS=!!n(e,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),p||a(e,r),e}function l(e){for(var t,n=e.getElementsByTagName("*"),o=n.length,i=RegExp("^(?:"+r().join("|")+")","i"),a=[];o--;)t=n[o],i.test(t.nodeName)&&a.push(t.applyElement(c(t)));return a}function c(e){for(var t,n=e.attributes,r=n.length,o=e.ownerDocument.createElement(x+":"+e.nodeName);r--;)(t=n[r]).specified&&o.setAttribute(t.nodeName,t.nodeValue);return o.style.cssText=e.style.cssText,o}function d(e){for(var t,n=e.split("{"),o=n.length,i=RegExp("(^|[\\s,>+~])("+r().join("|")+")(?=[[\\s,>+~#.:]|)","gi"),a="1"+x+"\\:2";o--;)t=n[o]=n[o].split("}"),t[t.length-1]=t[t.length-1].replace(i,a),n[o]=t.join("}");return n.join("{")}function u(e){for(var t=e.length;t--;)e[t].removeNode()}function f(e){function t(){clearTimeout(a._removeSheetTimer),r&&r.removeNode(!0),r=null}var r,i,a=o(e),s=e.namespaces,c=e.parentWindow;return!E||e.printShived?e:(void 0===s[x]&&s.add(x),c.attachEvent("onbeforeprint",function(){t();for(var o,a,s,c=e.styleSheets,u=[],f=c.length,m=Array(f);f--;)m[f]=c[f];for(;s=m.pop();)if(!s.disabled&&M.test(s.media)){try{o=s.imports,a=o.length}catch(e){a=0}for(f=0;a>f;f++)m.push(o[f]);try{u.push(s.cssText)}catch(e){}}u=d(u.reverse().join("")),i=l(e),r=n(e,u)}),c.attachEvent("onafterprint",function(){u(i),clearTimeout(a._removeSheetTimer),a._removeSheetTimer=setTimeout(t,500)}),e.printShived=!0,e)}var m,p,v=e.html5||{},h=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)/i,g=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)/i,_="_html5shiv",y=0,b={};!function(){try{var e=t.createElement("a");e.innerHTML="<xyz></xyz>",m="hidden"in e,p=1==e.childNodes.length||function(){t.createElement("a");var e=t.createDocumentFragment();return void 0===e.cloneNode||void 0===e.createDocumentFragment||void 0===e.createElement}()}catch(e){m=!0,p=!0}}();var w={elements:v.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:"3.7.3",shivCSS:!1!==v.shivCSS,supportsUnknownElements:p,shivMethods:!1!==v.shivMethods,type:"default",shivDocument:s,createElement:i,createDocumentFragment:function(e,n){if(e||(e=t),p)return e.createDocumentFragment();for(var i=(n=n||o(e)).frag.cloneNode(),a=0,s=r(),l=s.length;l>a;a++)i.createElement(s[a]);return i},addElements:function(e,t){var n=w.elements;"string"!=typeof n&&(n=n.join(" ")),"string"!=typeof e&&(e=e.join(" ")),w.elements=n+" "+e,s(t)}};e.html5=w,s(t);var M=/^|\b(?:all|print)\b/,x="html5shiv",E=!p&&function(){var n=t.documentElement;return!(void 0===t.namespaces||void 0===t.parentWindow||void 0===n.applyElement||void 0===n.removeNode||void 0===e.attachEvent)}();w.type+=" print",w.shivPrint=f,f(t),"object"==typeof module&&module.exports&&(module.exports=w)}(void 0!==e?e:this,t),b.addTest("canvas",function(){var e=o("canvas");return!(!e.getContext||!e.getContext("2d"))});var E=function(){var e=!("onblur"in t.documentElement);return function(t,r){var i;return!!t&&(r&&"string"!=typeof r||(r=o(r||"div")),t="on"+t,!(i=t in r)&&e&&(r.setAttribute||(r=o("div")),r.setAttribute(t,""),i="function"==typeof r[t],r[t]!==n&&(r[t]=n),r.removeAttribute(t)),i)}}();y.hasEvent=E;var S=y.testStyles=a;b.addTest("touchevents",function(){var n;if("ontouchstart"in e||e.DocumentTouch&&t instanceof DocumentTouch)n=!0;else{var r=["@media (",w.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");S(r,function(e){n=9===e.offsetTop})}return n}),b.addTest("unicode",function(){var e,t=o("span"),n=o("span");return S("#modernizr{font-family:Arial,sans;font-size:300em;}",function(r){t.innerHTML=x?"妇":"&#5987;",n.innerHTML=x?"☆":"&#9734;",r.appendChild(t),r.appendChild(n),e="offsetWidth"in t&&t.offsetWidth!==n.offsetWidth}),e});var z="Moz O ms Webkit",T=y._config.usePrefixes?z.toLowerCase().split(" "):[];y._domPrefixes=T,b.addTest("pointerevents",function(){var e=!1,t=T.length;for(e=b.hasEvent("pointerdown");t--&&!e;)E(T[t]+"pointerdown")&&(e=!0);return e});var N=y._config.usePrefixes?z.split(" "):[];y._cssomPrefixes=N;var C=function(t){var r,o=w.length,i=e.CSSRule;if(void 0===i)return n;if(!t)return!1;if(t=t.replace(/^@/,""),(r=t.replace(/-/g,"_").toUpperCase()+"_RULE")in i)return"@"+t;for(var a=0;o>a;a++){var s=w[a];if(s.toUpperCase()+"_"+r in i)return"@-"+s.toLowerCase()+"-"+t}return!1};y.atRule=C;var L={elem:o("modernizr")};b._q.push(function(){delete L.elem});var k={style:L.elem.style};b._q.unshift(function(){delete k.style}),y.testAllProps=v,y.testAllProps=h,b.addTest("flexwrap",h("flexWrap","wrap",!0));var j=y.prefixed=function(e,t,n){return 0===e.indexOf("@")?C(e):(-1!=e.indexOf("-")&&(e=s(e)),t?v(e,t,n):v(e,"pfx"))};b.addTest("matchmedia",!!j("matchMedia",e)),b.addTest("vibrate",!!j("vibrate",navigator)),function(){var e,t,n,o,i,a,s;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],(t=_[l]).name&&(e.push(t.name.toLowerCase()),t.options&&t.options.aliases&&t.options.aliases.length))for(n=0;n<t.options.aliases.length;n++)e.push(t.options.aliases[n].toLowerCase());for(o=r(t.fn,"function")?t.fn():t.fn,i=0;i<e.length;i++)a=e[i],1===(s=a.split(".")).length?b[s[0]]=o:(!b[s[0]]||b[s[0]]instanceof Boolean||(b[s[0]]=new Boolean(b[s[0]])),b[s[0]][s[1]]=o),g.push((o?"":"no-")+s.join("-"))}}(),function(e){var t=M.className,n=b._config.classPrefix||"";if(x&&(t=t.baseVal),b._config.enableJSClass){var r=new RegExp("(^|\\s)"+n+"no-js(\\s|)");t=t.replace(r,"1"+n+"js2")}b._config.enableClasses&&(t+=" "+n+e.join(" "+n),x?M.className.baseVal=t:M.className=t)}(g),delete y.addTest,delete y.addAsyncTest;for(var A=0;A<b._q.length;A++)b._q[A]();e.Modernizr=b}(window,document),Modernizr.viewport_width=Math.max(document.documentElement.clientWidth,window.innerWidth||0),Modernizr.viewport_height=Math.max(document.documentElement.clientHeight,window.innerHeight||0),Modernizr.narrow=Modernizr.viewport_width<=704,Modernizr.constrained=Modernizr.viewport_width<=1200,Modernizr.site_menu=Modernizr.viewport_width<=1020?"button":"nav_bar",Modernizr.touch=Modernizr.touchevents||Modernizr.pointerevents&&(navigator.MaxTouchPoints>0||navigator.msMaxTouchPoints>0),Modernizr.phone=Modernizr.narrow&&Modernizr.touch,Modernizr.tablet=Modernizr.viewport_width<1075&&Modernizr.touch,Modernizr.desktop=!Modernizr.constrained&&!Modernizr.touch,Modernizr.laptop=!(Modernizr.desktop||Modernizr.tablet||Modernizr.phone);var patt=new RegExp("hideallads");Modernizr.adfree=patt.test(window.location.href);var sr_html=document.querySelector("html"),cn=sr_html.className;Modernizr.phone?sr_html.className=cn.concat(" phone"):Modernizr.tablet?sr_html.className=cn.concat(" tablet"):(Modernizr.desktop||Modernizr.laptop)&&(sr_html.className=cn.concat(" desktop"));var sr_host_parts=window.location.hostname.split("."),cn=sr_html.className;Modernizr.is_build=Modernizr.is_live=Modernizr.is_dev=!1,"b"===sr_host_parts[0]?(Modernizr.is_build=!0,sr_html.className=cn.concat(" is_build")):"d"===sr_host_parts[0]||"r"===sr_host_parts[0]?(Modernizr.is_dev=!0,sr_html.className=cn.concat(" is_dev")):"www"===sr_host_parts[0]&&(Modernizr.is_live=!0,sr_html.className=cn.concat(" is_live"));var sr_logger=function(){var e=null,t={};return t.enableLogger=function(){null!=e&&(window.console.log=e)},t.disableLogger=function(){e=console.log,window.console.log=function(){}},t}();sr_is_production&&sr_logger.disableLogger(),Modernizr.is_modern=(Modernizr.canvas||Modernizr.localstorage)&&!sr_detect_operaMini,Modernizr.is_modern?(document.documentElement.className+=" is_modern",Modernizr.is_not_modern=!1):(document.documentElement.className+=" is_not_modern",Modernizr.is_not_modern=!0);var sr_utilities_js_loader=[];!function(e){var t=function(t,n){"use strict";var r=e.document.getElementsByTagName("script")[0],o=e.document.createElement("script");return o.src=t,o.async=!0,r.parentNode.insertBefore(o,r),n&&"function"==typeof n&&(o.onload=n),o};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this),function(e){"use strict";var t=function(t,n,r){function o(e){if(s.body)return e();setTimeout(function(){o(e)})}function i(){l.addEventListener&&l.removeEventListener("load",i),l.media=r||"all"}var a,s=e.document,l=s.createElement("link");if(n)a=n;else{var c=(s.body||s.getElementsByTagName("head")[0]).childNodes;a=c[c.length-1]}var d=s.styleSheets;l.rel="stylesheet",l.href=t,l.media="only x",o(function(){a.parentNode.insertBefore(l,n?a:a.nextSibling)});var u=function(e){for(var t=l.href,n=d.length;n--;)if(d[n].href===t)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",i),l.onloadcssdefined=u,u(i),l};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r,r.getAttribute("media")),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);var sr_time_begin=new Date,sr_perf_startTime=new Date,sr_perf_log="<strong>Performance:</strong>",sr_perf_lastTime=new Date;
+
+</script>
+
+<script>
+if (Modernizr.is_modern) { loadJS( "https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/js/br/sr-min.js"     , function() { vjs_ready(sr_fire_js); }); }
+else                     { loadJS( "https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/js/br/sr-basic-min.js", function() { vjs_ready(sr_fire_js); }); }
+</script>    
+
+<script>sr_utilities_js_loader.push(function() { vjs_createCookie('srcssfull', 'yes', 0.5 )});</script>
+
+
+    <title>1939 Major League Baseball Transactions | Baseball-Reference.com</title>
+    <meta name="revised" content="13:58:50 08-Jul-2018" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="generated-by"     content="build_leagues_other.pl" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="4d383b" />
+    <meta name="msapplication-navbutton-color" content="4d383b" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="4d383b" />
+        
+
+<meta name="keywords" content="">
+    <link rel="canonical" href="https://www.baseball-reference.com/leagues/MLB/1939-transactions.shtml" />
+
+<meta itemprop="url"           content="https://www.baseball-reference.com">
+    <meta itemprop="name"          content="Baseball Reference">
+    <meta itemprop="alternateName" content="BBref">
+    <meta name="Description" content="1939 Complete team transactions for this season with links to the players and teams involved.">
+<meta property="fb:app_id"     content="">
+    <meta property="og:url"          content="https://www.baseball-reference.com/leagues/MLB/1939-transactions.shtml">
+    <meta property="og:title"        content="1939 Major League Baseball Transactions | Baseball-Reference.com">
+    <meta property="og:site_name"    content="Baseball-Reference.com">
+    <meta property="og:type"         content="    article" />
+    <meta property="og:description"  content="1939 Complete team transactions for this season with links to the players and teams involved.">
+    <meta property="og:image"        content="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-228x228-precomposed.png">
+<meta name="twitter:card"         content="summary">
+    <meta name="twitter:site"         content="@baseball_ref">
+    <meta name="twitter:creator"      content="@baseball_ref">
+    <meta property="twitter:image"    content="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-228x228-precomposed.png">
+    <meta name="twitter:domain"       content="Baseball-Reference.com">
+    <meta name="referrer" content="unsafe-url">
+
+    
+    <!-- tiles, touch, favicons -->
+    <link rel="icon"                         sizes="192x192" href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-192x192-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="228x228" href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-228x228-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="195x195" href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-195x195-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="180x180" href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-180x180-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="152x152" href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-152x152-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="144x144" href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="128x128" href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-128x128-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="120x120" href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-120x120-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="114x114" href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="76x76"   href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-76x76-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="72x72"   href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon"             sizes="57x57"   href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/apple-touch-icon-57x57-precomposed.png">
+    <link rel="icon"                         sizes="32x32"   href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/favicon-32.png">
+    <!--[if IE]>
+    <link rel="shortcut icon"                                href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/favicon.ico"><![endif]-->
+    <meta name="msapplication-TileColor" content="#86081a" />
+    <meta name="msapplication-TileImage" content="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/favicons/br/ms-tile-144.png" />
+    <link rel=search        type="application/opensearchdescription+xml" href="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/opensearch/opensearch-br.xml" title=" Player and Team Search">
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var freestar = freestar || {};
+    freestar.config = freestar.config || {};
+    freestar.config.enabled_slots = [ "div-gpt-ad-300x250-ATF","div-gpt-ad-728x90-ATF","div-gpt-ad-728x90-GeneralHeader","div-gpt-ad-728x90-Footer" ];
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree || document.getElementById('sr_suppress_ads') || Modernizr.viewport_width < 1810) {
+    // do not include the rails
+    }
+    else {
+         freestar.config.enabled_slots.push('div-gpt-ad-160x600-1');
+         freestar.config.enabled_slots.push('div-gpt-ad-160x600-2');
+    } 
+
+</script>
+<script data-cfasync="false" type="text/javascript">
+    var fs_debug = window.location.search.indexOf('fsdebug') == -1 ? false : true;
+    freestar.hitTime = Date.now();
+    freestar.queue = freestar.queue || [];
+    freestar.config = freestar.config || {};
+    freestar.queue.push(function() {
+      // Include the line reflecting the area/section of the site you are on
+      googletag.pubads().setTargeting('sr_site_id', 'br');
+    });
+!function(a,b){
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+        return;
+    }  
+    var c=b.getElementsByTagName("script")[0],
+    d=b.createElement("script"),
+    e="https://a.pub.network/baseball-reference";
+    e+=fs_debug?"/qa/pubfig.min.js":"/pubfig.min.js",
+    d.async=!0,
+    d.src=e,
+    c.parentNode.insertBefore(d,c)
+}(window,document);
+</script>
+
+
+
+</head>
+<body class="br"	     >
+
+<div id="wrap">
+  <div id="header" role="banner">
+  <ul id="subnav">
+	<li><a href="https://www.sports-reference.com/"><svg height="15px" width="20px"><use xlink:href="#ic-sr-pennant"></use></svg> Sports Reference</a></li>
+	<li class="current"><a href="https://www.baseball-reference.com/">Baseball</a></li>
+	<li><a href="https://www.pro-football-reference.com/">Football</a> <a href="https://www.sports-reference.com/cfb/">(college)</a></li>
+	<li><a href="https://www.basketball-reference.com/">Basketball</a> <a href="https://www.sports-reference.com/cbb/">(college)</a></li>
+	<li><a href="https://www.hockey-reference.com/">Hockey</a></li>
+	<li><a href="https://fbref.com/">Soccer</a></li>
+	<li><a href="https://www.sports-reference.com/blog/">Blog</a></li>
+
+        <li><a href="https://stathead.com/">Stathead</a></li>
+        <li><a href="https://widgets.sports-reference.com/">Widgets</a></li>
+
+        	<li><a href="https://www.sports-reference.com/feedback/">Questions or Comments?</a></li>
+	<li class="user logged_in">Welcome<span class="username"></span>&nbsp;&#183;&nbsp;<a href="/my/">Your Account</a></li>
+<li class="user logged_in"><a class="logout" href="/my/?do=logout">Logout</a></li>
+<li class="user not_logged_in"><a class="login" href="/my/">Login</a></li>
+<li class="user not_logged_in"><a href="/my/">Create Account</a></li>
+<li><a href="/my/?do=ad_free_browsing">Surf AD-FREE</a></li>
+
+</ul>
+
+  <a href="/"><img src="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/logos/br-logo.svg" onerror="this.src='https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/logos/br-logo.png'; this.onerror = null;" alt="Baseball-Reference.com Logo &amp; Link to home page" /></a>
+<div id="nav_trigger" role="button"><a href="#site_menu_link">MENU</a></div>
+<div id="nav" role="navigation" aria-label="Baseball-Reference.com sections">
+	<ul id="main_nav" class="hoversmooth nohover">	        <li id="header_players" ><a href="/players">Players</a></li>
+		<li id="header_teams" ><a href="/teams/">Teams</a></li>
+		<li id="header_leagues" class="current"><a href="/leagues/">Seasons</a></li>
+		<li id="header_leaders" ><a href="/leaders/">Leaders</a></li>
+		<li id="header_scores" ><a href="/boxes/">MLB Scores</a></li>
+		<li id="header_playoffs" class=""><a href="/postseason/">MLB Playoffs</a></li>	
+		<li id="header_playindex" class=""><a href="/play-index/">Play Index</a></li>
+		<li><a data-scroll href="#site_menu_link" class="opener">Full Site Menu Below</a></li>
+	</ul>
+	<div class="breadcrumbs">You are here: <div itemscope itemtype="https://schema.org/BreadcrumbList" class="crumbs"><span><a href="/">BR Home</a></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/leagues/"><span itemprop="name">Leagues</span></a> <meta itemprop="position" content="1" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/leagues/MLB/"><span itemprop="name">MLB History</span></a> <meta itemprop="position" content="2" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/leagues/MLB/1939.shtml"><span itemprop="name">1939 MLB</span></a> <meta itemprop="position" content="3" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><strong><span itemprop="name">Transactions</span></strong> <meta itemprop="position" content="4" /></span></div></div>
+	<ul class="usertools bullets-inline"><li class="user logged_in">Welcome<span class="username"></span>&nbsp;&#183;&nbsp;<a href="/my/">Your Account</a></li>
+<li class="user logged_in"><a class="logout" href="/my/?do=logout">Logout</a></li>
+<li class="user not_logged_in"><a class="login" href="/my/">Login</a></li>
+<li class="user not_logged_in"><a href="/my/">Create Account</a></li>
+<li><a href="/my/?do=ad_free_browsing">Surf AD-FREE</a></li>
+	</ul><!-- ul.user -->
+</div><!-- div#nav -->
+<script>
+function sr_menus_setupMainNav_button_inline () {
+    if (sr_detect_operaMini || !("classList" in document.createElement("_"))) {
+	return false;
+    }
+    var nav_trigger = document.getElementById('nav_trigger');
+    if(!nav_trigger || !Modernizr.is_modern || nav_trigger.triggered) {
+	return false;
+    }
+    nav_trigger.triggered = true;
+    var nav = document.getElementById('nav');
+    var nav_trigger_a = nav_trigger.querySelector('a');
+    if (nav_trigger_a) {
+	nav_trigger_a.setAttribute('href','javascript:void(0)');
+	nav_trigger.onclick = function (event) {
+	    nav.classList.toggle('open');
+	    var is_open = nav.classList.contains('open');
+	    if (is_open) {
+		nav_trigger.classList.add('open');
+	    }
+	    else {
+		nav_trigger.classList.remove('open');
+	    }
+	    event.preventDefault();
+	    try { sr_record_analytics_event('MainNavButtonClick_inline',sr_record_directory(),sr_record_page());}
+	    catch(err) {}
+	};
+    }
+    return true;
+}
+sr_menus_setupMainNav_button_inline();
+</script><div class="search" role="search" aria-label="Site Search for players, teams and sections">
+<form itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction" name="f_big"  action="/search/search.fcgi">
+<meta itemprop="target" content="https://www.baseball-reference.com/search/search.fcgi?search={search}">
+<div class="ac-outline">
+  <div class="ac-wrapper"><input type="search" tabindex="-1" class="ac-hint" name="hint" placeholder="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" dir="auto"><input tabindex="1" type="search" class="ac-input completely" name="search" placeholder="Enter Person, Team, Section, etc" aria-label="Enter a player, team or section name" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" dir="auto" itemprop="query-input" />
+    <div class="ac-dropdown"></div>
+  </div>
+</div>
+<input type="submit" value="Search" tabindex="2" />
+<input type="hidden" name="pid" value="" data-search-id>
+<input type="hidden" name="idx" value="" data-search-idx>
+
+</form>
+</div><!-- div.search -->
+
+</div><!-- div#header -->
+
+
+<div id="info" class="seasons">
+	<div id="meta">
+        
+
+<div class="media-item logo loader">
+	<img class="teamlogo" itemscope="image" 	     src="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/tlogo/br/MLB-1939.png"
+	     alt="1939  Logo">
+	<p><a href="http://www.sportslogos.net/">via Sports Logos.net</a></p>
+	<p><a href="https://www.sports-reference.com/blog/2016/06/redesign-team-and-league-logos-courtesy-sportslogos-net/">About logos</a></p>
+</div>
+
+
+		<div>
+			<h1 itemprop="name">
+				
+				<span>1939</span> <span>MLB</span> <span class="header_end">Transactions</span>
+				
+			</h1>
+			<div class="prevnext">
+  
+  <a href="/leagues/MLB/1938-transactions.shtml" class="button2 prev">Previous Season</a>
+  
+  
+  <a href="/leagues/MLB/1940-transactions.shtml" class="button2 next">Next Season</a>
+  
+</div>
+
+			
+			
+			
+			<p><strong>World Series Champion</strong>: <a href="/teams/NYY/1939.shtml">New York Yankees</a></p>
+			
+			
+			<button id="meta_more_button" class="opener" data-type="hide_after" data-class="open" data-id="info">More league info</button>
+
+
+		</div>
+	</div>
+	
+<div class="adblock ad300">
+
+<div><a href="/my/?do=ad_free_browsing">Support us without the ads? Go Ad-Free.</a></div>
+<!-- div#fs_fs_300_atf  -->
+<div align="center" id="div-gpt-ad-300x250-ATF">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-300x250-ATF');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-300x250-ATF'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_300_atf -->
+
+
+</div>
+
+</div>
+<div id="srcom">
+<div class="adblock ad728">
+
+<!-- div#fs_fs_728_atf  -->
+<div align="center" id="div-gpt-ad-728x90-ATF">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-728x90-ATF');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-728x90-ATF'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_728_atf -->
+
+
+</div>
+
+
+</div>
+
+<div id="inner_nav" role="navigation" aria-label="Sections on this page and/or other pages related to this page" class=" inactive">
+	<ul class="hoversmooth">
+		<li		   class="index "><a href="/leagues/MLB/1939.shtml">1939 MLB Season</a>		</li>
+		<li data-fade-selector="#inpage_nav"		   class="condensed hasmore "><span>More 1939 MLB Pages</span>
+			<div>
+
+					<section>
+						<p><a href="/register/league.cgi?year=1939">Minor Leagues</a></p>
+						
+						<p><a href="/leagues/MLB/1939-standings.shtml">Standings</a></p>
+						
+						<p><a href="/leagues/MLB/1939-schedule.shtml">Schedule</a></p>
+						
+						<p><a href="/leagues/MLB/1939-standard-fielding.shtml">Fielding</a></p>
+						
+						<p><a href="/leagues/MLB/1939-standard-batting.shtml">Batting</a></p>
+						
+						<p><a href="/leagues/MLB/1939-standard-pitching.shtml">Pitching</a></p>
+						
+					</section>
+
+
+<p class="listhead">Fielding</p>
+					<ul class="">
+						<li><a href="/leagues/MLB/1939-standard-fielding.shtml">Standard Fielding</a></li>
+						<li><a href="/leagues/MLB/1939-appearances-fielding.shtml">Appearances</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_p-fielding.shtml">Pitcher</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_c-fielding.shtml">Catcher</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_1b-fielding.shtml">First Base</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_2b-fielding.shtml">Second Base</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_3b-fielding.shtml">Third Base</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_ss-fielding.shtml">Shortstop</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_lf-fielding.shtml">Left Field</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_cf-fielding.shtml">Center Field</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_rf-fielding.shtml">Right Field</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_of-fielding.shtml">Outfield</a></li>
+					</ul>
+
+<p class="listhead">Batting</p>
+					<ul class="">
+						<li><a href="/leagues/MLB/1939-standard-batting.shtml">Standard Batting</a></li>
+						<li><a href="/leagues/MLB/1939-value-batting.shtml">Player Value</a></li>
+						<li><a href="/leagues/MLB/1939-advanced-batting.shtml">Advanced Batting</a></li>
+						<li><a href="/leagues/MLB/1939-win_probability-batting.shtml">Win Probability</a></li>
+						<li>Spring Training</li>
+						<li><a href="/leagues/MLB/1939-ratio-batting.shtml">Batting Ratios</a></li>
+						<li><a href="/leagues/MLB/1939-baserunning-batting.shtml">Baserunning/Misc</a></li>
+						<li><a href="/leagues/MLB/1939-situational-batting.shtml">PH/HR/Situ Hitting</a></li>
+						<li>Pitches Batting</li>
+						<li><a href="/leagues/MLB/1939-cumulative-batting.shtml">Cumulative Batting</a></li>
+						<li><a href="/leagues/MLB/1939-neutral-batting.shtml">Neutralized Batting</a></li>
+						<li><a href="/leagues/team_compare.cgi?lg=MLB&amp;year=1939">Team Positional Comparisons</a></li>
+						<li><a href="/leagues/split.cgi?t=b&amp;lg=MLB&amp;year=1939">League Splits</a></li>
+						<li><a href="/register/leader.cgi?type=bat&amp;year=1939"">Minors Batting</a></li>
+					</ul>
+
+<p class="listhead">Pitching</p>
+					<ul class="">
+						<li><a href="/leagues/MLB/1939-standard-pitching.shtml">Standard Pitching</a></li>
+						<li><a href="/leagues/MLB/1939-value-pitching.shtml">Player Value</a></li>
+						<li>Spring Training</li>
+						<li><a href="/leagues/MLB/1939-batting-pitching.shtml">Batting Against</a></li>
+						<li><a href="/leagues/MLB/1939-win_probability-pitching.shtml">Win Probability</a></li>
+						<li><a href="/leagues/MLB/1939-starter-pitching.shtml">Starting Pitching</a></li>
+						<li><a href="/leagues/MLB/1939-reliever-pitching.shtml">Relief Pitching</a></li>
+						<li><a href="/leagues/MLB/1939-ratio-pitching.shtml">Pitching Ratios</a></li>
+						<li>Pitching Pitches</li>
+						<li><a href="/leagues/MLB/1939-basesituation-pitching.shtml">Baserunning/Situ</a></li>
+						<li><a href="/leagues/MLB/1939-cumulative-pitching.shtml">Cumulative Pitching</a></li>
+						<li><a href="/leagues/MLB/1939-neutral-pitching.shtml">Neutralized Pitching</a></li>
+						<li><a href="/leagues/split.cgi?t=p&amp;lg=MLB&amp;year=1939">League Splits</a></li>
+						<li><a href="/register/leader.cgi?type=pitch&amp;year=1939"">Minors Pitching</a></li>
+					</ul>
+
+<p class="listhead">Leaders &amp; Awards</p>
+					<ul class="">
+						<li><a href="/leagues/MLB/1939-batting-leaders.shtml">Batting</a></li>
+						<li><a href="/leagues/MLB/1939-pitching-leaders.shtml">Pitching</a></li>
+						<li><a href="/leagues/MLB/1939-fielding-leaders.shtml">Fielding</a></li>
+						<li><a href="/leagues/MLB/1939-other-leaders.shtml">Awards, All-Stars, &amp; More</a></li>
+					</ul>
+
+<p class="listhead">Other</p>
+					<ul class="">
+						<li><a href="/leagues/MLB/1939-misc.shtml">Attendance &amp; Misc.</a></li>
+						<li><a href="/leagues/MLB/1939-debuts.shtml">New Debuts</a></li>
+						<li><a href="/leagues/MLB/1939-rookies.shtml">Rookie Players</a></li>
+						<li><a href="/leagues/MLB/1939-finalyear.shtml">Retirements</a></li>
+						<li><a href="/leagues/MLB/1939-births.shtml">Born this Year</a></li>
+						<li><a href="/leagues/MLB/1939-deaths.shtml">Died this Year</a></li>
+						<li><a href="/leagues/MLB/1939-uniform-numbers.shtml">Uniform Numbers</a></li>
+						<li><a href="/leagues/MLB/1939-transactions.shtml">Transactions</a></li>
+						<li>Amateur Draft</li>
+						<li>Free Agents</li>
+						<li>Last N Days Leaders</li>
+						<li><a href="/leagues/MLB/1939-opening-day-rosters.shtml">Opening Day Lineups</a></li>
+						<li><a href="/leagues/MLB/1939-team-starting-lineups.shtml">Team Starting Lineups</a></li>
+						<li><a href="/leagues/MLB/1939-team-pitching-staffs.shtml">Team Pitching Staffs</a></li>
+						<li>Marcel Projections</li>
+					</ul>
+
+			</div>		</li>
+		<li		   class="full "><a href="/register/league.cgi?year=1939">Minor Leagues</a>		</li>
+		<li		   class="full "><a href="/leagues/MLB/1939-standings.shtml">Standings</a>		</li>
+		<li		   class="full "><a href="/leagues/MLB/1939-schedule.shtml">Schedule</a>		</li>
+		<li data-fade-selector="#inpage_nav"		   class="full hasmore "><a href="/leagues/MLB/1939-standard-fielding.shtml">Fielding</a>
+			<div>
+
+					<ul class=" in_list">
+						<li><a href="/leagues/MLB/1939-standard-fielding.shtml">Standard Fielding</a></li>
+						<li><a href="/leagues/MLB/1939-appearances-fielding.shtml">Appearances</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_p-fielding.shtml">Pitcher</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_c-fielding.shtml">Catcher</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_1b-fielding.shtml">First Base</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_2b-fielding.shtml">Second Base</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_3b-fielding.shtml">Third Base</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_ss-fielding.shtml">Shortstop</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_lf-fielding.shtml">Left Field</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_cf-fielding.shtml">Center Field</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_rf-fielding.shtml">Right Field</a></li>
+						<li><a href="/leagues/MLB/1939-specialpos_of-fielding.shtml">Outfield</a></li>
+					</ul>
+
+			</div>		</li>
+		<li data-fade-selector="#inpage_nav"		   class="full hasmore "><a href="/leagues/MLB/1939-standard-batting.shtml">Batting</a>
+			<div>
+
+					<ul class=" in_list">
+						<li><a href="/leagues/MLB/1939-standard-batting.shtml">Standard Batting</a></li>
+						<li><a href="/leagues/MLB/1939-value-batting.shtml">Player Value</a></li>
+						<li><a href="/leagues/MLB/1939-advanced-batting.shtml">Advanced Batting</a></li>
+						<li><a href="/leagues/MLB/1939-win_probability-batting.shtml">Win Probability</a></li>
+						<li>Spring Training</li>
+						<li><a href="/leagues/MLB/1939-ratio-batting.shtml">Batting Ratios</a></li>
+						<li><a href="/leagues/MLB/1939-baserunning-batting.shtml">Baserunning/Misc</a></li>
+						<li><a href="/leagues/MLB/1939-situational-batting.shtml">PH/HR/Situ Hitting</a></li>
+						<li>Pitches Batting</li>
+						<li><a href="/leagues/MLB/1939-cumulative-batting.shtml">Cumulative Batting</a></li>
+						<li><a href="/leagues/MLB/1939-neutral-batting.shtml">Neutralized Batting</a></li>
+						<li><a href="/leagues/team_compare.cgi?lg=MLB&amp;year=1939">Team Positional Comparisons</a></li>
+						<li><a href="/leagues/split.cgi?t=b&amp;lg=MLB&amp;year=1939">League Splits</a></li>
+						<li><a href="/register/leader.cgi?type=bat&amp;year=1939"">Minors Batting</a></li>
+					</ul>
+
+			</div>		</li>
+		<li data-fade-selector="#inpage_nav"		   class="full hasmore "><a href="/leagues/MLB/1939-standard-pitching.shtml">Pitching</a>
+			<div>
+
+					<ul class=" in_list">
+						<li><a href="/leagues/MLB/1939-standard-pitching.shtml">Standard Pitching</a></li>
+						<li><a href="/leagues/MLB/1939-value-pitching.shtml">Player Value</a></li>
+						<li>Spring Training</li>
+						<li><a href="/leagues/MLB/1939-batting-pitching.shtml">Batting Against</a></li>
+						<li><a href="/leagues/MLB/1939-win_probability-pitching.shtml">Win Probability</a></li>
+						<li><a href="/leagues/MLB/1939-starter-pitching.shtml">Starting Pitching</a></li>
+						<li><a href="/leagues/MLB/1939-reliever-pitching.shtml">Relief Pitching</a></li>
+						<li><a href="/leagues/MLB/1939-ratio-pitching.shtml">Pitching Ratios</a></li>
+						<li>Pitching Pitches</li>
+						<li><a href="/leagues/MLB/1939-basesituation-pitching.shtml">Baserunning/Situ</a></li>
+						<li><a href="/leagues/MLB/1939-cumulative-pitching.shtml">Cumulative Pitching</a></li>
+						<li><a href="/leagues/MLB/1939-neutral-pitching.shtml">Neutralized Pitching</a></li>
+						<li><a href="/leagues/split.cgi?t=p&amp;lg=MLB&amp;year=1939">League Splits</a></li>
+						<li><a href="/register/leader.cgi?type=pitch&amp;year=1939"">Minors Pitching</a></li>
+					</ul>
+
+			</div>		</li>
+		<li data-fade-selector="#inpage_nav"		   class="full hasmore "><span>Leaders &amp; Awards</span>
+			<div>
+
+					<ul class="">
+						<li><a href="/leagues/MLB/1939-batting-leaders.shtml">Batting</a></li>
+						<li><a href="/leagues/MLB/1939-pitching-leaders.shtml">Pitching</a></li>
+						<li><a href="/leagues/MLB/1939-fielding-leaders.shtml">Fielding</a></li>
+						<li><a href="/leagues/MLB/1939-other-leaders.shtml">Awards, All-Stars, &amp; More</a></li>
+					</ul>
+
+			</div>		</li>
+		<li data-fade-selector="#inpage_nav"		   class="full current hasmore "><span>Other</span>
+			<div>
+
+					<ul class=" in_list">
+						<li><a href="/leagues/MLB/1939-misc.shtml">Attendance &amp; Misc.</a></li>
+						<li><a href="/leagues/MLB/1939-debuts.shtml">New Debuts</a></li>
+						<li><a href="/leagues/MLB/1939-rookies.shtml">Rookie Players</a></li>
+						<li><a href="/leagues/MLB/1939-finalyear.shtml">Retirements</a></li>
+						<li><a href="/leagues/MLB/1939-births.shtml">Born this Year</a></li>
+						<li><a href="/leagues/MLB/1939-deaths.shtml">Died this Year</a></li>
+						<li><a href="/leagues/MLB/1939-uniform-numbers.shtml">Uniform Numbers</a></li>
+						<li><a href="/leagues/MLB/1939-transactions.shtml">Transactions</a></li>
+						<li>Amateur Draft</li>
+						<li>Free Agents</li>
+						<li>Last N Days Leaders</li>
+						<li><a href="/leagues/MLB/1939-opening-day-rosters.shtml">Opening Day Lineups</a></li>
+						<li><a href="/leagues/MLB/1939-team-starting-lineups.shtml">Team Starting Lineups</a></li>
+						<li><a href="/leagues/MLB/1939-team-pitching-staffs.shtml">Team Pitching Staffs</a></li>
+						<li>Marcel Projections</li>
+					</ul>
+
+			</div>		</li>
+	</ul>
+</div><!-- div#inner_nav -->
+
+<div id="content" role="main">
+    
+          
+      
+      
+      
+      
+            
+
+<!-- fs_general_header -->
+<div class="adblock">
+
+<!-- div#fs_fs_general_header  -->
+<div align="center" id="div-gpt-ad-728x90-GeneralHeader">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-728x90-GeneralHeader');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-728x90-GeneralHeader'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_general_header -->
+
+</div>
+
+      	 
+      
+      <!-- no Local/Partials/NoteTop.tt2 -->
+      
+         
+            
+<div class="section_wrapper" id="all_trxs">
+
+<div class="section_heading">
+  <span class="section_anchor" id="trxs_link" data-label="All Transactions"></span>
+    <h2>All Transactions</h2>    <div class="section_heading_text">
+      <ul>
+      </ul>
+    </div>		
+</div>	<div data-no-overall-control id="div_trxs">		<p>Transactions listed are from November 1 of previous year to April 1 of the following year.</p>		<ul class="page_index "><li><span>November 5, 1938</span>			<div>
+			<p>Syracuse (International) purchased <a href="/players/k/kronejo01.shtml">John Kroner</a> from the <a href="/teams/CLE/1938.shtml">Cleveland Indians</a>.</p>
+			</div>
+			</li><li><span>November 19, 1938</span>			<div>
+			<p>The <a href="/teams/CLE/1938.shtml">Cleveland Indians</a> purchased <a href="/players/b/broacjo01.shtml">Johnny Broaca</a> from the <a href="/teams/NYY/1938.shtml">New York Yankees</a>.</p>
+			</div>
+			</li><li><span>December, 1938</span>			<div>
+			<p>Buffalo (International) purchased <a href="/players/c/cascajo01.shtml">Joe Cascarella</a> from the <a href="/teams/CIN/1938.shtml">Cincinnati Reds</a>.</p>
+			</div>
+			</li><li><span>December 6, 1938</span>			<div>
+			<p>Hollywood (PCL) purchased <a href="/players/c/cissebi01.shtml">Bill Cissell</a> from the <a href="/teams/NYG/1938.shtml">New York Giants</a>.</p> <p>The <a href="/teams/BOS/1938.shtml">Boston Red Sox</a> purchased <a href="/players/h/hogsech01.shtml">Chief Hogsett</a> from the <a href="/teams/WSH/1938.shtml">Washington Senators</a>.</p> <p>The <a href="/teams/CHC/1938.shtml">Chicago Cubs</a> traded <a href="/players/d/demarfr02.shtml">Frank Demaree</a>, <a href="/players/j/jurgebi01.shtml">Billy Jurges</a> and <a href="/players/o/o'deake01.shtml">Ken O'Dea</a> to the <a href="/teams/NYG/1938.shtml">New York Giants</a> for <a href="/players/b/bartedi01.shtml">Dick Bartell</a>, <a href="/players/l/leibeha01.shtml">Hank Leiber</a> and <a href="/players/m/mancugu01.shtml">Gus Mancuso</a>.</p> <p>The <a href="/teams/BOS/1938.shtml">Boston Red Sox</a> traded <a href="/players/m/marcujo01.shtml">Johnny Marcum</a> to the <a href="/teams/SLB/1938.shtml">St. Louis Browns</a> for <a href="/players/c/careyto02.shtml">Tom Carey</a>.</p>
+			</div>
+			</li><li><span>December 7, 1938</span>			<div>
+			<p>The <a href="/teams/PHI/1938.shtml">Philadelphia Phillies</a> purchased <a href="/players/p/powerle01.shtml">Les Powers</a> from the <a href="/teams/NYG/1938.shtml">New York Giants</a>.</p> <p>The <a href="/teams/CHW/1938.shtml">Chicago White Sox</a> purchased <a href="/players/r/reisbo01.shtml">Bobby Reis</a> from the <a href="/teams/BSN/1938.shtml">Boston Bees</a>.</p> <p>The <a href="/teams/BOS/1938.shtml">Boston Red Sox</a> purchased <a href="/players/w/weintph01.shtml">Phil Weintraub</a> from the <a href="/teams/PHI/1938.shtml">Philadelphia Phillies</a>.</p> <p>The <a href="/teams/NYG/1938.shtml">New York Giants</a> traded <a href="/players/h/haslimi01.shtml">Mickey Haslin</a> and cash to San Diego (PCL) for <a href="/players/s/salvoma01.shtml">Manny Salvo</a>.</p>
+			</div>
+			</li><li><span>December 8, 1938</span>			<div>
+			<p>The <a href="/teams/CHC/1938.shtml">Chicago Cubs</a> purchased <a href="/players/h/harrera01.shtml">Ray Harrell</a> from the <a href="/teams/STL/1938.shtml">St. Louis Cardinals</a>.</p> <p>The <a href="/teams/CIN/1938.shtml">Cincinnati Reds</a> traded <a href="/players/c/cookedu01.shtml">Dusty Cooke</a> to the <a href="/teams/STL/1938.shtml">St. Louis Cardinals</a> for <a href="/players/b/bordafr01.shtml">Frenchy Bordagaray</a>.</p>
+			</div>
+			</li><li><span>December 10, 1938</span>			<div>
+			<p>The <a href="/teams/CHC/1938.shtml">Chicago Cubs</a> released <a href="/players/l/lazzeto01.shtml">Tony Lazzeri</a>.</p> <p>The <a href="/teams/BRO/1938.shtml">Brooklyn Dodgers</a> signed <a href="/players/l/lazzeto01.shtml">Tony Lazzeri</a> as a free agent.</p>
+			</div>
+			</li><li><span>December 11, 1938</span>			<div>
+			<p>The <a href="/teams/NYG/1938.shtml">New York Giants</a> traded <a href="/players/b/bakerto01.shtml">Tom Baker</a>, <a href="/players/c/carliji01.shtml">Jim Carlin</a> and $20,000 to the <a href="/teams/WSH/1938.shtml">Washington Senators</a> for <a href="/players/b/bonurze01.shtml">Zeke Bonura</a>.</p>
+			</div>
+			</li><li><span>December 12, 1938</span>			<div>
+			<p>The <a href="/teams/DET/1938.shtml">Detroit Tigers</a> traded <a href="/register/player.fcgi?id=selway001edw">Ed Selway</a> (minors), <a href="/players/a/archige01.shtml">George Archie</a>, <a href="/players/p/pietto01.shtml">Tony Piet</a>, <a href="/players/w/whitejo01.shtml">Jo-Jo White</a> and cash to Seattle (PCL) for <a href="/players/h/hutchfr01.shtml">Fred Hutchinson</a>.</p>
+			</div>
+			</li><li><span>December 13, 1938</span>			<div>
+			<p>The <a href="/teams/BRO/1938.shtml">Brooklyn Dodgers</a> traded <a href="/players/k/krausle01.shtml">Lew Krausse</a> and cash to the <a href="/teams/STL/1938.shtml">St. Louis Cardinals</a> for <a href="/players/o/outlaji01.shtml">Jimmy Outlaw</a>.</p> <p>The <a href="/teams/BRO/1938.shtml">Brooklyn Dodgers</a> traded <a href="/players/f/frankfr02.shtml">Fred Frankhouse</a> to the <a href="/teams/BSN/1938.shtml">Boston Bees</a> for <a href="/players/s/stripjo01.shtml">Joe Stripp</a>.</p> <p>The <a href="/teams/BRO/1938.shtml">Brooklyn Dodgers</a> traded <a href="/players/h/hassebu01.shtml">Buddy Hassett</a> and <a href="/players/o/outlaji01.shtml">Jimmy Outlaw</a> to the <a href="/teams/BSN/1938.shtml">Boston Bees</a> for <a href="/players/h/hutchir01.shtml">Ira Hutchinson</a> and <a href="/players/m/moorege03.shtml">Gene Moore</a>.</p>
+			</div>
+			</li><li><span>December 14, 1938</span>			<div>
+			<p>Seattle (PCL) purchased <a href="/players/c/campbgi01.shtml">Gilly Campbell</a> from the <a href="/teams/BRO/1938.shtml">Brooklyn Dodgers</a>.</p>
+			</div>
+			</li><li><span>December 15, 1938</span>			<div>
+			<p>The <a href="/teams/NYG/1938.shtml">New York Giants</a> purchased <a href="/players/h/harribi01.shtml">Bill Harris</a> from the <a href="/teams/BOS/1938.shtml">Boston Red Sox</a>.</p> <p>The <a href="/teams/BOS/1938.shtml">Boston Red Sox</a> traded <a href="/players/c/chapmbe01.shtml">Ben Chapman</a> to the <a href="/teams/CLE/1938.shtml">Cleveland Indians</a> for <a href="/players/g/galehde01.shtml">Denny Galehouse</a> and <a href="/players/i/irwinto01.shtml">Tommy Irwin</a>.</p> <p>The <a href="/teams/BOS/1938.shtml">Boston Red Sox</a> traded <a href="/players/h/higgipi01.shtml">Pinky Higgins</a> and <a href="/players/m/mckaiar01.shtml">Archie McKain</a> to the <a href="/teams/DET/1938.shtml">Detroit Tigers</a> for <a href="/players/a/aukerel01.shtml">Elden Auker</a>, <a href="/players/m/morgach01.shtml">Chet Morgan</a> and <a href="/players/w/wadeja01.shtml">Jake Wade</a>.</p>
+			</div>
+			</li><li><span>December 16, 1938</span>			<div>
+			<p>The <a href="/teams/BSN/1938.shtml">Boston Bees</a> traded <a href="/players/m/muellra01.shtml">Ray Mueller</a> to the <a href="/teams/PIT/1938.shtml">Pittsburgh Pirates</a> for <a href="/players/d/dicksjo01.shtml">Johnny Dickshot</a>, <a href="/players/t/toddal01.shtml">Al Todd</a> and cash.</p>
+			</div>
+			</li><li><span>December 17, 1938</span>			<div>
+			<p>The <a href="/teams/WSH/1938.shtml">Washington Senators</a> purchased <a href="/players/w/willial02.shtml">Al Williams</a> from the <a href="/teams/PHA/1938.shtml">Philadelphia Athletics</a>.</p>
+			</div>
+			</li><li><span>December 19, 1938</span>			<div>
+			<p>The <a href="/teams/BRO/1938.shtml">Brooklyn Dodgers</a> purchased <a href="/players/s/sewellu01.shtml">Luke Sewell</a> from the <a href="/teams/CHW/1938.shtml">Chicago White Sox</a>.</p> <p>The <a href="/teams/PHI/1938.shtml">Philadelphia Phillies</a> released <a href="/players/h/hallabi01.shtml">Bill Hallahan</a>.</p>
+			</div>
+			</li><li><span>December 21, 1938</span>			<div>
+			<p>The <a href="/teams/BOS/1938.shtml">Boston Red Sox</a> traded <a href="/players/m/mcnaier01.shtml">Eric McNair</a> to the <a href="/teams/CHW/1938.shtml">Chicago White Sox</a> for <a href="/players/b/bergebo01.shtml">Boze Berger</a>.</p>
+			</div>
+			</li><li><span>December 29, 1938</span>			<div>
+			<p>The <a href="/teams/BSN/1938.shtml">Boston Bees</a> purchased <a href="/players/s/simmoal01.shtml">Al Simmons</a> from the <a href="/teams/WSH/1938.shtml">Washington Senators</a> for $3,000.</p>
+			</div>
+			</li><li><span>Before 1939 Season</span>			<div>
+			<p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> signed <a href="/players/a/adamsbo03.shtml">Bobby Adams</a> as an amateur free agent.</p> <p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> signed <a href="/players/a/adamsre01.shtml">Red Adams</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> signed <a href="/players/a/anderfe01.shtml">Ferrell Anderson</a> as an amateur free agent.</p> <p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> signed <a href="/players/b/beardge01.shtml">Gene Bearden</a> as an amateur free agent.</p> <p>The <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> signed <a href="/players/b/blatnjo01.shtml">Johnny Blatnik</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> signed <a href="/players/b/borowha01.shtml">Hank Borowy</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> signed <a href="/players/c/collijo01.shtml">Joe Collins</a> as an amateur free agent.</p> <p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> signed <a href="/players/d/dillibo01.shtml">Bob Dillinger</a> as an amateur free agent.</p> <p>The <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> signed <a href="/players/d/dockige01.shtml">George Dockins</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> signed <a href="/players/d/drewska01.shtml">Karl Drews</a> as an amateur free agent.</p> <p>The <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> signed <a href="/players/e/edwarha01.shtml">Hank Edwards</a> as an amateur free agent.</p> <p>The <a href="/teams/BOS/1939.shtml">Boston Red Sox</a> signed <a href="/players/f/fineto01.shtml">Tommy Fine</a> as an amateur free agent.</p> <p>The <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> signed <a href="/players/g/gromest01.shtml">Steve Gromek</a> as an amateur free agent.</p> <p>The <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a> signed <a href="/players/h/hermage01.shtml">Gene Hermanski</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> signed <a href="/players/h/hitchbi01.shtml">Billy Hitchcock</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> signed <a href="/players/h/houkra01.shtml">Ralph Houk</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> signed <a href="/players/k/kennebi02.shtml">Bill Kennedy</a> as an amateur free agent.</p> <p>The <a href="/teams/DET/1939.shtml">Detroit Tigers</a> signed <a href="/players/m/marklge01.shtml">Gene Markland</a> as an amateur free agent.</p> <p>The <a href="/teams/WSH/1939.shtml">Washington Senators</a> signed <a href="/players/m/mastewa02.shtml">Walt Masterson</a> as an amateur free agent.</p> <p>The <a href="/teams/DET/1939.shtml">Detroit Tigers</a> signed <a href="/players/m/metkoca01.shtml">George Metkovich</a> as an amateur free agent.</p> <p>The <a href="/teams/DET/1939.shtml">Detroit Tigers</a> signed <a href="/players/n/newhoha01.shtml">Hal Newhouser</a> as an amateur free agent.</p> <p>The <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a> signed <a href="/players/n/northro01.shtml">Ron Northey</a> as an amateur free agent.</p> <p>The <a href="/teams/WSH/1939.shtml">Washington Senators</a> signed <a href="/players/o/ortizro01.shtml">Roberto Ortiz</a> as an amateur free agent.</p> <p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> signed <a href="/players/o/ostrojo01.shtml">Johnny Ostrowski</a> as an amateur free agent.</p> <p>The <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> signed <a href="/players/p/polleho01.shtml">Howie Pollet</a> as an amateur free agent.</p> <p>The <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> signed <a href="/players/r/reynoal01.shtml">Allie Reynolds</a> as an amateur free agent.</p> <p>The <a href="/teams/WSH/1939.shtml">Washington Senators</a> signed <a href="/players/r/robersh01.shtml">Sherry Robertson</a> as an amateur free agent.</p> <p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> signed <a href="/players/r/rojekst01.shtml">Stan Rojek</a> as an amateur free agent.</p> <p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> signed <a href="/players/s/sanfofr01.shtml">Fred Sanford</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> signed <a href="/players/s/souchst01.shtml">Bud Souchock</a> as an amateur free agent.</p> <p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> signed <a href="/players/v/vollmcl01.shtml">Clyde Vollmer</a> as an amateur free agent.</p> <p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> signed <a href="/players/w/waitked01.shtml">Eddie Waitkus</a> as an amateur free agent.</p> <p>The <a href="/teams/CHW/1939.shtml">Chicago White Sox</a> signed <a href="/players/g/grantji02.shtml">Jimmy Grant</a> as a free agent.</p> <p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> obtained <a href="/players/b/bragabo01.shtml">Bobby Bragan</a> from Pensacola (Southeastern) as part of a minor league working agreement.</p> <p>The <a href="/teams/CHW/1939.shtml">Chicago White Sox</a> obtained <a href="/players/l/lopated01.shtml">Eddie Lopat</a> from Shreveport (Texas) as part of a minor league working agreement.</p> <p>The <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> obtained <a href="/players/m/maglisa01.shtml">Sal Maglie</a> from Buffalo (International) as part of a minor league working agreement.</p> <p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> obtained <a href="/players/r/russeji01.shtml">Jim Russell</a> from Beaver Falls (Pennsylvania State Association) as part of a minor league working agreement.</p> <p>The <a href="/teams/BSN/1939.shtml">Boston Bees</a> released <a href="/players/a/abernwo01.shtml">Woody Abernathy</a>.</p> <p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> released <a href="/players/f/ferrito01.shtml">Tom Ferrick</a>.</p> <p><a href="/players/h/holcoke01.shtml">Ken Holcombe</a> sent from Greensburg (Pennsylvania State Association) to the <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> in an unknown transaction.</p> <p><a href="/players/k/kloppst01.shtml">Stan Klopp</a> sent from the <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> to ??? in an unknown transaction.</p> <p><a href="/players/s/sandlmi01.shtml">Mike Sandlock</a> sent from Huntington (Mountain States) to the <a href="/teams/BSN/1939.shtml">Boston Bees</a> in an unknown transaction.</p> <p><a href="/players/v/voisebi01.shtml">Bill Voiselle</a> sent from Moultrie (Georgia-Florida) to the <a href="/teams/BOS/1939.shtml">Boston Red Sox</a> in an unknown transaction.</p> <p><a href="/players/w/whiteha01.shtml">Hal White</a> sent from Rome (Canadian-American) to the <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> in an unknown transaction.</p> <p><a href="/players/m/masiph01.shtml">Phil Masi</a> of the <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> granted free agency.</p> <p>The <a href="/teams/WSH/1939.shtml">Washington Senators</a> returned <a href="/players/m/mccormi02.shtml">Mike McCormick</a> to Indianapolis (American Association) after expiration of minor league working agreement.</p> <p>The <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> returned <a href="/players/s/schmijo01.shtml">Johnny Schmitz</a> to Milwaukee (American Association) after expiration of minor league working agreement.</p> <p>The <a href="/teams/BSN/1939.shtml">Boston Bees</a> signed <a href="/players/m/masiph01.shtml">Phil Masi</a> as a free agent.</p> <p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> obtained <a href="/players/m/mccormi02.shtml">Mike McCormick</a> from Indianapolis (American Association) as part of a minor league working agreement.</p> <p>The <a href="/teams/BOS/1939.shtml">Boston Red Sox</a> obtained <a href="/players/r/reesepe01.shtml">Pee Wee Reese</a> from Louisville (American Association) as part of a minor league working agreement.</p> <p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> obtained <a href="/players/s/schmijo01.shtml">Johnny Schmitz</a> from Milwaukee (American Association) as part of a minor league working agreement.</p>
+			</div>
+			</li><li><span>January 5, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1938.shtml">Brooklyn Dodgers</a> traded a player to be named later and cash to the <a href="/teams/WSH/1938.shtml">Washington Senators</a> for <a href="/players/s/singtfr01.shtml">Fred Sington</a>. The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> sent <a href="/players/c/chambjo02.shtml">Johnnie Chambers</a> (January 5, 1939) to the <a href="/teams/WSH/1939.shtml">Washington Senators</a> to complete the trade.
+</p>
+			</div>
+			</li><li><span>January 13, 1939</span>			<div>
+			<p>Hollywood (PCL) purchased <a href="/players/m/maggeha02.shtml">Harl Maggert</a> from the <a href="/teams/BSN/1939.shtml">Boston Bees</a>.</p>
+			</div>
+			</li><li><span>January 14, 1939</span>			<div>
+			<p>The <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> released <a href="/players/l/lucasre01.shtml">Red Lucas</a>.</p>
+			</div>
+			</li><li><span>January 21, 1939</span>			<div>
+			<p>Syracuse (International) purchased <a href="/players/h/heathto01.shtml">Tommy Heath</a> from the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a>.</p>
+			</div>
+			</li><li><span>January 24, 1939</span>			<div>
+			<p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> purchased <a href="/players/g/gleesji01.shtml">Jim Gleeson</a> from the <a href="/teams/NYY/1939.shtml">New York Yankees</a> for $25,000.</p>
+			</div>
+			</li><li><span>February 1, 1939</span>			<div>
+			<p>The <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> released <a href="/players/w/whiteea01.shtml">Earl Whitehill</a>.</p>
+			</div>
+			</li><li><span>February 2, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> purchased <a href="/players/l/lannito01.shtml">Tom Lanning</a> from the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a>.</p>
+			</div>
+			</li><li><span>February 4, 1939</span>			<div>
+			<p>The <a href="/teams/BSN/1938.shtml">Boston Bees</a> traded players to be named later, <a href="/players/e/engligi01.shtml">Gil English</a>, <a href="/players/r/riddljo02.shtml">Johnny Riddle</a> and cash to the <a href="/teams/NYY/1938.shtml">New York Yankees</a> for <a href="/players/m/milleed03.shtml">Eddie Miller</a>. The <a href="/teams/BSN/1939.shtml">Boston Bees</a> sent <a href="/players/r/reisbo01.shtml">Bobby Reis</a> (October 27, 1938), <a href="/players/r/reisto01.shtml">Tommy Reis</a> (October 27, 1938), <a href="/players/b/babicjo01.shtml">Johnny Babich</a> (October 27, 1938) and <a href="/players/d/dimagvi01.shtml">Vince DiMaggio</a> (February 4, 1939) to the <a href="/teams/NYY/1939.shtml">New York Yankees</a> to complete the trade.
+</p>
+			</div>
+			</li><li><span>February 6, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> purchased <a href="/register/player.fcgi?id=larocc002jos">Jack LaRocca</a> (minors), <a href="/players/h/hartjch01.shtml">Chris Hartje</a> and <a href="/players/w/wickeke01.shtml">Kemp Wicker</a> from the <a href="/teams/NYY/1939.shtml">New York Yankees</a> for $50,000.</p>
+			</div>
+			</li><li><span>February 10, 1939</span>			<div>
+			<p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> purchased <a href="/players/b/bonetju01.shtml">Julio Bonetti</a> from the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a>.</p>
+			</div>
+			</li><li><span>February 14, 1939</span>			<div>
+			<p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> signed <a href="/players/w/whiteea01.shtml">Earl Whitehill</a> as a free agent.</p> <p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> purchased <a href="/players/p/preibme01.shtml">Mel Preibisch</a> from the <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a>.</p>
+			</div>
+			</li><li><span>February 15, 1939</span>			<div>
+			<p>The <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> signed <a href="/players/s/suscege01.shtml">George Susce</a> as a free agent.</p>
+			</div>
+			</li><li><span>February 16, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> released <a href="/players/s/stripjo01.shtml">Joe Stripp</a>.</p>
+			</div>
+			</li><li><span>February 17, 1939</span>			<div>
+			<p>The <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> signed <a href="/players/s/sisledi01.shtml">Dick Sisler</a> as an amateur free agent.</p>
+			</div>
+			</li><li><span>February 18, 1939</span>			<div>
+			<p>Oklahoma City (Texas) purchased <a href="/players/d/dickege02.shtml">George Dickey</a> from the <a href="/teams/BOS/1939.shtml">Boston Red Sox</a>.</p> <p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> purchased <a href="/players/j/jungeke01.shtml">Ken Jungels</a> from the <a href="/teams/CLE/1939.shtml">Cleveland Indians</a>.</p>
+			</div>
+			</li><li><span>February 23, 1939</span>			<div>
+			<p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> purchased <a href="/players/g/glossal01.shtml">Al Glossop</a> from the <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a>.</p> <p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> returned <a href="/players/e/engliwo01.shtml">Woody English</a> to the <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> following previous waiver selection.</p> <p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> purchased <a href="/players/e/engliwo01.shtml">Woody English</a> from the <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a>.</p>
+			</div>
+			</li><li><span>March 2, 1939</span>			<div>
+			<p>Minneapolis (American Association) purchased <a href="/players/t/tietjle01.shtml">Les Tietje</a> from the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a>.</p>
+			</div>
+			</li><li><span>March 16, 1939</span>			<div>
+			<p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> purchased <a href="/players/w/werbebi01.shtml">Billy Werber</a> from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a>.</p>
+			</div>
+			</li><li><span>March 17, 1939</span>			<div>
+			<p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> purchased <a href="/players/e/englich01.shtml">Charlie English</a> from the <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> for $10,000.</p>
+			</div>
+			</li><li><span>March 20, 1939</span>			<div>
+			<p><a href="/players/m/mackjo01.shtml">Joe Mack</a> assigned by the <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> to the <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a>.</p>
+			</div>
+			</li><li><span>March 23, 1939</span>			<div>
+			<p>The <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> released <a href="/players/b/branded01.shtml">Ed Brandt</a>.</p>
+			</div>
+			</li><li><span>March 27, 1939</span>			<div>
+			<p>The <a href="/teams/BOS/1939.shtml">Boston Red Sox</a> purchased <a href="/players/w/weavemo01.shtml">Monte Weaver</a> from the <a href="/teams/WSH/1939.shtml">Washington Senators</a>.</p>
+			</div>
+			</li><li><span>March 29, 1939</span>			<div>
+			<p>Syracuse (International) purchased <a href="/players/j/jordabu01.shtml">Buck Jordan</a> from the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a>.</p>
+			</div>
+			</li><li><span>March 31, 1939</span>			<div>
+			<p>The <a href="/teams/BSN/1939.shtml">Boston Bees</a> sent <a href="/players/k/kahlebo01.shtml">Bob Kahle</a> to the <a href="/teams/NYY/1939.shtml">New York Yankees</a> as part of a conditional deal.</p> <p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> traded <a href="/players/p/posedbi01.shtml">Bill Posedel</a> to the <a href="/teams/BSN/1939.shtml">Boston Bees</a> for <a href="/players/t/toddal01.shtml">Al Todd</a>.</p>
+			</div>
+			</li><li><span>April 4, 1939</span>			<div>
+			<p>Baltimore (International) sent <a href="/players/m/matuzha01.shtml">Harry Matuzak</a> to the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> as part of a conditional deal.</p>
+			</div>
+			</li><li><span>April 8, 1939</span>			<div>
+			<p>The <a href="/teams/WSH/1939.shtml">Washington Senators</a> purchased <a href="/players/b/barnaba01.shtml">Babe Barna</a> from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a>.</p> <p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> traded <a href="/players/g/gabrile01.shtml">Len Gabrielson</a> to the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> for <a href="/players/s/sivespe01.shtml">Pete Sivess</a> and cash.</p>
+			</div>
+			</li><li><span>April 9, 1939</span>			<div>
+			<p>Minneapolis (American Association) returned <a href="/players/t/tietjle01.shtml">Les Tietje</a> to the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> following previous purchase.  <em>(Date given is approximate. Exact date is uncertain.)</em></p> <p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> selected <a href="/players/p/poffebo01.shtml">Boots Poffenberger</a> off waivers from the <a href="/teams/DET/1939.shtml">Detroit Tigers</a>.</p>
+			</div>
+			</li><li><span>April 10, 1939</span>			<div>
+			<p><a href="/players/t/tostlo01.shtml">Lou Tost</a> assigned by the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> to Hollywood (PCL).</p> <p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> purchased <a href="/players/d/dicksjo01.shtml">Johnny Dickshot</a> from the <a href="/teams/BSN/1939.shtml">Boston Bees</a>.</p>
+			</div>
+			</li><li><span>April 16, 1939</span>			<div>
+			<p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> returned <a href="/players/m/matuzha01.shtml">Harry Matuzak</a> to Baltimore (International) as part of a conditional deal.</p>
+			</div>
+			</li><li><span>April 20, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> released <a href="/players/s/sewellu01.shtml">Luke Sewell</a>.</p>
+			</div>
+			</li><li><span>April 23, 1939</span>			<div>
+			<p>The <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> signed <a href="/players/s/sewellu01.shtml">Luke Sewell</a> as a free agent.</p>
+			</div>
+			</li><li><span>April 24, 1939</span>			<div>
+			<p>Milwaukee (American Association) purchased <a href="/players/h/hillol01.shtml">Oliver Hill</a> from the <a href="/teams/BSN/1939.shtml">Boston Bees</a>.</p>
+			</div>
+			</li><li><span>April 26, 1939</span>			<div>
+			<p>Atlanta (Southern Association) purchased <a href="/players/s/sperrst01.shtml">Stan Sperry</a> from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a>.</p>
+			</div>
+			</li><li><span>April 27, 1939</span>			<div>
+			<p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> purchased <a href="/players/t/thompto02.shtml">Tommy Thompson</a> from the <a href="/teams/CHW/1939.shtml">Chicago White Sox</a>.</p> <p>The <a href="/teams/CHW/1939.shtml">Chicago White Sox</a> selected <a href="/players/s/smithed04.shtml">Eddie Smith</a> off waivers from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a>.</p>
+			</div>
+			</li><li><span>May, 1939</span>			<div>
+			<p><a href="/players/s/stanked01.shtml">Eddie Stanky</a> sent from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a> to the <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> in an unknown transaction.  <em>(Date given is approximate. Exact date is uncertain.)</em></p>
+			</div>
+			</li><li><span>May 1, 1939</span>			<div>
+			<p>The <a href="/teams/WSH/1939.shtml">Washington Senators</a> selected <a href="/players/t/thomabu01.shtml">Bud Thomas</a> off waivers from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a>.</p>
+			</div>
+			</li><li><span>May 3, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> purchased <a href="/players/l/laryly01.shtml">Lyn Lary</a> from the <a href="/teams/CLE/1939.shtml">Cleveland Indians</a>.</p>
+			</div>
+			</li><li><span>May 5, 1939</span>			<div>
+			<p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> signed <a href="/players/w/wilsoji01.shtml">Jimmie Wilson</a> as a free agent.</p> <p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> selected <a href="/players/s/schotge01.shtml">Gene Schott</a> off waivers from the <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a>.</p>
+			</div>
+			</li><li><span>May 8, 1939</span>			<div>
+			<p>The <a href="/teams/BOS/1939.shtml">Boston Red Sox</a> purchased <a href="/players/f/finnelo01.shtml">Lou Finney</a> from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a>.</p>
+			</div>
+			</li><li><span>May 9, 1939</span>			<div>
+			<p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> purchased <a href="/players/f/flemile01.shtml">Les Fleming</a> from the <a href="/teams/DET/1939.shtml">Detroit Tigers</a>.</p> <p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> purchased <a href="/players/l/lynnre01.shtml">Red Lynn</a> from the <a href="/teams/DET/1939.shtml">Detroit Tigers</a>.</p> <p>Louisville (American Association) purchased <a href="/players/w/weaveji01.shtml">Jim Weaver</a> from the <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a>.</p>
+			</div>
+			</li><li><span>May 13, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> released <a href="/players/l/lazzeto01.shtml">Tony Lazzeri</a>.  <em>(Date given is approximate. Exact date is uncertain.)</em></p> <p>The <a href="/teams/DET/1939.shtml">Detroit Tigers</a> traded <a href="/players/c/chrisma01.shtml">Mark Christman</a>, <a href="/players/g/gillge01.shtml">George Gill</a>, <a href="/players/h/harribo01.shtml">Bob Harris</a>, <a href="/players/k/kenneve01.shtml">Vern Kennedy</a>, <a href="/players/l/laabsch01.shtml">Chet Laabs</a> and <a href="/players/l/lawsoro01.shtml">Roxie Lawson</a> to the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> for <a href="/players/b/bellbe01.shtml">Beau Bell</a>, <a href="/players/k/kressre01.shtml">Red Kress</a>, <a href="/players/n/newsobo01.shtml">Bobo Newsom</a> and <a href="/players/w/walkuji02.shtml">Jim Walkup</a>.</p>
+			</div>
+			</li><li><span>May 14, 1939</span>			<div>
+			<p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> signed <a href="/players/l/lazzeto01.shtml">Tony Lazzeri</a> as a free agent.</p> <p>Toronto (International) purchased <a href="/players/j/johnsfr01.shtml">Fred Johnson</a> and <a href="/players/v/vanatru01.shtml">Russ Van Atta</a> from the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a>.</p>
+			</div>
+			</li><li><span>May 15, 1939</span>			<div>
+			<p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> returned <a href="/players/k/kahlebo01.shtml">Bob Kahle</a> to the <a href="/teams/BSN/1939.shtml">Boston Bees</a> as part of a conditional deal.</p>
+			</div>
+			</li><li><span>May 16, 1939</span>			<div>
+			<p>The <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> purchased <a href="/players/e/engliwo01.shtml">Woody English</a> from the <a href="/teams/CHC/1939.shtml">Chicago Cubs</a>.</p>
+			</div>
+			</li><li><span>May 18, 1939</span>			<div>
+			<p>Hollywood (PCL) purchased <a href="/players/k/kahlebo01.shtml">Bob Kahle</a> from the <a href="/teams/BSN/1939.shtml">Boston Bees</a>.</p> <p>The <a href="/teams/DET/1939.shtml">Detroit Tigers</a> selected <a href="/players/t/thomabu01.shtml">Bud Thomas</a> off waivers from the <a href="/teams/WSH/1939.shtml">Washington Senators</a>.</p>
+			</div>
+			</li><li><span>May 25, 1939</span>			<div>
+			<p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> purchased <a href="/players/w/watwojo01.shtml">Johnny Watwood</a> from the <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a>.</p>
+			</div>
+			</li><li><span>May 28, 1939</span>			<div>
+			<p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> released <a href="/players/f/ferrewe01.shtml">Wes Ferrell</a>.</p>
+			</div>
+			</li><li><span>May 29, 1939</span>			<div>
+			<p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> traded <a href="/players/h/harrera01.shtml">Ray Harrell</a>, <a href="/players/h/higbeki01.shtml">Kirby Higbe</a> and <a href="/players/m/martyjo01.shtml">Joe Marty</a> to the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> for <a href="/players/p/passecl01.shtml">Claude Passeau</a>.</p>
+			</div>
+			</li><li><span>June 2, 1939</span>			<div>
+			<p>The <a href="/teams/CHW/1939.shtml">Chicago White Sox</a> traded <a href="/players/w/whitejo02.shtml">John Whitehead</a> to the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> for <a href="/players/m/marcujo01.shtml">Johnny Marcum</a>.</p>
+			</div>
+			</li><li><span>June 6, 1939</span>			<div>
+			<p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> released <a href="/players/k/kleinch01.shtml">Chuck Klein</a>.</p>
+			</div>
+			</li><li><span>June 7, 1939</span>			<div>
+			<p>The <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> signed <a href="/players/k/kleinch01.shtml">Chuck Klein</a> as a free agent.</p> <p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> released <a href="/players/l/lazzeto01.shtml">Tony Lazzeri</a>.</p> <p>The <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> released <a href="/players/m/manushe01.shtml">Heinie Manush</a>.</p>
+			</div>
+			</li><li><span>June 9, 1939</span>			<div>
+			<p>Atlanta (Southern Association) traded <a href="/players/b/bollija01.shtml">Jack Bolling</a> to the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> for <a href="/players/p/poindje01.shtml">Jennings Poindexter</a> and cash.</p>
+			</div>
+			</li><li><span>June 11, 1939</span>			<div>
+			<p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> purchased <a href="/players/j/jensewo01.shtml">Woody Jensen</a> from the <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a>.</p>
+			</div>
+			</li><li><span>June 13, 1939</span>			<div>
+			<p>Toronto (International) purchased <a href="/players/m/mazzeme01.shtml">Mel Mazzera</a> from the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a>.</p> <p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> traded <a href="/players/g/gallajo02.shtml">Joe Gallagher</a> to the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> for <a href="/players/h/hughero01.shtml">Roy Hughes</a> and cash.</p>
+			</div>
+			</li><li><span>June 14, 1939</span>			<div>
+			<p>Baltimore (International) purchased <a href="/players/e/ettenni01.shtml">Nick Etten</a> from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a>.</p> <p>Louisville (American Association) purchased <a href="/players/p/parmero01.shtml">Roy Parmelee</a> from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a>.</p> <p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> traded <a href="/players/c/cookea01.shtml">Earl Cook</a> and cash to the <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> for <a href="/players/j/jacobar01.shtml">Art Jacobs</a>.</p> <p>The <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> traded <a href="/players/a/averiea01.shtml">Earl Averill</a> to the <a href="/teams/DET/1939.shtml">Detroit Tigers</a> for <a href="/players/e/eisenha01.shtml">Harry Eisenstat</a> and cash.</p>
+			</div>
+			</li><li><span>June 15, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> purchased <a href="/players/a/almadme01.shtml">Mel Almada</a> from the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> for $25,000.</p> <p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> purchased <a href="/players/k/kerksbi01.shtml">Bill Kerksieck</a> from the <a href="/teams/BOS/1939.shtml">Boston Red Sox</a>.</p> <p>The <a href="/teams/BSN/1939.shtml">Boston Bees</a> traded <a href="/players/f/fletcel01.shtml">Elbie Fletcher</a> to the <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> for <a href="/players/s/schusbi01.shtml">Bill Schuster</a> and cash.</p> <p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> selected <a href="/players/s/schotge01.shtml">Gene Schott</a> off waivers from the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a>.</p>
+			</div>
+			</li><li><span>June 17, 1939</span>			<div>
+			<p><a href="/players/s/singtfr01.shtml">Fred Sington</a> assigned by the <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> to the <a href="/teams/BOS/1939.shtml">Boston Red Sox</a>.</p>
+			</div>
+			</li><li><span>June 20, 1939</span>			<div>
+			<p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> purchased <a href="/players/d/deshoji01.shtml">Jimmie DeShong</a> from the <a href="/teams/WSH/1939.shtml">Washington Senators</a>.</p>
+			</div>
+			</li><li><span>June 25, 1939</span>			<div>
+			<p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> purchased <a href="/players/n/nichobi01.shtml">Bill Nicholson</a> from the <a href="/teams/WSH/1939.shtml">Washington Senators</a> for $35,000.</p>
+			</div>
+			</li><li><span>July, 1939</span>			<div>
+			<p><a href="/players/g/gumpera01.shtml">Randy Gumpert</a> sent from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a> to the <a href="/teams/NYY/1939.shtml">New York Yankees</a> in an unknown transaction.</p>
+			</div>
+			</li><li><span>July 1, 1939</span>			<div>
+			<p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> released <a href="/players/p/powerle01.shtml">Les Powers</a>.</p>
+			</div>
+			</li><li><span>July 2, 1939</span>			<div>
+			<p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> purchased <a href="/players/j/johnsha01.shtml">Hank Johnson</a> from Birmingham (Southern Association).</p>
+			</div>
+			</li><li><span>July 3, 1939</span>			<div>
+			<p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> traded <a href="/register/player.fcgi?id=glock-001cha">Charles Glock</a> (minors), <a href="/register/player.fcgi?id=liveng001wes">Wes Livengood</a> (minors) and <a href="/players/c/chapmgl01.shtml">Glenn Chapman</a> to the <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> for <a href="/players/h/hafeybu01.shtml">Bud Hafey</a>.</p>
+			</div>
+			</li><li><span>July 13, 1939</span>			<div>
+			<p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> traded <a href="/players/h/hughero01.shtml">Roy Hughes</a> to the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> for <a href="/players/h/hollial01.shtml">Al Hollingsworth</a>.</p>
+			</div>
+			</li><li><span>July 15, 1939</span>			<div>
+			<p><a href="/players/s/scalzsk01.shtml">Skeeter Scalzi</a> of the <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> granted free agency.  <em>(Date given is approximate. Exact date is uncertain.)</em></p>
+			</div>
+			</li><li><span>July 18, 1939</span>			<div>
+			<p>The <a href="/teams/BOS/1939.shtml">Boston Red Sox</a> traded <a href="/players/r/reesepe01.shtml">Pee Wee Reese</a> to the <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> for players to be named later and $35000 and 3 players. The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> sent <a href="/players/e/evansre01.shtml">Red Evans</a> (September 1, 1939) and <a href="/players/p/parksar01.shtml">Art Parks</a> (February 24, 1940) to the <a href="/teams/BOS/1940.shtml">Boston Red Sox</a> to complete the trade.
+</p>
+			</div>
+			</li><li><span>July 21, 1939</span>			<div>
+			<p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> signed <a href="/players/s/scalzsk01.shtml">Skeeter Scalzi</a> as a free agent.</p> <p>Toronto (International) purchased <a href="/players/w/walkuji02.shtml">Jim Walkup</a> from the <a href="/teams/DET/1939.shtml">Detroit Tigers</a>.</p>
+			</div>
+			</li><li><span>July 24, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> selected <a href="/players/w/walkedi02.shtml">Dixie Walker</a> off waivers from the <a href="/teams/DET/1939.shtml">Detroit Tigers</a>.</p>
+			</div>
+			</li><li><span>July 28, 1939</span>			<div>
+			<p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> traded <a href="/players/b/butchma01.shtml">Max Butcher</a> to the <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> for <a href="/players/s/suhrgu01.shtml">Gus Suhr</a>.</p>
+			</div>
+			</li><li><span>July 31, 1939</span>			<div>
+			<p>The <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> purchased <a href="/players/g/geejo01.shtml">Johnny Gee</a> from Syracuse (International).</p>
+			</div>
+			</li><li><span>August, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> purchased <a href="/players/d/doyleca01.shtml">Carl Doyle</a> from Memphis (Southern Association).</p> <p>The <a href="/teams/CHW/1939.shtml">Chicago White Sox</a> purchased <a href="/players/e/eavesva01.shtml">Vallie Eaves</a> from Shreveport (Texas) for $2,000.</p> <p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> purchased <a href="/players/n/niggejo01.shtml">Johnny Niggeling</a> from Indianapolis (American Association).</p> <p>The <a href="/teams/WSH/1939.shtml">Washington Senators</a> purchased <a href="/players/p/palagmi01.shtml">Mike Palagyi</a> from Spartanburg (South Atlantic).</p>
+			</div>
+			</li><li><span>August 2, 1939</span>			<div>
+			<p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> selected <a href="/players/s/soltemo01.shtml">Moose Solters</a> off waivers from the <a href="/teams/CLE/1939.shtml">Cleveland Indians</a>.</p>
+			</div>
+			</li><li><span>August 5, 1939</span>			<div>
+			<p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> purchased <a href="/players/h/hafeybu01.shtml">Bud Hafey</a> from the <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a>.</p> <p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> traded players to be named later and $40,000 to the <a href="/teams/NYY/1939.shtml">New York Yankees</a> for <a href="/players/d/dimagvi01.shtml">Vince DiMaggio</a>. The <a href="/teams/CIN/1940.shtml">Cincinnati Reds</a> sent <a href="/players/b/bordafr01.shtml">Frenchy Bordagaray</a> (January 27, 1940) and <a href="/players/b/bongini01.shtml">Nino Bongiovanni</a> (January 27, 1940) to the <a href="/teams/NYY/1940.shtml">New York Yankees</a> to complete the trade.
+</p>
+			</div>
+			</li><li><span>August 7, 1939</span>			<div>
+			<p>The <a href="/teams/CLE/1939.shtml">Cleveland Indians</a> purchased <a href="/players/p/peterru02.shtml">Rusty Peters</a> from Atlanta (Southern Association).</p>
+			</div>
+			</li><li><span>August 12, 1939</span>			<div>
+			<p>The <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a> purchased <a href="/players/b/bessehe01.shtml">Herman Besse</a> from the <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a>.</p> <p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> purchased <a href="/players/h/hollial01.shtml">Al Hollingsworth</a> from the <a href="/teams/NYY/1939.shtml">New York Yankees</a>.</p> <p>The <a href="/teams/BOS/1939.shtml">Boston Red Sox</a> traded a player to be named later and $60,000 to Minneapolis (American Association) for <a href="/register/player.fcgi?id=lacy--001geo">George Lacy</a> (minors), <a href="/players/b/butlabi01.shtml">Bill Butland</a> and <a href="/players/h/hashhe01.shtml">Herb Hash</a>. The <a href="/teams/BOS/1940.shtml">Boston Red Sox</a> sent <a href="/players/e/evansre01.shtml">Red Evans</a> (April 4, 1940) to Minneapolis (American Association) to complete the trade.
+</p>
+			</div>
+			</li><li><span>August 14, 1939</span>			<div>
+			<p>The <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> selected <a href="/players/l/laryly01.shtml">Lyn Lary</a> off waivers from the <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a>.</p>
+			</div>
+			</li><li><span>August 16, 1939</span>			<div>
+			<p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> traded $17500 plus optional assignment of Steve Mesner and a player to be named later to San Diego (PCL) for <a href="/players/d/dalledo01.shtml">Dom Dallessandro</a>.</p>
+			</div>
+			</li><li><span>August 17, 1939</span>			<div>
+			<p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> purchased <a href="/players/b/blaemra01.shtml">Rae Blaemire</a> from the <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a>.</p>
+			</div>
+			</li><li><span>August 18, 1939</span>			<div>
+			<p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> purchased <a href="/players/w/warrebe01.shtml">Bennie Warren</a> from Baltimore (International).</p>
+			</div>
+			</li><li><span>August 19, 1939</span>			<div>
+			<p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> purchased <a href="/players/d/davispe01.shtml">Peaches Davis</a> from the <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a>.</p> <p>Minneapolis (American Association) traded <a href="/players/p/pofahji01.shtml">Jimmy Pofahl</a> to the <a href="/teams/WSH/1939.shtml">Washington Senators</a> for a player to be named later. The <a href="/teams/WSH/1940.shtml">Washington Senators</a> sent <a href="/players/k/kelleha01.shtml">Harry Kelley</a> (1940) to Minneapolis (American Association) to complete the trade.
+</p> <p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> selected <a href="/players/s/shoffmi01.shtml">Milt Shoffner</a> off waivers from the <a href="/teams/BSN/1939.shtml">Boston Bees</a>.</p>
+			</div>
+			</li><li><span>August 22, 1939</span>			<div>
+			<p>The <a href="/teams/DET/1939.shtml">Detroit Tigers</a> purchased <a href="/players/s/smithcl01.shtml">Clay Smith</a> from the <a href="/teams/CLE/1939.shtml">Cleveland Indians</a>.</p>
+			</div>
+			</li><li><span>August 23, 1939</span>			<div>
+			<p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> purchased <a href="/players/r/ruckejo01.shtml">Johnny Rucker</a> from Atlanta (Southern Association).</p>
+			</div>
+			</li><li><span>August 31, 1939</span>			<div>
+			<p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> purchased <a href="/players/s/simmoal01.shtml">Al Simmons</a> from the <a href="/teams/BSN/1939.shtml">Boston Bees</a>.</p>
+			</div>
+			</li><li><span>September, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> purchased <a href="/players/m/maconma01.shtml">Max Macon</a> from the <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a>.</p>
+			</div>
+			</li><li><span>September 5, 1939</span>			<div>
+			<p>The <a href="/teams/CHW/1939.shtml">Chicago White Sox</a> purchased <a href="/players/m/methasc01.shtml">Scat Metha</a> from Fort Worth (Texas).</p>
+			</div>
+			</li><li><span>September 6, 1939</span>			<div>
+			<p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> purchased <a href="/players/w/wadeja01.shtml">Jake Wade</a> from the <a href="/teams/BOS/1939.shtml">Boston Red Sox</a>.</p>
+			</div>
+			</li><li><span>September 7, 1939</span>			<div>
+			<p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> traded <a href="/players/r/ripplji01.shtml">Jimmy Ripple</a> to the <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> for a player to be named later. The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> sent <a href="/players/h/haywora01.shtml">Ray Hayworth</a> (September 9, 1939) to the <a href="/teams/NYG/1939.shtml">New York Giants</a> to complete the trade.
+</p>
+			</div>
+			</li><li><span>September 8, 1939</span>			<div>
+			<p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> purchased <a href="/players/m/mcculcl01.shtml">Clyde McCullough</a> from the <a href="/teams/NYY/1939.shtml">New York Yankees</a>.</p> <p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> traded <a href="/players/p/piechal01.shtml">Al Piechota</a> to the <a href="/teams/BSN/1939.shtml">Boston Bees</a> for a player to be named later. The <a href="/teams/BSN/1940.shtml">Boston Bees</a> sent <a href="/players/c/callajo01.shtml">Joe Callahan</a> (June 17, 1940) to the <a href="/teams/NYY/1940.shtml">New York Yankees</a> to complete the trade.
+</p>
+			</div>
+			</li><li><span>September 10, 1939</span>			<div>
+			<p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> released <a href="/players/c/coffmdi01.shtml">Dick Coffman</a>.  <em>(Date given is approximate. Exact date is uncertain.)</em></p>
+			</div>
+			</li><li><span>September 12, 1939</span>			<div>
+			<p>The <a href="/teams/DET/1939.shtml">Detroit Tigers</a> selected <a href="/players/p/pippeco01.shtml">Cotton Pippen</a> off waivers from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a>.</p>
+			</div>
+			</li><li><span>September 25, 1939</span>			<div>
+			<p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> purchased <a href="/players/a/andrena01.shtml">Nate Andrews</a> from the <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a>.</p>
+			</div>
+			</li><li><span>October, 1939</span>			<div>
+			<p>The <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> drafted <a href="/players/w/wilbede01.shtml">Del Wilber</a> from Findlay (Ohio State) in the 1939 minor league draft.  <em>(Date given is approximate. Exact date is uncertain.)</em></p>
+			</div>
+			</li><li><span>October 3, 1939</span>			<div>
+			<p>The <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a> drafted <a href="/players/b/babicjo01.shtml">Johnny Babich</a> from the <a href="/teams/NYY/1939.shtml">New York Yankees</a> in the 1939 rule 5 draft.</p> <p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> drafted <a href="/players/d/deanpa01.shtml">Paul Dean</a> from the <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> in the 1939 rule 5 draft.</p> <p>The <a href="/teams/WSH/1939.shtml">Washington Senators</a> drafted <a href="/players/g/gehrmpa01.shtml">Paul Gehrman</a> from the <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> in the 1939 rule 5 draft.</p> <p>The <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a> drafted <a href="/players/h/hogsech01.shtml">Chief Hogsett</a> from Minneapolis (American Association) in the 1939 rule 5 draft.</p> <p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> drafted <a href="/players/j/johnssi01.shtml">Si Johnson</a> from the <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> in the 1939 rule 5 draft.</p> <p>The <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> drafted <a href="/players/l/lanahdi01.shtml">Dick Lanahan</a> from the <a href="/teams/WSH/1939.shtml">Washington Senators</a> in the 1939 rule 5 draft.</p> <p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> drafted <a href="/players/m/mootyja01.shtml">Jake Mooty</a> from Syracuse (International) in the 1939 rule 5 draft.</p> <p>The <a href="/teams/DET/1939.shtml">Detroit Tigers</a> drafted <a href="/players/s/seatsto01.shtml">Tom Seats</a> from the <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> in the 1939 rule 5 draft.</p> <p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> drafted <a href="/players/s/smollle01.shtml">Lefty Smoll</a> from Atlanta (Southern Association) in the 1939 rule 5 draft.</p> <p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> drafted <a href="/players/s/stranal01.shtml">Alan Strange</a> from Seattle (PCL) in the 1939 rule 5 draft.</p> <p>The <a href="/teams/BSN/1939.shtml">Boston Bees</a> drafted <a href="/players/s/strinni01.shtml">Nick Strincevich</a> from the <a href="/teams/NYY/1939.shtml">New York Yankees</a> in the 1939 rule 5 draft.</p> <p>The <a href="/teams/CHW/1939.shtml">Chicago White Sox</a> drafted <a href="/players/t/turneto01.shtml">Tom Turner</a> from the <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> in the 1939 rule 5 draft.</p>
+			</div>
+			</li><li><span>October 9, 1939</span>			<div>
+			<p>Toronto (International) drafted <a href="/players/g/graymi01.shtml">Milt Gray</a> from the <a href="/teams/BSN/1939.shtml">Boston Bees</a> in the 1939 minor league draft.</p>
+			</div>
+			</li><li><span>October 14, 1939</span>			<div>
+			<p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> drafted <a href="/players/p/prichbo01.shtml">Bob Prichard</a> from the <a href="/teams/WSH/1939.shtml">Washington Senators</a> in the 1939 minor league draft.</p> <p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> drafted <a href="/players/s/sauerha01.shtml">Hank Sauer</a> from the <a href="/teams/NYY/1939.shtml">New York Yankees</a> in the 1939 minor league draft.</p>
+			</div>
+			</li><li><span>October 15, 1939</span>			<div>
+			<p>The <a href="/teams/WSH/1939.shtml">Washington Senators</a> drafted <a href="/players/m/milleox01.shtml">Ox Miller</a> from the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> in the 1939 minor league draft.</p>
+			</div>
+			</li><li><span>October 18, 1939</span>			<div>
+			<p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> released <a href="/players/r/russeja01.shtml">Jack Russell</a>.</p> <p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> released <a href="/players/w/whiteea01.shtml">Earl Whitehill</a>.</p>
+			</div>
+			</li><li><span>October 19, 1939</span>			<div>
+			<p>The <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> released <a href="/players/s/simmoal01.shtml">Al Simmons</a>.</p>
+			</div>
+			</li><li><span>October 25, 1939</span>			<div>
+			<p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> released <a href="/players/r/reninji01.shtml">Jim Reninger</a>.</p>
+			</div>
+			</li><li><span>October 27, 1939</span>			<div>
+			<p>The <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> purchased <a href="/players/d/davissp01.shtml">Spud Davis</a> from the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a>.</p>
+			</div>
+			</li><li><span>October 31, 1939</span>			<div>
+			<p>Atlanta (Southern Association) purchased <a href="/players/k/kerksbi01.shtml">Bill Kerksieck</a> from the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a>.</p>
+			</div>
+			</li><li><span>November 12, 1939</span>			<div>
+			<p>The <a href="/teams/BOS/1939.shtml">Boston Red Sox</a> purchased <a href="/players/d/dimagdo01.shtml">Dom DiMaggio</a> from San Francisco (PCL).</p>
+			</div>
+			</li><li><span>November 28, 1939</span>			<div>
+			<p>The <a href="/teams/BSN/1939.shtml">Boston Bees</a> purchased <a href="/players/l/loanebo01.shtml">Bob Loane</a> from the <a href="/teams/WSH/1939.shtml">Washington Senators</a>.</p>
+			</div>
+			</li><li><span>December 4, 1939</span>			<div>
+			<p>The <a href="/teams/CHW/1939.shtml">Chicago White Sox</a> purchased <a href="/players/b/brackgi01.shtml">Gibby Brack</a> from the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a>.</p>
+			</div>
+			</li><li><span>December 5, 1939</span>			<div>
+			<p>The <a href="/teams/BSN/1939.shtml">Boston Bees</a> selected <a href="/players/b/batesbu01.shtml">Bud Bates</a> off waivers from the <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a>.</p>
+			</div>
+			</li><li><span>December 6, 1939</span>			<div>
+			<p>Syracuse (International) purchased <a href="/players/c/connome01.shtml">Merv Connors</a> from the <a href="/teams/CHW/1939.shtml">Chicago White Sox</a>.</p> <p>Atlanta (Southern Association) purchased <a href="/players/h/hafeyto01.shtml">Tom Hafey</a> from the <a href="/teams/NYG/1939.shtml">New York Giants</a>.</p> <p>The <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> purchased <a href="/players/j/jonesre01.shtml">Red Jones</a> from the <a href="/teams/NYG/1939.shtml">New York Giants</a>.</p> <p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> traded <a href="/players/b/bartedi01.shtml">Dick Bartell</a> to the <a href="/teams/DET/1939.shtml">Detroit Tigers</a> for <a href="/players/r/rogelbi01.shtml">Billy Rogell</a>.</p> <p>The <a href="/teams/BSN/1939.shtml">Boston Bees</a> traded <a href="/players/l/lannijo01.shtml">Johnny Lanning</a> to the <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> for <a href="/players/t/tobinji01.shtml">Jim Tobin</a> and cash.</p> <p>The <a href="/teams/BSN/1939.shtml">Boston Bees</a> traded <a href="/players/t/turneji01.shtml">Jim Turner</a> to the <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a> for <a href="/players/s/scarsle01.shtml">Les Scarsella</a> and cash.</p>
+			</div>
+			</li><li><span>December 7, 1939</span>			<div>
+			<p>The <a href="/teams/NYG/1939.shtml">New York Giants</a> purchased <a href="/players/a/amblewa01.shtml">Wayne Ambler</a> from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a>.</p> <p>Portland (PCL) purchased <a href="/players/b/brownli01.shtml">Lindsay Brown</a> from the <a href="/teams/CIN/1939.shtml">Cincinnati Reds</a>.</p>
+			</div>
+			</li><li><span>December 8, 1939</span>			<div>
+			<p>The <a href="/teams/BSN/1939.shtml">Boston Bees</a> signed <a href="/players/c/coffmdi01.shtml">Dick Coffman</a> as a free agent.</p> <p>The <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a> signed <a href="/players/s/simmoal01.shtml">Al Simmons</a> as a free agent.</p> <p>The <a href="/teams/BOS/1939.shtml">Boston Red Sox</a> purchased <a href="/players/o/owenma01.shtml">Marv Owen</a> from the <a href="/teams/CHW/1939.shtml">Chicago White Sox</a>.</p> <p>The <a href="/teams/BSN/1939.shtml">Boston Bees</a> traded <a href="/players/m/macfada01.shtml">Danny MacFayden</a> to the <a href="/teams/PIT/1939.shtml">Pittsburgh Pirates</a> for <a href="/players/s/swiftbi01.shtml">Bill Swift</a> and cash.</p> <p>The <a href="/teams/CHW/1939.shtml">Chicago White Sox</a> traded <a href="/players/r/radclri01.shtml">Rip Radcliff</a> to the <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> for <a href="/players/s/soltemo01.shtml">Moose Solters</a>.</p> <p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> traded <a href="/players/t/toddal01.shtml">Al Todd</a> to the <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> for <a href="/players/k/kimbane01.shtml">Newt Kimball</a> and <a href="/players/m/mancugu01.shtml">Gus Mancuso</a>.</p> <p>The <a href="/teams/CHW/1939.shtml">Chicago White Sox</a> traded <a href="/players/w/walkege02.shtml">Gee Walker</a> to the <a href="/teams/WSH/1939.shtml">Washington Senators</a> for <a href="/players/a/applepe01.shtml">Pete Appleton</a> and <a href="/players/w/wrighta01.shtml">Taffy Wright</a>.</p>
+			</div>
+			</li><li><span>December 9, 1939</span>			<div>
+			<p>Baltimore (International) purchased <a href="/players/n/newsosk01.shtml">Skeeter Newsome</a> from the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a>.</p> <p>The <a href="/teams/DET/1939.shtml">Detroit Tigers</a> traded <a href="/players/m/mccoybe01.shtml">Benny McCoy</a> to the <a href="/teams/PHA/1939.shtml">Philadelphia Athletics</a> for <a href="/players/m/moseswa01.shtml">Wally Moses</a>.  Trade was voided and players returned on January 14, 1940.</p>
+			</div>
+			</li><li><span>December 15, 1939</span>			<div>
+			<p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> purchased <a href="/players/m/marcujo01.shtml">Johnny Marcum</a> from the <a href="/teams/CHW/1939.shtml">Chicago White Sox</a>.</p>
+			</div>
+			</li><li><span>December 17, 1939</span>			<div>
+			<p>The <a href="/teams/PHI/1939.shtml">Philadelphia Phillies</a> released <a href="/players/w/whitnpi01.shtml">Pinky Whitney</a>.</p>
+			</div>
+			</li><li><span>December 23, 1939</span>			<div>
+			<p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> released <a href="/players/r/reynoca01.shtml">Carl Reynolds</a>.</p>
+			</div>
+			</li><li><span>December 26, 1939</span>			<div>
+			<p>The <a href="/teams/BRO/1939.shtml">Brooklyn Dodgers</a> purchased <a href="/players/b/bergebo01.shtml">Boze Berger</a> from the <a href="/teams/BOS/1939.shtml">Boston Red Sox</a>.</p>
+			</div>
+			</li><li><span>December 27, 1939</span>			<div>
+			<p>The <a href="/teams/NYY/1939.shtml">New York Yankees</a> purchased <a href="/players/k/kampoal01.shtml">Alex Kampouris</a> and <a href="/players/p/paddeto01.shtml">Tom Padden</a> from the <a href="/teams/NYG/1939.shtml">New York Giants</a>.</p> <p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> purchased <a href="/players/s/sturgbo01.shtml">Bobby Sturgeon</a> from the <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a>.</p> <p>The <a href="/teams/CHC/1939.shtml">Chicago Cubs</a> traded <a href="/players/l/lillage01.shtml">Gene Lillard</a>, <a href="/players/m/mesnest01.shtml">Steve Mesner</a> and cash to the <a href="/teams/STL/1939.shtml">St. Louis Cardinals</a> for <a href="/players/r/raffeke01.shtml">Ken Raffensberger</a>.</p>
+			</div>
+			</li><li><span>December 29, 1939</span>			<div>
+			<p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> purchased <a href="/players/s/schluno01.shtml">Norm Schlueter</a> from the <a href="/teams/CHW/1939.shtml">Chicago White Sox</a>.</p> <p>The <a href="/teams/SLB/1939.shtml">St. Louis Browns</a> purchased <a href="/players/s/steinha02.shtml">Hank Steinbacher</a> from the <a href="/teams/CHW/1939.shtml">Chicago White Sox</a>.</p> <p>The <a href="/teams/CHW/1939.shtml">Chicago White Sox</a> traded <a href="/players/l/landrje01.shtml">Jesse Landrum</a>, <a href="/players/r/rensato01.shtml">Tony Rensa</a> and cash to Oklahoma City (Texas) for <a href="/players/k/kollodo01.shtml">Don Kolloway</a>.</p>
+			</div>
+			</li><li><span>Before 1940 Season</span>			<div>
+			<p>The <a href="/teams/SLB/1940.shtml">St. Louis Browns</a> signed <a href="/players/a/arftha01.shtml">Hank Arft</a> as an amateur free agent.</p> <p>The <a href="/teams/STL/1940.shtml">St. Louis Cardinals</a> signed <a href="/players/b/byerlbu01.shtml">Bud Byerly</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1940.shtml">New York Yankees</a> signed <a href="/players/b/byrneto01.shtml">Tommy Byrne</a> as an amateur free agent.</p> <p>The <a href="/teams/PIT/1940.shtml">Pittsburgh Pirates</a> signed <a href="/players/c/castipe01.shtml">Pete Castiglione</a> as an amateur free agent.</p> <p>The <a href="/teams/STL/1940.shtml">St. Louis Cardinals</a> signed <a href="/players/c/clarkmi01.shtml">Mike Clark</a> as an amateur free agent.</p> <p>The <a href="/teams/SLB/1940.shtml">St. Louis Browns</a> signed <a href="/players/c/colemra01.shtml">Ray Coleman</a> as an amateur free agent.</p> <p>The <a href="/teams/DET/1940.shtml">Detroit Tigers</a> signed <a href="/players/c/congedi01.shtml">Dick Conger</a> as an amateur free agent.</p> <p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> signed <a href="/players/c/connoch01.shtml">Chuck Connors</a> as an amateur free agent.</p> <p>The <a href="/teams/PIT/1940.shtml">Pittsburgh Pirates</a> signed <a href="/players/c/coxbi02.shtml">Billy Cox</a> as an amateur free agent.</p> <p>The <a href="/teams/PIT/1940.shtml">Pittsburgh Pirates</a> signed <a href="/players/d/dealco01.shtml">Cot Deal</a> as an amateur free agent.</p> <p>The <a href="/teams/DET/1940.shtml">Detroit Tigers</a> signed <a href="/players/e/erautjo01.shtml">Joe Erautt</a> as an amateur free agent.</p> <p>The <a href="/teams/STL/1940.shtml">St. Louis Cardinals</a> signed <a href="/players/g/genovge01.shtml">George Genovese</a> as an amateur free agent.</p> <p>The <a href="/teams/DET/1940.shtml">Detroit Tigers</a> signed <a href="/players/g/gillebo01.shtml">Bob Gillespie</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1940.shtml">New York Yankees</a> signed <a href="/players/h/hoylete01.shtml">Tex Hoyle</a> as an amateur free agent.</p> <p>The <a href="/teams/BOS/1940.shtml">Boston Red Sox</a> signed <a href="/players/j/jansela01.shtml">Larry Jansen</a> as an amateur free agent.</p> <p>The <a href="/teams/BOS/1940.shtml">Boston Red Sox</a> signed <a href="/players/j/johnsea01.shtml">Earl Johnson</a> as an amateur free agent.</p> <p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> signed <a href="/players/k/kellge01.shtml">George Kell</a> as an amateur free agent.</p> <p>The <a href="/teams/STL/1940.shtml">St. Louis Cardinals</a> signed <a href="/players/k/kleinlo01.shtml">Lou Klein</a> as an amateur free agent.</p> <p>The <a href="/teams/CIN/1940.shtml">Cincinnati Reds</a> signed <a href="/players/k/kressch01.shtml">Chuck Kress</a> as an amateur free agent.</p> <p>The <a href="/teams/CIN/1940.shtml">Cincinnati Reds</a> signed <a href="/players/k/kucabjo01.shtml">Johnny Kucab</a> as an amateur free agent.</p> <p>The <a href="/teams/CLE/1940.shtml">Cleveland Indians</a> signed <a href="/players/m/mapescl01.shtml">Cliff Mapes</a> as an amateur free agent.</p> <p>The <a href="/teams/SLB/1940.shtml">St. Louis Browns</a> signed <a href="/players/m/martiba01.shtml">Babe Martin</a> as an amateur free agent.</p> <p>The <a href="/teams/BSN/1940.shtml">Boston Bees</a> signed <a href="/players/m/mcelyfr01.shtml">Frank McElyea</a> as an amateur free agent.</p> <p>The <a href="/teams/WSH/1940.shtml">Washington Senators</a> signed <a href="/players/m/mersoja01.shtml">Jack Merson</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1940.shtml">New York Yankees</a> signed <a href="/players/m/murrajo01.shtml">Joe Murray</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1940.shtml">New York Yankees</a> signed <a href="/players/p/pagejo01.shtml">Joe Page</a> as an amateur free agent.</p> <p>The <a href="/teams/STL/1940.shtml">St. Louis Cardinals</a> signed <a href="/players/p/papaial01.shtml">Al Papai</a> as an amateur free agent.</p> <p>The <a href="/teams/BOS/1940.shtml">Boston Red Sox</a> signed <a href="/players/p/peskyjo01.shtml">Johnny Pesky</a> as an amateur free agent.</p> <p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> signed <a href="/players/r/ramazbo01.shtml">Bob Ramazzotti</a> as an amateur free agent.</p> <p>The <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> signed <a href="/players/r/rappea01.shtml">Earl Rapp</a> as an amateur free agent.</p> <p>The <a href="/teams/PHA/1940.shtml">Philadelphia Athletics</a> signed <a href="/players/r/richmdo01.shtml">Don Richmond</a> as an amateur free agent.</p> <p>The <a href="/teams/WSH/1940.shtml">Washington Senators</a> signed <a href="/players/s/scarbra01.shtml">Ray Scarborough</a> as an amateur free agent.</p> <p>The <a href="/teams/PIT/1940.shtml">Pittsburgh Pirates</a> signed <a href="/players/s/seminan01.shtml">Andy Seminick</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1940.shtml">New York Yankees</a> signed <a href="/players/s/sheasp01.shtml">Spec Shea</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1940.shtml">New York Yankees</a> signed <a href="/players/s/singlel01.shtml">Elmer Singleton</a> as an amateur free agent.</p> <p>The <a href="/teams/NYY/1940.shtml">New York Yankees</a> signed <a href="/players/s/stirnsn01.shtml">Snuffy Stirnweiss</a> as an amateur free agent.</p> <p>The <a href="/teams/SLB/1940.shtml">St. Louis Browns</a> signed <a href="/players/s/stuarma01.shtml">Marlin Stuart</a> as an amateur free agent.</p> <p>The <a href="/teams/BOS/1940.shtml">Boston Red Sox</a> signed <a href="/players/t/thompjo01.shtml">Jocko Thompson</a> as an amateur free agent.</p> <p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> signed <a href="/players/w/wadebe01.shtml">Ben Wade</a> as an amateur free agent.</p> <p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> signed <a href="/players/w/westlwa01.shtml">Wally Westlake</a> as an amateur free agent.</p> <p>The <a href="/teams/CLE/1940.shtml">Cleveland Indians</a> signed <a href="/players/w/woodlge01.shtml">Gene Woodling</a> as an amateur free agent.</p> <p>The <a href="/teams/CHC/1940.shtml">Chicago Cubs</a> signed <a href="/players/w/wyseha01.shtml">Hank Wyse</a> as an amateur free agent.</p> <p>The <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> signed <a href="/players/l/litwhda01.shtml">Danny Litwhiler</a> as a free agent.</p> <p>The <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> obtained <a href="/players/e/ettenni01.shtml">Nick Etten</a> from Baltimore (International) as part of a minor league working agreement.</p> <p>The <a href="/teams/PHA/1940.shtml">Philadelphia Athletics</a> obtained <a href="/players/f/fowledi01.shtml">Dick Fowler</a> from Toronto (International) as part of a minor league working agreement.</p> <p>The <a href="/teams/PHA/1940.shtml">Philadelphia Athletics</a> obtained <a href="/players/m/marchph01.shtml">Phil Marchildon</a> from Toronto (International) as part of a minor league working agreement.</p> <p>The <a href="/teams/WSH/1940.shtml">Washington Senators</a> returned <a href="/players/l/livinmi01.shtml">Mickey Livingston</a> to Springfield (Eastern) after expiration of minor league working agreement.</p> <p>The <a href="/teams/CLE/1940.shtml">Cleveland Indians</a> returned <a href="/players/w/whiteha01.shtml">Hal White</a> to Buffalo (International) after expiration of minor league working agreement.</p> <p>The <a href="/teams/WSH/1940.shtml">Washington Senators</a> purchased <a href="/players/d/dejanmi01.shtml">Mike Dejan</a> from the <a href="/teams/NYY/1940.shtml">New York Yankees</a> for $750.</p> <p>The <a href="/teams/WSH/1940.shtml">Washington Senators</a> released <a href="/players/g/geragbe01.shtml">Ben Geraghty</a>.  <em>(Date given is approximate. Exact date is uncertain.)</em></p> <p><a href="/players/e/erickha02.shtml">Hal Erickson</a> sent from Lewiston (Pioneer) to the <a href="/teams/CIN/1940.shtml">Cincinnati Reds</a> in an unknown transaction.</p> <p><a href="/players/k/kliemed01.shtml">Ed Klieman</a> sent from the <a href="/teams/CIN/1940.shtml">Cincinnati Reds</a> to the <a href="/teams/CLE/1940.shtml">Cleveland Indians</a> in an unknown transaction.</p> <p><a href="/players/w/walkeha01.shtml">Harry Walker</a> sent from the <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> to the <a href="/teams/STL/1940.shtml">St. Louis Cardinals</a> in an unknown transaction.</p> <p>The <a href="/teams/CLE/1940.shtml">Cleveland Indians</a> returned <a href="/players/m/maglisa01.shtml">Sal Maglie</a> to Buffalo (International) after expiration of minor league working agreement.</p> <p>The <a href="/teams/DET/1940.shtml">Detroit Tigers</a> obtained <a href="/players/m/maglisa01.shtml">Sal Maglie</a> from Buffalo (International) as part of a minor league working agreement.</p>
+			</div>
+			</li><li><span>January 4, 1940</span>			<div>
+			<p>The <a href="/teams/CIN/1940.shtml">Cincinnati Reds</a> traded <a href="/players/g/grissle01.shtml">Lee Grissom</a> to the <a href="/teams/NYY/1940.shtml">New York Yankees</a> for <a href="/players/b/beggsjo01.shtml">Joe Beggs</a>.</p> <p>The <a href="/teams/SLB/1940.shtml">St. Louis Browns</a> selected <a href="/players/n/niggejo01.shtml">Johnny Niggeling</a> off waivers from the <a href="/teams/CIN/1940.shtml">Cincinnati Reds</a>.</p>
+			</div>
+			</li><li><span>January 10, 1940</span>			<div>
+			<p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> signed <a href="/players/f/ferrewe01.shtml">Wes Ferrell</a> as a free agent.</p> <p>The <a href="/teams/CHW/1940.shtml">Chicago White Sox</a> traded <a href="/players/b/bejmaol01.shtml">Ollie Bejma</a> and <a href="/players/g/gerlajo01.shtml">Johnny Gerlach</a> to the <a href="/teams/CLE/1940.shtml">Cleveland Indians</a> for <a href="/players/w/webbsk01.shtml">Skeeter Webb</a>.</p>
+			</div>
+			</li><li><span>January 14, 1940</span>			<div>
+			<p><a href="/players/a/albosed01.shtml">Ed Albosta</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/c/cullero01.shtml">Roy Cullenbine</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/c/curtrgu01.shtml">Guy Curtright</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/d/dietzdu01.shtml">Dutch Dietz</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/d/dorseca01.shtml">Cal Dorsett</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/g/gardeal01.shtml">Al Gardella</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/g/gardeda01.shtml">Danny Gardella</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/g/gillepa01.shtml">Paul Gillespie</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/h/hanckbu01.shtml">Buddy Hancken</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/h/hickeji01.shtml">Jim Hickey</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/j/johnsjo03.shtml">Johnny Johnson</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/j/jonesda02.shtml">Dale Jones</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/m/mclaupa01.shtml">Pat McLaughlin</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/m/metkoca01.shtml">George Metkovich</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/m/muellbi01.shtml">Bill Mueller</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/p/phillda02.shtml">Dee Phillips</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/r/rachust01.shtml">Steve Rachunok</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/s/sainjo01.shtml">Johnny Sain</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/s/stephbr01.shtml">Bryan Stephens</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/t/tatumto01.shtml">Tommy Tatum</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/w/weilaed01.shtml">Ed Weiland</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p> <p><a href="/players/m/mccoybe01.shtml">Benny McCoy</a> of the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> granted free agency.</p>
+			</div>
+			</li><li><span>January 18, 1940</span>			<div>
+			<p>The <a href="/teams/CHC/1940.shtml">Chicago Cubs</a> purchased <a href="/players/b/bassdi01.shtml">Dick Bass</a> from the <a href="/teams/WSH/1940.shtml">Washington Senators</a>.</p>
+			</div>
+			</li><li><span>January 20, 1940</span>			<div>
+			<p>The <a href="/teams/CLE/1940.shtml">Cleveland Indians</a> traded <a href="/players/c/campbbr01.shtml">Bruce Campbell</a> to the <a href="/teams/DET/1940.shtml">Detroit Tigers</a> for <a href="/players/b/bellbe01.shtml">Beau Bell</a>.</p>
+			</div>
+			</li><li><span>January 22, 1940</span>			<div>
+			<p>The <a href="/teams/PIT/1940.shtml">Pittsburgh Pirates</a> selected <a href="/players/h/harrera01.shtml">Ray Harrell</a> off waivers from the <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a>.</p>
+			</div>
+			</li><li><span>January 23, 1940</span>			<div>
+			<p>The <a href="/teams/BSN/1940.shtml">Boston Bees</a> released <a href="/players/f/frankfr02.shtml">Fred Frankhouse</a>.</p>
+			</div>
+			</li><li><span>January 26, 1940</span>			<div>
+			<p>The <a href="/teams/STL/1940.shtml">St. Louis Cardinals</a> purchased <a href="/players/s/scalzsk01.shtml">Skeeter Scalzi</a> from the <a href="/teams/NYG/1940.shtml">New York Giants</a>.</p>
+			</div>
+			</li><li><span>January 27, 1940</span>			<div>
+			<p>The <a href="/teams/CLE/1940.shtml">Cleveland Indians</a> signed <a href="/players/c/calvepa01.shtml">Paul Calvert</a> as a free agent.</p>
+			</div>
+			</li><li><span>January 29, 1940</span>			<div>
+			<p>The <a href="/teams/CIN/1940.shtml">Cincinnati Reds</a> signed <a href="/players/d/dietzdu01.shtml">Dutch Dietz</a> as a free agent.</p> <p>The <a href="/teams/PHA/1940.shtml">Philadelphia Athletics</a> signed <a href="/players/m/mccoybe01.shtml">Benny McCoy</a> as a free agent.</p> <p>The <a href="/teams/PHA/1940.shtml">Philadelphia Athletics</a> signed <a href="/players/m/mclaupa01.shtml">Pat McLaughlin</a> as a free agent.</p> <p>The <a href="/teams/CHW/1940.shtml">Chicago White Sox</a> signed <a href="/players/w/weilaed01.shtml">Ed Weiland</a> as a free agent.</p>
+			</div>
+			</li><li><span>January 30, 1940</span>			<div>
+			<p>The <a href="/teams/SLB/1940.shtml">St. Louis Browns</a> purchased <a href="/players/j/judniwa01.shtml">Wally Judnich</a> from the <a href="/teams/NYY/1940.shtml">New York Yankees</a>.</p> <p>The <a href="/teams/DET/1940.shtml">Detroit Tigers</a> traded <a href="/players/c/coffmsl01.shtml">Slick Coffman</a> to the <a href="/teams/SLB/1940.shtml">St. Louis Browns</a> for <a href="/players/s/sullibi04.shtml">Billy Sullivan</a>.</p>
+			</div>
+			</li><li><span>January 31, 1940</span>			<div>
+			<p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> purchased <a href="/players/c/carlete01.shtml">Tex Carleton</a> from Milwaukee (American Association).</p> <p>The <a href="/teams/BOS/1940.shtml">Boston Red Sox</a> released <a href="/players/b/bergmo01.shtml">Moe Berg</a>.</p>
+			</div>
+			</li><li><span>February 1, 1940</span>			<div>
+			<p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> signed <a href="/players/a/albosed01.shtml">Ed Albosta</a> as a free agent.</p> <p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> signed <a href="/players/r/rachust01.shtml">Steve Rachunok</a> as a free agent.</p>
+			</div>
+			</li><li><span>February 2, 1940</span>			<div>
+			<p>The <a href="/teams/BSN/1940.shtml">Boston Bees</a> signed <a href="/players/h/hickeji01.shtml">Jim Hickey</a> as a free agent.</p>
+			</div>
+			</li><li><span>February 5, 1940</span>			<div>
+			<p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> signed <a href="/players/c/cullero01.shtml">Roy Cullenbine</a> as a free agent.</p>
+			</div>
+			</li><li><span>February 6, 1940</span>			<div>
+			<p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> purchased <a href="/players/f/frankhe01.shtml">Herman Franks</a> from the <a href="/teams/STL/1940.shtml">St. Louis Cardinals</a>.</p>
+			</div>
+			</li><li><span>February 8, 1940</span>			<div>
+			<p>The <a href="/teams/SLB/1940.shtml">St. Louis Browns</a> purchased <a href="/players/a/aukerel01.shtml">Elden Auker</a> from the <a href="/teams/BOS/1940.shtml">Boston Red Sox</a>.</p>
+			</div>
+			</li><li><span>February 12, 1940</span>			<div>
+			<p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> purchased <a href="/players/v/vosmijo01.shtml">Joe Vosmik</a> from the <a href="/teams/BOS/1940.shtml">Boston Red Sox</a> for $25,000.</p>
+			</div>
+			</li><li><span>February 13, 1940</span>			<div>
+			<p>The <a href="/teams/BSN/1940.shtml">Boston Bees</a> signed <a href="/players/m/metkoca01.shtml">George Metkovich</a> as a free agent.</p>
+			</div>
+			</li><li><span>February 15, 1940</span>			<div>
+			<p>The <a href="/teams/PHA/1940.shtml">Philadelphia Athletics</a> signed <a href="/players/h/hanckbu01.shtml">Buddy Hancken</a> as a free agent.</p>
+			</div>
+			</li><li><span>February 23, 1940</span>			<div>
+			<p>The <a href="/teams/DET/1940.shtml">Detroit Tigers</a> selected <a href="/players/n/nelsoly01.shtml">Lynn Nelson</a> off waivers from the <a href="/teams/PHA/1940.shtml">Philadelphia Athletics</a>.</p>
+			</div>
+			</li><li><span>February 24, 1940</span>			<div>
+			<p><a href="/players/s/scottle01.shtml">LeGrant Scott</a> assigned by the <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> to the <a href="/teams/CIN/1940.shtml">Cincinnati Reds</a>.</p> <p>The <a href="/teams/NYY/1940.shtml">New York Yankees</a> traded <a href="/players/l/levyed01.shtml">Ed Levy</a> to the <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> for <a href="/players/s/shillji01.shtml">Jim Shilling</a> and $15,000.  <a href="/players/l/levyed01.shtml">Ed Levy</a> returned to original team on April 27, 1940.</p>
+			</div>
+			</li><li><span>March, 1940</span>			<div>
+			<p>The <a href="/teams/CLE/1940.shtml">Cleveland Indians</a> signed <a href="/players/d/dorseca01.shtml">Cal Dorsett</a> as a free agent.  <em>(Date given is approximate. Exact date is uncertain.)</em></p> <p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> signed <a href="/players/g/gillepa01.shtml">Paul Gillespie</a> as a free agent.  <em>(Date given is approximate. Exact date is uncertain.)</em></p> <p>The <a href="/teams/NYY/1940.shtml">New York Yankees</a> signed <a href="/players/j/johnsjo03.shtml">Johnny Johnson</a> as a free agent.  <em>(Date given is approximate. Exact date is uncertain.)</em></p> <p>The <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> signed <a href="/players/j/jonesda02.shtml">Dale Jones</a> as a free agent.  <em>(Date given is approximate. Exact date is uncertain.)</em></p> <p>The <a href="/teams/CHW/1940.shtml">Chicago White Sox</a> signed <a href="/players/p/phillda02.shtml">Dee Phillips</a> as a free agent.  <em>(Date given is approximate. Exact date is uncertain.)</em></p> <p>Nashville (Southern Association) signed <a href="/players/s/sainjo01.shtml">Johnny Sain</a> as a free agent.  <em>(Date given is approximate. Exact date is uncertain.)</em></p> <p>The <a href="/teams/CLE/1940.shtml">Cleveland Indians</a> signed <a href="/players/s/stephbr01.shtml">Bryan Stephens</a> as a free agent.  <em>(Date given is approximate. Exact date is uncertain.)</em></p> <p>The <a href="/teams/BRO/1940.shtml">Brooklyn Dodgers</a> signed <a href="/players/t/tatumto01.shtml">Tommy Tatum</a> as a free agent.  <em>(Date given is approximate. Exact date is uncertain.)</em></p> <p>The <a href="/teams/PIT/1940.shtml">Pittsburgh Pirates</a> released <a href="/players/k/kleinch01.shtml">Chuck Klein</a>.</p> <p>The <a href="/teams/NYY/1940.shtml">New York Yankees</a> traded <a href="/players/s/schulha01.shtml">Ham Schulte</a> to the <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> for a player to be named later and plus additional compensation. The <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> sent <a href="/players/s/scharge01.shtml">George Scharein</a> (May 3, 1940) to the <a href="/teams/NYY/1940.shtml">New York Yankees</a> to complete the trade.
+</p>
+			</div>
+			</li><li><span>March 3, 1940</span>			<div>
+			<p>The <a href="/teams/PIT/1940.shtml">Pittsburgh Pirates</a> purchased <a href="/players/g/garmsde01.shtml">Debs Garms</a> from the <a href="/teams/BSN/1940.shtml">Boston Bees</a>.</p>
+			</div>
+			</li><li><span>March 20, 1940</span>			<div>
+			<p>The <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> purchased <a href="/players/b/brownll01.shtml">Lloyd Brown</a> from the <a href="/teams/CHW/1940.shtml">Chicago White Sox</a>.</p> <p>The <a href="/teams/PIT/1940.shtml">Pittsburgh Pirates</a> released <a href="/players/s/suscege01.shtml">George Susce</a>.</p>
+			</div>
+			</li><li><span>March 21, 1940</span>			<div>
+			<p>The <a href="/teams/SLB/1940.shtml">St. Louis Browns</a> signed <a href="/players/s/suscege01.shtml">George Susce</a> as a free agent.</p>
+			</div>
+			</li><li><span>March 23, 1940</span>			<div>
+			<p>Buffalo (International) purchased <a href="/players/o/outlaji01.shtml">Jimmy Outlaw</a> from the <a href="/teams/BSN/1940.shtml">Boston Bees</a>.</p>
+			</div>
+			</li><li><span>March 26, 1940</span>			<div>
+			<p>The <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> signed <a href="/players/k/kleinch01.shtml">Chuck Klein</a> as a free agent.</p> <p>The <a href="/teams/BSN/1940.shtml">Boston Bees</a> released <a href="/players/b/barklre01.shtml">Red Barkley</a>.</p> <p>The <a href="/teams/BSN/1940.shtml">Boston Bees</a> returned <a href="/players/b/batesbu01.shtml">Bud Bates</a> to the <a href="/teams/PHI/1940.shtml">Philadelphia Phillies</a> following previous waiver selection.</p>
+			</div>
+			</li><li><span>March 28, 1940</span>			<div>
+			<p>San Francisco (PCL) purchased <a href="/players/e/epperal01.shtml">Al Epperly</a> from the <a href="/teams/CHC/1940.shtml">Chicago Cubs</a>.</p> <p>Seattle (PCL) purchased <a href="/players/s/schusbi01.shtml">Bill Schuster</a> from the <a href="/teams/BSN/1940.shtml">Boston Bees</a>.</p>
+			</div>
+			</li><li><span>March 30, 1940</span>			<div>
+			<p>Minneapolis (American Association) purchased <a href="/players/w/willial02.shtml">Al Williams</a> from the <a href="/teams/WSH/1940.shtml">Washington Senators</a>.</p>
+			</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+            
+            
+         
+      
+         
+            <p>
+The transaction information used here was obtained free of charge
+from and is copyrighted by <a
+rel="nofollow" href="http://www.retrosheet.org/">RetroSheet</a>. We attempt to update transactions throughout the season.
+</p>
+
+            
+            
+         
+      
+
+<!-- global.nonempty_tables_num: 2, table_count: 2 -->
+   <!-- no Local/Partials/NoteBottom.tt2 -->
+<div id="bottom_nav" class="section_wrapper commented">
+<div class="section_heading"><span data-no-inpage="1" class="section_anchor" id="inner_nav_bottom_link" data-label="More 1939 MLB Pages"></span><h2>More 1939 MLB Pages</h2></div>
+<button id="bottom_nav_button" class="comment_control opener" data-type="hide_after" data-class="commented" data-id="bottom_nav">More 1939 MLB Pages</button>
+<div class="section_content" id="bottom_nav_container">
+        <section>
+          <p><a href="/register/league.cgi?year=1939">Minor Leagues</a></p>
+          <p><a href="/leagues/MLB/1939-standings.shtml">Standings</a></p>
+          <p><a href="/leagues/MLB/1939-schedule.shtml">Schedule</a></p>
+          <p><a href="/leagues/MLB/1939-standard-fielding.shtml">Fielding</a></p>
+          <p><a href="/leagues/MLB/1939-standard-batting.shtml">Batting</a></p>
+          <p><a href="/leagues/MLB/1939-standard-pitching.shtml">Pitching</a></p>        </section><p class="listhead">Fielding</p>
+        <ul class="">
+          <li><a href="/leagues/MLB/1939-standard-fielding.shtml">Standard Fielding</a></li>
+          <li><a href="/leagues/MLB/1939-appearances-fielding.shtml">Appearances</a></li>
+          <li><a href="/leagues/MLB/1939-specialpos_p-fielding.shtml">Pitcher</a></li>
+          <li><a href="/leagues/MLB/1939-specialpos_c-fielding.shtml">Catcher</a></li>
+          <li><a href="/leagues/MLB/1939-specialpos_1b-fielding.shtml">First Base</a></li>
+          <li><a href="/leagues/MLB/1939-specialpos_2b-fielding.shtml">Second Base</a></li>
+          <li><a href="/leagues/MLB/1939-specialpos_3b-fielding.shtml">Third Base</a></li>
+          <li><a href="/leagues/MLB/1939-specialpos_ss-fielding.shtml">Shortstop</a></li>
+          <li><a href="/leagues/MLB/1939-specialpos_lf-fielding.shtml">Left Field</a></li>
+          <li><a href="/leagues/MLB/1939-specialpos_cf-fielding.shtml">Center Field</a></li>
+          <li><a href="/leagues/MLB/1939-specialpos_rf-fielding.shtml">Right Field</a></li>
+          <li><a href="/leagues/MLB/1939-specialpos_of-fielding.shtml">Outfield</a></li>
+        </ul><p class="listhead">Batting</p>
+        <ul class="">
+          <li><a href="/leagues/MLB/1939-standard-batting.shtml">Standard Batting</a></li>
+          <li><a href="/leagues/MLB/1939-value-batting.shtml">Player Value</a></li>
+          <li><a href="/leagues/MLB/1939-advanced-batting.shtml">Advanced Batting</a></li>
+          <li><a href="/leagues/MLB/1939-win_probability-batting.shtml">Win Probability</a></li>
+          <li>Spring Training</li>
+          <li><a href="/leagues/MLB/1939-ratio-batting.shtml">Batting Ratios</a></li>
+          <li><a href="/leagues/MLB/1939-baserunning-batting.shtml">Baserunning/Misc</a></li>
+          <li><a href="/leagues/MLB/1939-situational-batting.shtml">PH/HR/Situ Hitting</a></li>
+          <li>Pitches Batting</li>
+          <li><a href="/leagues/MLB/1939-cumulative-batting.shtml">Cumulative Batting</a></li>
+          <li><a href="/leagues/MLB/1939-neutral-batting.shtml">Neutralized Batting</a></li>
+          <li><a href="/leagues/team_compare.cgi?lg=MLB&amp;year=1939">Team Positional Comparisons</a></li>
+          <li><a href="/leagues/split.cgi?t=b&amp;lg=MLB&amp;year=1939">League Splits</a></li>
+          <li><a href="/register/leader.cgi?type=bat&amp;year=1939"">Minors Batting</a></li>
+        </ul><p class="listhead">Pitching</p>
+        <ul class="">
+          <li><a href="/leagues/MLB/1939-standard-pitching.shtml">Standard Pitching</a></li>
+          <li><a href="/leagues/MLB/1939-value-pitching.shtml">Player Value</a></li>
+          <li>Spring Training</li>
+          <li><a href="/leagues/MLB/1939-batting-pitching.shtml">Batting Against</a></li>
+          <li><a href="/leagues/MLB/1939-win_probability-pitching.shtml">Win Probability</a></li>
+          <li><a href="/leagues/MLB/1939-starter-pitching.shtml">Starting Pitching</a></li>
+          <li><a href="/leagues/MLB/1939-reliever-pitching.shtml">Relief Pitching</a></li>
+          <li><a href="/leagues/MLB/1939-ratio-pitching.shtml">Pitching Ratios</a></li>
+          <li>Pitching Pitches</li>
+          <li><a href="/leagues/MLB/1939-basesituation-pitching.shtml">Baserunning/Situ</a></li>
+          <li><a href="/leagues/MLB/1939-cumulative-pitching.shtml">Cumulative Pitching</a></li>
+          <li><a href="/leagues/MLB/1939-neutral-pitching.shtml">Neutralized Pitching</a></li>
+          <li><a href="/leagues/split.cgi?t=p&amp;lg=MLB&amp;year=1939">League Splits</a></li>
+          <li><a href="/register/leader.cgi?type=pitch&amp;year=1939"">Minors Pitching</a></li>
+        </ul><p class="listhead">Leaders &amp; Awards</p>
+        <ul class="">
+          <li><a href="/leagues/MLB/1939-batting-leaders.shtml">Batting</a></li>
+          <li><a href="/leagues/MLB/1939-pitching-leaders.shtml">Pitching</a></li>
+          <li><a href="/leagues/MLB/1939-fielding-leaders.shtml">Fielding</a></li>
+          <li><a href="/leagues/MLB/1939-other-leaders.shtml">Awards, All-Stars, &amp; More</a></li>
+        </ul><p class="listhead">Other</p>
+        <ul class="">
+          <li><a href="/leagues/MLB/1939-misc.shtml">Attendance &amp; Misc.</a></li>
+          <li><a href="/leagues/MLB/1939-debuts.shtml">New Debuts</a></li>
+          <li><a href="/leagues/MLB/1939-rookies.shtml">Rookie Players</a></li>
+          <li><a href="/leagues/MLB/1939-finalyear.shtml">Retirements</a></li>
+          <li><a href="/leagues/MLB/1939-births.shtml">Born this Year</a></li>
+          <li><a href="/leagues/MLB/1939-deaths.shtml">Died this Year</a></li>
+          <li><a href="/leagues/MLB/1939-uniform-numbers.shtml">Uniform Numbers</a></li>
+          <li><a href="/leagues/MLB/1939-transactions.shtml">Transactions</a></li>
+          <li>Amateur Draft</li>
+          <li>Free Agents</li>
+          <li>Last N Days Leaders</li>
+          <li><a href="/leagues/MLB/1939-opening-day-rosters.shtml">Opening Day Lineups</a></li>
+          <li><a href="/leagues/MLB/1939-team-starting-lineups.shtml">Team Starting Lineups</a></li>
+          <li><a href="/leagues/MLB/1939-team-pitching-staffs.shtml">Team Pitching Staffs</a></li>
+          <li>Marcel Projections</li>
+        </ul>
+</div>
+</div>
+
+   
+
+<!-- fs_footer -->
+<div class="adblock">
+<div><a href="/my/?do=ad_free_browsing">Support us without the ads? Go Ad-Free.</a></div>
+<!-- div#fs_fs_footer  -->
+<div align="center" id="div-gpt-ad-728x90-Footer">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-728x90-Footer');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-728x90-Footer'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_footer -->
+
+</div>
+
+
+
+</div><!-- div#content -->
+
+<div id="footer" role="contentinfo">
+	<div id="footer_header">
+		 <ul class="bullets-inline"><li class="user logged_in">Welcome<span class="username"></span>&nbsp;&#183;&nbsp;<a href="/my/">Your Account</a></li>
+<li class="user logged_in"><a class="logout" href="/my/?do=logout">Logout</a></li>
+<li class="user not_logged_in"><a class="login" href="/my/">Login</a></li>
+<li class="user not_logged_in"><a href="/my/">Create Account</a></li>
+<li><a href="/my/?do=ad_free_browsing">Surf AD-FREE</a></li>
+</ul>
+		 <div class="breadcrumbs" itemscope itemtype="https://schema.org/Other">You are here: <span><a href="/">BR Home</a></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/leagues/"><span itemprop="name">Leagues</span></a> <meta itemprop="position" content="1" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/leagues/MLB/"><span itemprop="name">MLB History</span></a> <meta itemprop="position" content="2" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" href="/leagues/MLB/1939.shtml"><span itemprop="name">1939 MLB</span></a> <meta itemprop="position" content="3" /></span> &gt; <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><strong><span itemprop="name">Transactions</span></strong> <meta itemprop="position" content="4" /></span></div>
+	</div><!-- div#footer_header -->
+	<div id="site_menu" role="navigation" aria-label="complete site index">
+		
+<div class="section_heading">
+  <span class="section_anchor" id="site_menu_link" data-label="Full Site Menu"></span>
+    <h2>Full Site Menu</h2>    <div class="section_heading_text">
+      <ul> <li><a data-scroll href="#header">Return to Top</a></li>
+      </ul>
+    </div>		
+</div>
+		<ul>
+	<li><a href="/players/">MLB Players</a>
+	<div>Current Greats: <a href="/players/k/kershcl01.shtml">Clayton Kershaw</a>, 
+<a href="/players/h/harpebr03.shtml">Bryce Harper</a>, 
+<a href="/players/t/troutmi01.shtml">Mike Trout</a>, 
+<a href="/players/a/arrieja01.shtml">Jake Arrieta</a>, 
+<a href="/players/c/cabremi01.shtml">Miguel Cabrera</a>, 
+<a href="/players/g/greinza01.shtml">Zack Greinke</a>, 
+<a href="/players/a/altuvjo01.shtml">Jose Altuve</a>,
+...   </div>
+
+	<div>All-Time Greats:  
+<a href="/players/m/musiast01.shtml">Stan Musial</a>, 
+<a href="/players/b/bondsba01.shtml">Barry Bonds</a>, 
+<a href="/players/r/ruthba01.shtml">Babe Ruth</a>, 
+<a href="/players/j/jeterde01.shtml">Derek Jeter</a>, 
+<a href="/players/g/griffke02.shtml">Ken Griffey Jr</a>, 
+<a href="/players/r/robinja02.shtml">Jackie Robinson</a>, 
+<a href="/players/a/aaronha01.shtml">Hank Aaron</a>, ...</div>
+</li>
+
+
+	 <li><a href="/teams/">MLB Teams</a>
+	 	<div class="division"><strong>NL East</strong>:
+<a href="/teams/ATL/">Atlanta Braves</a>, 
+<a href="/teams/FLA/">Miami Marlins</a>, 
+<a href="/teams/NYM/">New York Mets</a>, 
+<a href="/teams/PHI/">Philadelphia Phillies</a>, 
+<a href="/teams/WSN/">Washington Nationals</a>
+		</div>	
+	 	<div class="division"><strong>NL Central</strong>:
+<a href="/teams/CHC/">Chicago Cubs</a>, 
+<a href="/teams/CIN/">Cincinnati Reds</a>, 
+<a href="/teams/MIL/">Milwaukee Brewers</a>, 
+<a href="/teams/PIT/">Pittsburgh Pirates</a>, 
+<a href="/teams/STL/">St. Louis Cardinals</a>
+		</div>	
+	 	<div class="division"><strong>NL West</strong>:
+<a href="/teams/ARI/">Arizona Diamondbacks</a>, 
+<a href="/teams/COL/">Colorado Rockies</a>, 
+<a href="/teams/LAD/">Los Angeles Dodgers </a>, 
+<a href="/teams/SDP/">San Diego Padres</a>, 
+<a href="/teams/SFG/">San Francisco Giants</a>
+		</div>	
+	 	<div class="division"><strong>AL East</strong>:
+<a href="/teams/BAL/">Baltimore Orioles</a>, 
+<a href="/teams/BOS/">Boston Red Sox</a>, 
+<a href="/teams/NYY/">New York Yankees</a>, 
+<a href="/teams/TBR/">Tampa Bay Rays</a>, 
+<a href="/teams/TOR/">Toronto Blue Jays</a>
+		</div>	
+	 	<div class="division"><strong>AL Central</strong>:
+<a href="/teams/CHW/">Chicago White Sox</a>, 
+<a href="/teams/CLE/">Cleveland Indians</a>, 
+<a href="/teams/DET/">Detroit Tigers</a>, 
+<a href="/teams/KCR/">Kansas City Royals</a>, 
+<a href="/teams/MIN/">Minnesota Twins</a>
+		</div>	
+	 	<div class="division"><strong>AL West</strong>:
+<a href="/teams/HOU/">Houston Astros</a>, 
+<a href="/teams/LAA/">Los Angeles Angels</a>, 
+<a href="/teams/OAK/">Oakland Athletics</a>, 
+<a href="/teams/SEA/">Seattle Mariners</a>, 
+<a href="/teams/TEX/">Texas Rangers</a>
+		</div>	
+	 </li>
+
+<li><a href="/leagues/">Seasons</a>
+	     <div><a href="/leagues/MLB/2018.shtml">2018</a>,
+	     <a href="/leagues/MLB/2017.shtml">2017</a>,
+	     <a href="/leagues/MLB/2018-standard-pitching.shtml">2018 MLB Pitching</a>,
+	     <a href="/leagues/MLB/2018-standard-batting.shtml">2018 MLB Batting</a>,
+	     <a href="/leagues/MLB/2018-standings.shtml">2018 MLB Standings</a>,
+	     <a href="/leagues/MLB/2018-misc.shtml">2018 MLB Attendance</a>,
+	     <a href="/leagues/MLB/2018-rookies.shtml">2018 MLB Rookies</a>,
+	     ...</div>
+</li>
+
+         <li><a href="/leagues/MLB-leaders.shtml">MLB Leaders</a>
+	     <div>
+	     <a href="/leagues/MLB/2018-batting-leaders.shtml">2018 MLB Batting</a>,
+	     <a href="/leagues/MLB/2018-pitching-leaders.shtml">2018 MLB Pitching</a>,
+	     <a href="/leaders/WAR_career.shtml">Career WAR Leaders</a>,
+	     <a href="/leaders/HR_season.shtml">Single-Season Home Run Leaders</a>,
+	     <a href="/leaders/SO_p_active.shtml">Active Strikeout Leaders</a>,
+	     <a href="/friv/milestones.cgi">Upcoming Player Milestones</a>,
+	     ...</div>
+	 </li>
+
+         <li><a href="/boxes/">MLB Scores</a>
+	     <div><a href="/boxes/">Yesterday's MLB Games</a>,
+	     <a href="/boxes/">Scores from any date in MLB history</a>,
+	     <a href="/previews/">MLB Probable Pitchers</a>,
+	     ...</div>
+	 </li>
+	 <li><a href="/leagues/MLB-schedule.shtml">MLB Schedule</a></li>
+
+         <li><a href="/leagues/MLB-standings.shtml">MLB Standings</a>
+	     <div>
+	     <a href="/leagues/AL/2018-standings.shtml">AL Standings</a>,
+	     <a href="/leagues/NL/2018-standings.shtml">NL Standings</a>,
+	     <a href="/boxes/">Standings for any date in history</a>,
+	     ...</div>
+	 </li>
+
+         <li><a href="/postseason/">MLB Playoffs</a>
+	     <div>
+	     <a href="/postseason/2016_WS.shtml">2016 World Series: Cubs vs Indians</a>,
+	     <a href="/postseason/2015_WS.shtml">2015 World Series: </a>,
+	     <a href="/postseason/WS_batting.shtml">World Series Batting Leaders</a>,
+	     <a href="/postseason/WS_pitching.shtml">World Series Pitching Leaders</a>,
+	     ...</div>
+	 </li>
+
+         <li><a href="/play-index/">Play Index</a>
+	     <div>Player Finders:
+	     <a href="/play-index/season_finder.cgi">Season &amp; Career Finder</a>,
+	     <a href="/play-index/game_finder.cgi">Game Finder</a>,
+	     <a href="/play-index/streak_finder.cgi">Streak Finder</a>,
+	     <a href="/play-index/event_finder.cgi">Event Finder</a>,
+	     <a href="/play-index/player-comparison.cgi">Player Comparison Finder</a>,
+	     <a href="/play-index/neutralized-stats.cgi">Neutralized Stats</a>,
+	     ...</div>
+	     <div>Team Finders:
+	     <a href="/play-index/team-season-finder.cgi">Season Finder</a>,
+	     <a href="/play-index/split_finder.cgi?class=team">Split Finder</a>,
+	     <a href="/play-index/game_finder.cgi?class=team">Game Finder</a>,
+	     <a href="/play-index/streak_finder.cgi?class=team">Streak Finder</a>,
+	     <a href="/play-index/event_finder.cgi?class=team">Event Finder</a>,
+	     ...</div>
+	     <div>Other Finders:
+	     <a href="/draft/">Draft Finder</a>,
+	     <a href="/play-index/">Game Score &amp; Result Searches</a>,
+	     <a href="/friv/trade-partners.cgi">Team Trade Histories</a>,
+	     ...</div>
+	 </li>
+
+         <li><a href="/managers/">Managers</a>
+	     <div>Active:
+	     <a href="/managers/francte01.shtml">Terry Francona</a>,
+	     <a href="/managers/hurdlcl01.shtml">Clint Hurdle</a>,
+	     <a href="/managers/hincha.01.shtml">A.J. Hinch</a>,
+	     ...</div>
+	     <div>Retired:
+	     <a href="/managers/mcgrajo01.shtml">John McGraw</a>,
+	     <a href="/managers/coxbo01.shtml">Bobby Cox</a>,
+	     <a href="/managers/weaveea99.shtml">Earl Weaver</a>,
+	     ...</div>
+	 </li>
+
+         <li><a href="/awards/">MLB Awards</a>
+	     <div>
+	     <a href="/awards/hof.shtml">Baseball Hall of Fame</a>,
+	     <a href="/awards/mvp_cya.shtml">MLB MVP's</a>,
+	     <a href="/awards/mvp_cya.shtml">MLB Cy Young Award</a>,
+	     <a href="/awards/roy_rol.shtml">MLB Rookie of the Year</a>,
+	     <a href="/awards/gold_glove_nl.shtml">Rawlings Gold Gloves</a>,
+	     <a href="/awards/hof_2018.shtml">2018 HOF results</a>,
+	     <a href="/awards/hof_2019.shtml">2019 Hall of Fame ballot</a>,
+	     ...</div>
+	 </li>
+
+         <li><a href="/allstar/">MLB All-Star Games</a>
+	     <div>
+	     <a href="/allstar/2018-allstar-game.shtml">2018 All-Star Game</a>,
+	     <a href="/allstar/2017-allstar-game.shtml">2017 All-Star Game</a>,
+	     <a href="/allstar/bat-register.shtml">All-Time All-Star Batters</a>,
+	     <a href="/allstar/pitch-register.shtml">All-Time All-Star Pitchers</a>,
+	     ...</div>
+	 </li>
+
+         <li><a href="/friv/">Frivolities</a> and More
+	     <div>
+	     <a href="/oracle/">Oracle of Baseball</a>,
+	     <a href="/friv/numbers.cgi">Uniform Number Tracker</a>,
+	     <a href="/friv/coffee.shtml">Cups of Coffee</a>,
+	     <a href="/friv/baseball-player-name-pronunciation-guide.shtml">Pronunciation Guide</a>,
+	     <a href="/bio/">Birthplaces</a>,
+	     <a href="/schools/">Players by School Attended</a>,
+	     ....</div>
+	 </li>
+
+         <li><a href="/draft/">MLB Draft</a>
+	     <div>
+	     <a href="/draft/?query_type=year_round&amp;year_ID=2018&amp;draft_round=1&amp;draft_type=junreg&amp;">2018 Draft</a>,
+	     <a href="/draft/?query_type=year_round&amp;year_ID=2017&amp;draft_round=1&amp;draft_type=junreg&amp;">2017 Draft</a>,
+	     <a href="/draft/?query_type=year_round&amp;year_ID=2016&amp;draft_round=1&amp;draft_type=junreg&amp;">2016 Draft</a>,
+	     <a href="/draft/?overall_pick=1&amp;draft_type=junreg&amp;">MLB Number One Picks</a>,
+	     ...</div>
+	 </li>
+
+         <li><a href="/register/">Minor, Foreign, &amp; Negro Leagues</a>
+	     <div>
+	     <a href="/register/minor-league-stats.shtml">Minor League Stats</a>,
+	     <a href="/register/negro-league-stats.shtml">Negro League Stats</a>,
+	     <a href="/register/npb-stats.shtml">Nippon Pro Baseball Stats</a>,
+	     <a href="/register/cuban-league-stats.shtml">Cuban National Series Stats</a>,
+	     <a href="/register/kbo-stats.shtml">Korean Baseball Stats</a>,
+	     <a href="/register/league.cgi?year=2018">2018 Minor Leagues</a>,
+	     <a href="/register/affiliate.cgi?year=2018">2018 Affiliates</a>,
+	     ...</div>
+	 </li>
+
+         <li><a href="/bullpen/">Baseball-Reference Bullpen</a>
+	     <div>
+	     <a href="/bullpen/">85,000+ pages of baseball information</a>,
+	     <a href="/bullpen/How_to_contribute">How to Contribute</a>,
+	     ...</div>
+	 </li>
+
+         <li><a href="/about/">About Baseball Reference</a>
+	     <div>
+	     <a href="/about/bat_glossary.shtml">Batting Glossary</a>,
+	     <a href="/about/pitch_glossary.shtml">Pitching Glossary</a>,
+	     <a href="/about/war_explained.shtml">Wins Above Replacement Explainer</a>,
+	     <a href="/data/">WAR data archive</a>,
+	     <a href="/about/coverage.shtml">BR Data Coverage</a>,
+	     ...</div>
+	 </li>
+
+
+</ul>   
+
+	</div><!-- div#site_menu -->
+	<div id="social" class="icon_group noload">
+	
+<div class="section_heading">
+  <span class="section_anchor" id="_link" data-label="We're Social...for Statheads" data-no-inpage="1"></span>
+    <h2>We're Social...for Statheads</h2>		
+</div>
+	<a href="tel://888-512-8907" data-tip="Call us on Telephone" data-label="Telephone" class="poptip"><svg class="icon phone"><use xlink:href="#ic-phone"></use></svg></a>
+	<a href="//www.sports-reference.com/blog/" data-tip="The Sports Reference Blog" data-label="Our Blog" class="poptip"><svg class="icon wordpress"><use xlink:href="#ic-wordpress"></use></svg></a>
+	<a href="https://www.sports-reference.com/blog/feed/" data-tip="Our Blog's RSS Feed" data-label="RSS Feed" class="poptip"><svg class="icon rss"><use xlink:href="#ic-rss"></use></svg></a>
+	
+		<a href="https://twitter.com/baseball_ref" data-tip="Baseball-Reference.com at Twitter" data-label="Twitter" class="poptip"><svg class="icon twitter"><use xlink:href="#ic-twitter"></use></svg></a>
+	
+	<a href="https://reddit.com/r/SportsReference" data-tip="Reddit/r/SportsReference" data-label="Reddit/r/SR" class="poptip"><svg class="icon reddit"><use xlink:href="#ic-reddit"></use></svg></a>
+	<a href="https://www.youtube.com/user/sportsreference" data-tip="YouTube/SportsReference" data-label="YouTube" class="poptip"><svg class="icon youtube"><use xlink:href="#ic-youtube"></use></svg></a>
+	<a href="https://www.linkedin.com/company/sports-reference-llc" data-tip="Follow SR on LinkedIn" data-label="LinkedIn" class="poptip"><svg class="icon linkedin"><use xlink:href="#ic-linkedin"></use></svg></a>
+	<a href="https://www.paypal.me/sportsref" data-tip="Send us money via PayPal" data-label="PayPal" class="poptip"><svg class="icon paypal"><use xlink:href="#ic-paypal"></use></svg></a>
+
+<p>Every <a href="https://www.sports-reference.com/blog/sports-reference-social-media/">Sports Reference Social Media Account</a></p>
+<p><strong>Site Last Updated:</strong> Tuesday, July 10,  6:42AM
+</p>
+<p><a href="https://www.sports-reference.com/feedback/" class="button alt">Question, Comment, Feedback, or Correction?</a></p>
+
+<p><a style="background-color:#8e4496; color: #fff;" href="https://stathead.com/" class="button alt">Are you a Stathead, too? Subscribe to our Newsletter</a></p>
+</div><!-- div#social -->
+
+	<div id="tips_tricks">
+   
+<div class="section_heading">
+  <span class="section_anchor" id="tips_link" data-label="FAQs, Tip &amp; Tricks" data-no-inpage="1"></span>
+    <h2>FAQs, Tip &amp; Tricks</h2>		
+</div>
+   <ul>
+<li>Learn about the <a href="//www.baseball-reference.com/about/war_explained.shtml">Wins Above Replacement Formula</a></li>
+
+           <li><a href="//www.sports-reference.com/blog/category/tips-and-tricks/">Tips and Tricks from our Blog.</a></li>
+           <li><a href="/linker/">Do you have a blog? Join our linker program.</a></li>
+	   <li><a href="//www.sports-reference.com/blog/category/how-to-videos/">Watch our How-To Videos to Become a Stathead</a></li>
+	   <li><a href="/my/?do=ad_free_browsing">Go ad-free to support Sports Reference and get our fastest browsing experience</a></li>
+	   <li><a href="//www.baseball-reference.com/play-index/">Subscribe to the Play Index and get access to more data than you can imagine</a></li>
+   </ul>
+</div><!-- div#tips_tricks -->
+
+	<div id="credits">
+        <p>All logos are the trademark &amp; property of their owners and not Sports Reference LLC.  We present them here for purely educational purposes.
+        <a href="https://www.sports-reference.com/blog/2016/06/redesign-team-and-league-logos-courtesy-sportslogos-net/">Our reasoning for presenting offensive logos.</a></p>
+        <p>Logos were compiled by the amazing <a href="http://sportslogos.net/">SportsLogos.net.</a></p>
+
+        
+     
+     <div class="notice">Primary Data Provided By
+	<a href="http://www.gracenote.com/sports/sports-data/" rel="nofollow"><img alt="Gracenote Sports" border=0 width=275 src="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/images/klecko/gracenote-2.png"></a>
+</div>
+
+          <p>Copyright &copy; 2000-2018 <a href="//www.sports-reference.com/">Sports Reference LLC</a>. All rights reserved.</p>
+
+     <p >Much of the play-by-play, game results, and transaction information both shown and used to create certain data sets was obtained free of charge from and is copyrighted by <a rel="nofollow" href="http://www.retrosheet.org/">RetroSheet</a>.</p>
+     <p>Win Expectancy, Run Expectancy, and Leverage Index calculations provided by Tom Tango of <a rel="nofollow" href="http://www.tangotiger.com/index.php">InsideTheBook.com</a>, and co-author of <a class="italic_text" rel="nofollow" href="">The Book: Playing the Percentages in Baseball</a>.</p>
+     <p>Total Zone Rating and initial framework for Wins above Replacement calculations provided by Sean Smith.</p>
+     <p>Full-year historical Major League statistics provided by Pete Palmer and Gary Gillette of <a rel="nofollow" href="http://www.hiddengamesports.com/">Hidden Game Sports</a>.</p>
+     <p><a href="http://www.baseballinfosolutions.com/"><img alt="BaseballInfoSolutions.com logo"  src="https://d2p3bygnnzw9w3.cloudfront.net/req/201807061/images/klecko/bis_logo.png"></a></p>
+     <p>Some defensive statistics Copyright &copy; <a href="http://www.baseballinfosolutions.com/">Baseball Info Solutions</a>, 2010-2018.</p>
+     <p>Some high school data is courtesy David McWater.</p>
+     <p>Many historical player head shots courtesy of David Davis. Many thanks to him. All images are property the copyright holder and are displayed here for informational purposes only.</p>
+</div><!-- div#credits -->
+	<ul id="site_dirs" class="bullets-inline">
+	<li><a href="https://www.sports-reference.com/"><svg height="15px" width="20px"><use xlink:href="#ic-sr-pennant"></use></svg> Sports Reference</a></li>
+	<li class="current"><a href="https://www.baseball-reference.com/">Baseball</a></li>
+	<li><a href="https://www.pro-football-reference.com/">Football</a> <a href="https://www.sports-reference.com/cfb/">(college)</a></li>
+	<li><a href="https://www.basketball-reference.com/">Basketball</a> <a href="https://www.sports-reference.com/cbb/">(college)</a></li>
+	<li><a href="https://www.hockey-reference.com/">Hockey</a></li>
+	<li><a href="https://fbref.com/">Soccer</a></li>
+	<li><a href="https://www.sports-reference.com/blog/">Blog</a></li>
+
+        <li><a href="https://stathead.com/">Stathead</a></li>
+        <li><a href="https://widgets.sports-reference.com/">Widgets</a></li>
+
+        
+</ul>
+
+	<div id="about"><a href="//www.sports-reference.com/about.html">About</a> &bull; <a href="//www.sports-reference.com/privacy.html">Privacy Statement</a> &bull; <a href="//www.sports-reference.com/termsofuse.html">Conditions &amp; Terms of Service</a> &bull; <a href="//www.sports-reference.com/data_use.html">Use of Data</a></div><!-- div#about -->
+
+</div><!-- div#footer -->
+</div><!-- div#wrap -->
+
+<!-- rails -->
+
+<div class="adblock rails  left"><!-- div#fs_fs_rails_left  -->
+<div align="center" id="div-gpt-ad-160x600-1">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-160x600-1');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-160x600-1'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_rails_left -->
+</div>
+<div class="adblock rails right"><!-- div#fs_fs_rails_right  -->
+<div align="center" id="div-gpt-ad-160x600-2">
+    <script data-cfasync="false" type='text/javascript'>
+    if (sr_detect_ie || sr_detect_edge || Modernizr.adfree) {
+    }
+    else {
+        console.log('push ad:div-gpt-ad-160x600-2');
+        freestar.queue.push(function() { googletag.display('div-gpt-ad-160x600-2'); });
+    }
+    </script>
+</div>
+<!-- /div.#fs_fs_rails_right -->
+</div>
+
+
+<!-- Google Analytics --><script> String.prototype.sr_isMatch = function(s){ return this.match(s)!==null}; function getCookie(name) { var prefix = name + "="; var begin = document.cookie.indexOf("; " + prefix); if (begin == -1) { begin = document.cookie.indexOf(prefix); if (begin != 0) return null; } else { begin += 2; var end = document.cookie.indexOf(";", begin); if (end == -1) { end = document.cookie.length; } } return unescape(document.cookie.substring(begin + prefix.length, end));} var sr_cookie = getCookie('SR_user') || ''; var sr_is_ad_free = sr_cookie.sr_isMatch('Z6SON8tTdJid'); var sr_is_user = sr_cookie !== null && sr_cookie !== ''; var sr_seen_modal = getCookie('modal_ad') !== null; (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r; i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date(); a=s.createElement(o),m=s.getElementsByTagName(o)[0]; a.async=1; a.src=g; m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-1890630-1', 'auto'); ga('require', 'linkid', 'linkid.js'); ga('require', 'ecommerce', 'ecommerce.js'); ga('send', 'pageview'); ga('create', 'UA-1890630-19', 'auto', {'name': 'combined_tracker', 'allowLinker': true }); ga('combined_tracker.send', 'pageview'); var sr_device = 'unk'; if (Modernizr.phone) { sr_device = 'phone'; } else if (Modernizr.tablet) { sr_device = 'tablet'; } else if (Modernizr.laptop) { sr_device = 'laptop'; } else if (Modernizr.desktop) { sr_device = 'desktop'; } ga('create', 'UA-1890630-9', 'auto', {'name': 'sr_tracker', 'allowLinker': true }); ga('sr_tracker.require', 'displayfeatures'); ga('sr_tracker.set', 'dimension1','br'); ga('sr_tracker.set', 'dimension2',sr_is_ad_free); ga('sr_tracker.set', 'dimension3',sr_is_user); ga('sr_tracker.set', 'dimension4',sr_seen_modal); ga('sr_tracker.set', 'dimension5',sr_device); ga('sr_tracker.set', 'dimension6',Modernizr.is_modern?'yes':'no'); ga('sr_tracker.set', 'dimension7',Modernizr.viewport_width); /* note that this requires the Assets/AdBlockTest.tt2 to be included above. */ ga('sr_tracker.set', 'dimension8',(typeof sr_test == 'undefined')?'no-test':( sr_test ? 'non-blocking':'blocking')); ga('sr_tracker.send', 'pageview'); /* cribbed from: http://www.axllent.org/docs/view/track-outbound-links-with-analytics-js/ */ function _gaLt(event) { if (!ga.hasOwnProperty("loaded") || ga.loaded != true) { return; } var el = event.srcElement || event.target; /* if a link has been clicked */ if (el && el.href) { var link = el.href; /* Only if it is an external link */ if (link.indexOf(location.host) == -1 && !link.match(/^javascript\:/i)) { /* Is target set and not _(self|parent|top)? */ var target = (el.target && !el.target.match(/^_(self|parent|top)/i)) ? el.target : false; /* If target opens a new window then just track */ if (el.target && !el.target.match(/^_(self|parent|top)/i)) { ga("send", "event", "Outgoing Links", link, document.location.pathname + document.location.search); } }; } } window.addEventListener ? window.addEventListener("load", function() { document.body.addEventListener("click", _gaLt, !1)}, !1) : window.attachEvent && window.attachEvent("onload", function() { document.body.attachEvent("onclick", _gaLt) }); </script><!-- End Google Analytics -->
+</body><!-- SR -->
+</html>
+
+
