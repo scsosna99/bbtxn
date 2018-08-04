@@ -2,7 +2,9 @@ package com.buddhadata.sandbox.neo4j.baseball.functions;
 
 import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
-import com.buddhadata.sandbox.neo4j.baseball.relationship.DraftedTxn;
+import com.buddhadata.sandbox.neo4j.baseball.relationship.PurchaseTxn;
+import com.buddhadata.sandbox.neo4j.baseball.relationship.SellTxn;
+import com.buddhadata.sandbox.neo4j.baseball.relationship.SigningTxn;
 import com.buddhadata.sandbox.neo4j.baseball.relationship.TxnBase;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
@@ -14,7 +16,7 @@ import java.util.List;
 /**
  * Created by scsosna on 7/19/18.
  */
-public class DraftedByFunction extends BaseFunction {
+public class PurchasesFunction extends BaseFunction {
 
     /**
      * Expected location of the player link in the array of children nodes
@@ -22,25 +24,30 @@ public class DraftedByFunction extends BaseFunction {
     private static int PLAYER_NODE_INDEX = 3;
 
     /**
-     * Expected location of the team link in the array of children nodes
+     * Expected location of the purchasing team link in the array of children nodes.
      */
-    private static int TEAM_NODE_INDEX = 1;
+    private static int PURCHASE_TEAM_NODE_INDEX = 1;
+
+    /**
+     * Expected location of the selling team link in the array of children nodes
+     */
+    private static int SELL_TEAM_NODE_INDEX = 5;
 
     /**
      * Regex expression used to identify when this function should be used.
      */
-    private static String regex = "^(The ).+( drafted ).+( in the ).+( of the )(19|20)[0-9]{2}( amateur draft)(, but was not signed)?[\\.]";
+    private static String regex = "^(The ).+( purchased ).+( from the ).+[\\.]";
 
     /**
      * Singleton instance
      */
-    public static BaseFunction INSTANCE = new DraftedByFunction(regex);
+    public static BaseFunction INSTANCE = new PurchasesFunction(regex);
 
 
     /**
      * Private constructor to prevent instantiation.
      */
-    private DraftedByFunction(String regex) {
+    private PurchasesFunction(String regex) {
         super (regex);
     };
 
@@ -55,13 +62,12 @@ public class DraftedByFunction extends BaseFunction {
 
         TxnBase toReturn = null;
         List<Node> children = element.childNodes();
-        if (children.size() == 5 || children.size() == 7) {
+        if (children.size() == 7) {
             Player player = findOrCreatePlayer((Element) children.get(PLAYER_NODE_INDEX), session);
-            Team team = findOrCreateTeam((Element) children.get(TEAM_NODE_INDEX), session);
-            toReturn = new DraftedTxn(player, team, null);
+            Team purchasingTeam = findOrCreateTeam((Element) children.get(PURCHASE_TEAM_NODE_INDEX), session);
+            toReturn = new PurchaseTxn(player, purchasingTeam, null);
         } else {
             //  TODO: fish through the nodes and try and figure out what you have.
-            System.out.println ("Invalid number of nodes");
         }
 
         return toReturn != null ? Collections.singletonList(toReturn) : Collections.emptyList();
