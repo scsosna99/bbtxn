@@ -11,8 +11,8 @@ import java.util.Date;
 /**
  * Created by scsosna on 7/17/18.
  */
-@RelationshipEntity(type = "SOLD")
-public class SellTxn extends TxnBase {
+@RelationshipEntity(type = "DRAFTED_FROM")
+public class DraftedFromTxn extends TxnBase {
 
     /**
      * Neo4j Primary Key
@@ -20,13 +20,13 @@ public class SellTxn extends TxnBase {
     private Long id;
 
     /**
-     * the team to which one or more players are traded
+     * the player being drafted from one team to another
      */
     @EndNode
     private Player player;
 
     /**
-     * the team from which one or more players are traded
+     * the team from which the player is drafted
      */
     @StartNode
     private Team from;
@@ -34,13 +34,13 @@ public class SellTxn extends TxnBase {
     /**
      * Constructor
      */
-    public SellTxn() {
+    public DraftedFromTxn() {
         super();
     }
 
-    public SellTxn(Team from,
-                   Player player,
-                   Date transactionDate) {
+    public DraftedFromTxn(Team from,
+                          Player player,
+                          Date transactionDate) {
         super (transactionDate);
         this.from = from;
         this.player = player;
@@ -75,7 +75,7 @@ public class SellTxn extends TxnBase {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        SellTxn released = (SellTxn) o;
+        DraftedFromTxn released = (DraftedFromTxn) o;
 
         if (id != null ? !id.equals(released.id) : released.id != null) return false;
         if (from != null ? !from.equals(released.from) : released.from != null) return false;

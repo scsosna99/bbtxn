@@ -1,15 +1,11 @@
 package com.buddhadata.sandbox.neo4j.baseball;
 
 import com.buddhadata.sandbox.neo4j.baseball.functions.*;
-import com.buddhadata.sandbox.neo4j.baseball.node.Player;
-import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import com.buddhadata.sandbox.neo4j.baseball.relationship.TxnBase;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.neo4j.ogm.config.Configuration;
-import org.neo4j.ogm.cypher.ComparisonOperator;
-import org.neo4j.ogm.cypher.Filter;
 import org.neo4j.ogm.session.Session;
 import org.neo4j.ogm.session.SessionFactory;
 import org.neo4j.ogm.transaction.Transaction;
@@ -44,12 +40,15 @@ public class BaseballTransactions {
     static {
         consumers = new ArrayList<>();
         register (DraftedByFunction.INSTANCE);
+        register (DraftedFromFunction.INSTANCE);
         register (FreeAgentFunction.INSTANCE);
         register (PurchasesFunction.INSTANCE);
         register (ReleasesFunction.INSTANCE);
         register (RetiredFunction.INSTANCE);
         register (SellFunction.INSTANCE);
         register (SignsFunction.INSTANCE);
+        register (TradedFunction.INSTANCE);
+        register (UnknownFunction.INSTANCE);
         register (WaiversFunction.INSTANCE);
     }
 
@@ -173,7 +172,7 @@ public class BaseballTransactions {
         session.query("CREATE CONSTRAINT ON (player:Player) ASSERT player.url IS UNIQUE", Collections.EMPTY_MAP);
 
         //  Fetch/processSeason all the transaction from previous full season to 1901
-        for (int season = 2017; season < 2018; season++) {
+        for (int season = 1971; season < 1975; season++) {
             processSeason(season, session);
         }
 
@@ -187,7 +186,7 @@ public class BaseballTransactions {
     private void processSeason(int season,
                                Session session) {
 
-        System.out.println ("Processing seasion " + season);
+        System.out.println ("Processing season " + season);
         Transaction txn = null;
         try {
             //  New transaction for each season

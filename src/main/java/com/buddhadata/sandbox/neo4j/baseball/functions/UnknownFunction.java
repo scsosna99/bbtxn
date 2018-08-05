@@ -2,51 +2,50 @@ package com.buddhadata.sandbox.neo4j.baseball.functions;
 
 import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
-import com.buddhadata.sandbox.neo4j.baseball.relationship.DraftedByTxn;
-import com.buddhadata.sandbox.neo4j.baseball.relationship.DraftedFromTxn;
-import com.buddhadata.sandbox.neo4j.baseball.relationship.TxnBase;
+import com.buddhadata.sandbox.neo4j.baseball.relationship.*;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 import org.neo4j.ogm.session.Session;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
  * Created by scsosna on 7/19/18.
  */
-public class DraftedFromFunction extends BaseFunction {
+public class UnknownFunction extends BaseFunction {
 
     /**
      * Expected location of the player link in the array of children nodes
      */
-    private static int PLAYER_NODE_INDEX = 3;
+    private static int PLAYER_NODE_INDEX = 0;
 
     /**
      * Expected location of the purchasing team link in the array of children nodes.
      */
-    private static int DRAFTED_BY_TEAM_NODE_INDEX = 1;
+    private static int UNKNOWN_TO_TEAM_NODE_INDEX = 4;
 
     /**
      * Expected location of the selling team link in the array of children nodes
      */
-    private static int DRAFTED_FROM_TEAM_NODE_INDEX = 5;
+    private static int UNKNOWN_FROM_TEAM_NODE_INDEX = 2;
 
     /**
      * Regex expression used to identify when this function should be used.
      */
-    private static String regex = "^(The ).+( drafted ).+( from the ).+( minor league|rule 5|expansion)( draft)[\\.]";
+    private static String regex = "^.+( sent from the ).+( to | to the ).+( in an unknown transaction)[\\.]";
 
     /**
      * Singleton instance
      */
-    public static BaseFunction INSTANCE = new DraftedFromFunction(regex);
+    public static BaseFunction INSTANCE = new UnknownFunction(regex);
 
 
     /**
      * Private constructor to prevent instantiation.
      */
-    private DraftedFromFunction(String regex) {
+    private UnknownFunction(String regex) {
         super (regex);
     };
 
@@ -59,18 +58,29 @@ public class DraftedFromFunction extends BaseFunction {
     public List<TxnBase> apply (Element element,
                                 Session session) {
 
-        List<TxnBase> toReturn = null;
+        List<TxnBase> toReturn;
         List<Node> children = element.childNodes();
-        if (children.size() == 7) {
-            Player player = findOrCreatePlayer((Element) children.get(PLAYER_NODE_INDEX), session);
-            Team draftedBy = findOrCreateTeam((Element) children.get(DRAFTED_BY_TEAM_NODE_INDEX), session);
-            Team draftedFrom = findOrCreateTeam((Element) children.get(DRAFTED_FROM_TEAM_NODE_INDEX), session);
-            toReturn = new ArrayList<>(2);
-            toReturn.add(new DraftedFromTxn(draftedFrom, player, null));
-            toReturn.add(new DraftedByTxn(player, draftedBy, null));
-        } else {
-            //  TODO: fish through the nodes and try and figure out what you have.
-            System.out.println ("invalid number of nodes.");
+
+        Player player;
+        Team unknownFrom;
+        switch (children.size()) {
+            case 6:
+                player = findOrCreatePlayer((Element) children.get(PLAYER_NODE_INDEX), session);
+                Team unknownTo = findOrCreateTeam((Element) children.get(UNKNOWN_TO_TEAM_NODE_INDEX), session);
+                unknownFrom = findOrCreateTeam((Element) children.get(UNKNOWN_FROM_TEAM_NODE_INDEX), session);
+                toReturn = new ArrayList<>(2);
+                toReturn.add(new UnknownFromTxn(unknownFrom, player, null));
+                toReturn.add(new UnknownToTxn(player, unknownTo, null));
+                break;
+
+            case 4:
+                player = findOrCreatePlayer((Element) children.get(PLAYER_NODE_INDEX), session);
+                unknownFrom = findOrCreateTeam((Element) children.get(UNKNOWN_FROM_TEAM_NODE_INDEX), session);
+                toReturn = Collections.singletonList(new UnknownFromTxn(unknownFrom, player, null));
+                break;
+
+            default:
+                toReturn = Collections.EMPTY_LIST;
         }
 
         return toReturn;

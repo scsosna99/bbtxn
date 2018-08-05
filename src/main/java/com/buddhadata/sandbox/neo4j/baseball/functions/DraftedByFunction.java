@@ -2,7 +2,7 @@ package com.buddhadata.sandbox.neo4j.baseball.functions;
 
 import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
-import com.buddhadata.sandbox.neo4j.baseball.relationship.DraftedTxn;
+import com.buddhadata.sandbox.neo4j.baseball.relationship.DraftedByTxn;
 import com.buddhadata.sandbox.neo4j.baseball.relationship.TxnBase;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
@@ -29,7 +29,7 @@ public class DraftedByFunction extends BaseFunction {
     /**
      * Regex expression used to identify when this function should be used.
      */
-    private static String regex = "^(The ).+( drafted ).+( in the ).+( of the )(19|20)[0-9]{2}( amateur draft)(, but was not signed)?[\\.]";
+    private static String regex = "^(The ).+( drafted ).+( in the ).+( of the )(19|20)[0-9]{2}( amateur draft)( \\(.+\\))?(, but was not signed|[\\.] Player signed .+)?[\\.]";
 
     /**
      * Singleton instance
@@ -58,7 +58,7 @@ public class DraftedByFunction extends BaseFunction {
         if (children.size() == 5 || children.size() == 7) {
             Player player = findOrCreatePlayer((Element) children.get(PLAYER_NODE_INDEX), session);
             Team team = findOrCreateTeam((Element) children.get(TEAM_NODE_INDEX), session);
-            toReturn = new DraftedTxn(player, team, null);
+            toReturn = new DraftedByTxn(player, team, null);
         } else {
             //  TODO: fish through the nodes and try and figure out what you have.
             System.out.println ("Invalid number of nodes");

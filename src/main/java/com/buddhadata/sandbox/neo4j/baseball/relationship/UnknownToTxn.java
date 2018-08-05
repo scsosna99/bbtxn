@@ -12,7 +12,7 @@ import java.util.Date;
  * Neo4J relationship representing a player is drafted, such as the amateur draft
  */
 @RelationshipEntity(type = "DRAFTED_BY")
-public class DraftedByTxn extends TxnBase {
+public class UnknownToTxn extends TxnBase {
 
     /**
      * Neo4j Primary Key
@@ -34,11 +34,11 @@ public class DraftedByTxn extends TxnBase {
     /**
      * Constructor
      */
-    public DraftedByTxn() {
+    public UnknownToTxn() {
         super();
     }
 
-    public DraftedByTxn(Player player,
+    public UnknownToTxn(Player player,
                         Team team,
                         Date transactionDate) {
         super (transactionDate);
@@ -99,7 +99,7 @@ public class DraftedByTxn extends TxnBase {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        DraftedByTxn released = (DraftedByTxn) o;
+        UnknownToTxn released = (UnknownToTxn) o;
 
         if (id != null ? !id.equals(released.id) : released.id != null) return false;
         if (team != null ? !team.equals(released.team) : released.team != null) return false;

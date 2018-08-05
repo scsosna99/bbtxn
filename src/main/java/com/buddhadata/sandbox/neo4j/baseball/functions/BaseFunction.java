@@ -74,7 +74,7 @@ abstract public class BaseFunction implements BiFunction<Element, Session, List<
         Player toReturn;
 
         //  Create a filter based on the player's URI and attempt to load from the database
-        String href = elem.attributes().get("href").split("/")[3].trim();
+        String href = getPlayerIdentifier (elem.attributes().get("href"));
         Filter filter = new Filter ("url", ComparisonOperator.EQUALS, href);
         Collection<Player> nodes = session.loadAll (Player.class, filter);
         if (nodes != null && !nodes.isEmpty()) {
@@ -91,6 +91,25 @@ abstract public class BaseFunction implements BiFunction<Element, Session, List<
 
 
         return toReturn;
+    }
+
+    /**
+     * Determine what the unique player identifier is based on the href URI of the player
+     * @param href original URI for the player, as identified in the transaction record
+     * @return unique player identifier.
+     */
+    private String getPlayerIdentifier (String href) {
+
+        //  Two possibilities: either the player has a normal URI starting with "players" and then the last
+        //  part is the unique player identifier, or the URI starts with "register" in which case the player
+        //  identifier is a parameter.  Don't ask me why.
+        if (href.startsWith ("/players")) {
+            return href.split ("/")[3].trim();
+        } else if (href.startsWith ("/register")) {
+            return href.split ("=")[1].trim();
+        } else {
+            return null;
+        }
     }
 
     /**
