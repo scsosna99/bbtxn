@@ -25,7 +25,7 @@ public class TradedFunction extends BaseFunction {
     /**
      * Regex expression used to identify when this function should be used.
      */
-    private static String regex = "^(The ).+( traded ).+( to the ).+( for ).+[\\.]";
+    private static String regex = "^(The ).+( traded ).+( to the ).+( for ).+(.)( \\(Date given is approximate. Exact date is uncertain.\\))?";
 
     /**
      * The phrase " to the " separates the first team and the player the team is trading from the other team/players

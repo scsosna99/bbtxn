@@ -30,7 +30,7 @@ public class RetiredFunction extends BaseFunction {
     /**
      * Regex expression used to identify when this function should be used.
      */
-    private static String regex = "^.+( voluntarily retired from the ).+[\\.]";
+    private static String regex = "^.+( voluntarily)?( retired from the ).+[\\.]";
     /**
      * Singleton instance
      */

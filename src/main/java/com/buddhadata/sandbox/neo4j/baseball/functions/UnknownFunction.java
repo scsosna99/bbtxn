@@ -34,7 +34,7 @@ public class UnknownFunction extends BaseFunction {
     /**
      * Regex expression used to identify when this function should be used.
      */
-    private static String regex = "^.+( sent from the ).+( to | to the ).+( in an unknown transaction)[\\.]";
+    private static String regex = "^.+( sent from the ).+( to | to the ).+( in an unknown transaction)(.)( \\(Date given is approximate. Exact date is uncertain.\\))?";
 
     /**
      * Singleton instance

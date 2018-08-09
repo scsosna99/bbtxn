@@ -30,7 +30,7 @@ public class FreeAgentFunction extends BaseFunction {
     /**
      * Regex expression used to identify when this function should be used.
      */
-    private static String regex = "^.+( of the ).+( granted free agency)[\\.]";
+    private static String regex = "^.+( of the ).+( granted free agency)(.)( \\(Date given is approximate. Exact date is uncertain.\\))?";
 
     /**
      * Singleton instance
@@ -56,13 +56,20 @@ public class FreeAgentFunction extends BaseFunction {
 
         TxnBase toReturn = null;
         List<Node> children = element.childNodes();
-        if (children.size() == 4) {
-            Player player = findOrCreatePlayer((Element) children.get(PLAYER_NODE_INDEX), session);
-            Team team = findOrCreateTeam((Element) children.get(TEAM_NODE_INDEX), session);
-            toReturn = new FreeAgentTxn(team, player, null);
-        } else {
-            //  TODO: fish through the nodes and try and figure out what you have.
+
+        switch (children.size()) {
+
+            case 4:
+            case 5:     //  Special case for the final <em> unknown transaction date.
+                Player player = findOrCreatePlayer((Element) children.get(PLAYER_NODE_INDEX), session);
+                Team team = findOrCreateTeam((Element) children.get(TEAM_NODE_INDEX), session);
+                toReturn = new FreeAgentTxn(team, player, null);
+                break;
+
+            default:
+                break;
         }
+
 
         return toReturn != null ? Collections.singletonList(toReturn) : Collections.emptyList();
     }

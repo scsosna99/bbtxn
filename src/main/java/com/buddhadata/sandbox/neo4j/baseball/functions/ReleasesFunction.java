@@ -29,12 +29,11 @@ public class ReleasesFunction extends BaseFunction {
     /**
      * Regex expression used to identify when this function should be used.
      */
-    private static String regex = "^(The ).+( released ).+[\\.]";
+    private static String regex = "^(The ).+( released ).+(.)( \\(Date given is approximate. Exact date is uncertain.\\))?";
     /**
      * Singleton instance
      */
     public static BaseFunction INSTANCE = new ReleasesFunction(regex);
-
 
     /**
      * Private constructor to prevent instantiation.
@@ -54,13 +53,19 @@ public class ReleasesFunction extends BaseFunction {
 
         TxnBase toReturn = null;
         List<Node> children = element.childNodes();
-        if (children.size() == 5) {
-            Player player = findOrCreatePlayer((Element) children.get(PLAYER_NODE_INDEX), session);
-            Team team = findOrCreateTeam((Element) children.get(TEAM_NODE_INDEX), session);
-            toReturn = new ReleaseTxn(team, player, null);
-        } else {
-            //  TODO: fish through the nodes and try and figure out what you have.
+
+        switch (children.size()) {
+            case 5:
+            case 6:     //  Special case for the <em> tag for unknown transaction date.
+                Player player = findOrCreatePlayer((Element) children.get(PLAYER_NODE_INDEX), session);
+                Team team = findOrCreateTeam((Element) children.get(TEAM_NODE_INDEX), session);
+                toReturn = new ReleaseTxn(team, player, null);
+                break;
+
+            default:
+                break;
         }
+
 
         return toReturn != null ? Collections.singletonList(toReturn) : Collections.emptyList();
     }

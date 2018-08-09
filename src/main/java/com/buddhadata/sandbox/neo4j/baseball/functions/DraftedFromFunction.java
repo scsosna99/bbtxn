@@ -36,7 +36,7 @@ public class DraftedFromFunction extends BaseFunction {
     /**
      * Regex expression used to identify when this function should be used.
      */
-    private static String regex = "^(The ).+( drafted ).+( from | from the ).+( minor league| rule 5| expansion)( draft)[\\.]";
+    private static String regex = "^(The ).+( drafted ).+( from | from the ).+( expansion| first-year| minor league| rule 5)( draft)[\\.]";
 
     /**
      * Singleton instance

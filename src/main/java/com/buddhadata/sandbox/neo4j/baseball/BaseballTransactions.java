@@ -45,7 +45,6 @@ public class BaseballTransactions {
         register (PurchasesFunction.INSTANCE);
         register (ReleasesFunction.INSTANCE);
         register (RetiredFunction.INSTANCE);
-        register (SellFunction.INSTANCE);
         register (SignsFunction.INSTANCE);
         register (TradedFunction.INSTANCE);
         register (UnknownFunction.INSTANCE);
@@ -98,7 +97,8 @@ public class BaseballTransactions {
      */
     static private final String BBREF_TXN_URL = "%d-transactions.shtml";
 
-    private int count = 0;
+    private int countUnprocessed = 0;
+    private int countTransactions = 0;
 
 
     /**
@@ -125,7 +125,6 @@ public class BaseballTransactions {
         //  Define session factory for connecting to Neo4j database
         Configuration configuration = new Configuration.Builder().uri(SERVER_URI).credentials(SERVER_USERNAME, SERVER_PASSWORD).build();
         sessionFactory = new SessionFactory(configuration, "com.buddhadata.sandbox.neo4j.baseball.node", "com.buddhadata.sandbox.neo4j.baseball.relationship");
-
     }
 
 
@@ -172,11 +171,11 @@ public class BaseballTransactions {
         session.query("CREATE CONSTRAINT ON (player:Player) ASSERT player.url IS UNIQUE", Collections.EMPTY_MAP);
 
         //  Fetch/processSeason all the transaction from previous full season to 1901
-        for (int season = 1971; season < 1975; season++) {
+        for (int season = 1901; season < 2018; season++) {
             processSeason(season, session);
         }
 
-        System.out.println ("Unaccounted for transactions: " + count);
+        System.out.println (countUnprocessed + "/" + countTransactions + " unprocessed.");
     }
 
     /**
@@ -242,10 +241,11 @@ public class BaseballTransactions {
                 }
             }
 
-            //  For debugging, if the count hasn't changed, nothing generated and we need to look at the transaction
+            //  For debugging, if the countUnprocessed hasn't changed, nothing generated and we need to look at the transaction
+            countTransactions++;
             if (created.size() == before) {
                 System.out.println (one.text());
-                count++;
+                countUnprocessed++;
             }
         });
 

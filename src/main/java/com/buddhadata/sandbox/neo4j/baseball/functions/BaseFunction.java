@@ -3,6 +3,7 @@ package com.buddhadata.sandbox.neo4j.baseball.functions;
 import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import com.buddhadata.sandbox.neo4j.baseball.relationship.TxnBase;
+import org.apache.commons.collections4.map.LRUMap;
 import org.jsoup.nodes.Element;
 import org.neo4j.ogm.cypher.ComparisonOperator;
 import org.neo4j.ogm.cypher.Filter;
@@ -10,6 +11,7 @@ import org.neo4j.ogm.session.Session;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 import java.util.function.BiFunction;
 import java.util.regex.Pattern;
 
@@ -22,6 +24,16 @@ abstract public class BaseFunction implements BiFunction<Element, Session, List<
      * Pattern used to match a string with the function to process.
      */
     private final Pattern regexPattern;
+
+    //  Cache for the players, continually re-querying from Neo4J is slow and laborious
+    static private final Map<String,Player> players = new LRUMap<>(500);
+
+    /**
+     * Thread-local storage used by the lamba attempting to retrieve players from Neo4J if it doesn't exist
+     * in the cache already.
+     */
+    static private final ThreadLocal<Session> tls = new ThreadLocal<>();
+
 
     /**
      * Constructor
@@ -71,27 +83,36 @@ abstract public class BaseFunction implements BiFunction<Element, Session, List<
      */
     protected Player findOrCreatePlayer (final Element elem,
                                          final Session session) {
-        Player toReturn;
 
-        //  Create a filter based on the player's URI and attempt to load from the database
+        //  The key that uniquely identifie the player.
         String href = getPlayerIdentifier (elem.attributes().get("href"));
-        Filter filter = new Filter ("url", ComparisonOperator.EQUALS, href);
-        Collection<Player> nodes = session.loadAll (Player.class, filter);
-        if (nodes != null && !nodes.isEmpty()) {
-            //  Neo4J OGM usually returns an ArrayList, but just in case it ever changes
-            if (nodes instanceof List) {
-                toReturn = ((List<Player>) nodes).get(0);
+
+        //  First, see if the player already exists in the LRU cache.
+        Player toReturn = players.get(href);
+        if (toReturn == null) {
+
+            //  Player isn't in memory, so attempt to load from the database
+            Filter filter = new Filter("url", ComparisonOperator.EQUALS, href);
+            Collection<Player> nodes = session.loadAll(Player.class, filter);
+            if (nodes != null && !nodes.isEmpty()) {
+                //  Neo4J OGM usually returns an ArrayList, but just in case it ever changes
+                if (nodes instanceof List) {
+                    toReturn = ((List<Player>) nodes).get(0);
+                } else {
+                    toReturn = nodes.toArray(new Player[nodes.size()])[0];
+                }
             } else {
-                toReturn = nodes.toArray(new Player[nodes.size()])[0];
+                //  Player doesn't exist in the database either, so create new and add to cache.
+                toReturn = new Player(elem.childNodes().get(0).toString(), href);
+                session.save(toReturn);
+                players.put(href, toReturn);
             }
-        } else {
-            toReturn = new Player (elem.childNodes().get(0).toString(),  href);
-            session.save (toReturn);
         }
 
 
         return toReturn;
     }
+
 
     /**
      * Determine what the unique player identifier is based on the href URI of the player
