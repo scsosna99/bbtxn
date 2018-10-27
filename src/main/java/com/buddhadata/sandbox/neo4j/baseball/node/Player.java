@@ -5,6 +5,8 @@ import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.Index;
 import org.neo4j.ogm.annotation.NodeEntity;
 
+import java.util.Date;
+
 /**
  * Domain Object for baseball players
  */
@@ -19,82 +21,129 @@ public class Player {
     private Long id;
 
     /**
-     * The name of the player
+     * The date of his coaching debut
      */
-    private String name;
+    private Date coachDebut;
 
     /**
-     * The baseball-reference.com URL for the player
+     * The date of his managerial debut.
+     */
+    private Date managerDebut;
+
+    /**
+     * The date of his playing debut
+     */
+    private Date playerDebut;
+
+    /**
+     * The datae of his umpiring debut
+     */
+    private Date umpireDebut;
+
+
+    /**
+     * First name of player
+     */
+    private String firstName;
+
+    /**
+     * Last name of player
+     */
+    private String lastName;
+
+    /**
+     * Player ID from retrosheet download
      */
     @Index (unique = true)
-    private String url;
+    private String retrosheetId;
 
     /**
      * Constructor
+     * @param retrosheetId
+     * @param lastName
+     * @param firstName
+     * @param playerDebut
+     * @param coachDebut
+     * @param managerDebut
+     * @param umpireDebut
      */
-    public Player() {
-        return;
+    public Player (String retrosheetId,
+                   String lastName,
+                   String firstName,
+                   Date playerDebut,
+                   Date coachDebut,
+                   Date managerDebut,
+                   Date umpireDebut) {
+        this.retrosheetId = retrosheetId;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.playerDebut = playerDebut;
+        this.coachDebut = coachDebut;
+        this.managerDebut = managerDebut;
+        this.umpireDebut = umpireDebut;
     }
 
-    /**
-     * Constructor
-     * @param name name of the player
-     * @param bbrefUrl baseball-reference.com URL for the player
-     */
-    public Player (String name,
-                   String bbrefUrl) {
-        this.name = name;
-        this.url = bbrefUrl;
+    public Long getId() {
+        return id;
     }
 
-    /**
-     * getter
-     * @return player's name
-     */
-    public String getName() {
-        return name;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    /**
-     * setter
-     * @param name player's name
-     */
-    public void setName(String name) {
-        this.name = name;
+    public Date getCoachDebut() {
+        return coachDebut;
     }
 
-    /**
-     * getter
-     * @return baseball-reference.com URL for player
-     */
-    public String getUrl() {
-        return url;
+    public void setCoachDebut(Date coachDebut) {
+        this.coachDebut = coachDebut;
     }
 
-    /**
-     * setter
-     * @param url baseball-reference.com URL for player
-     */
-    public void setUrl(String url) {
-        this.url = url;
+    public Date getManagerDebut() {
+        return managerDebut;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Player player = (Player) o;
-
-        if (url != null ? !url.equals(player.url) : player.url != null) return false;
-        return name != null ? name.equals(player.name) : player.name == null;
-
+    public void setManagerDebut(Date managerDebut) {
+        this.managerDebut = managerDebut;
     }
 
-    @Override
-    public int hashCode() {
-        int result = url != null ? url.hashCode() : 0;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        return result;
+    public Date getPlayerDebut() {
+        return playerDebut;
+    }
+
+    public void setPlayerDebut(Date playerDebut) {
+        this.playerDebut = playerDebut;
+    }
+
+    public Date getUmpireDebut() {
+        return umpireDebut;
+    }
+
+    public void setUmpireDebut(Date umpireDebut) {
+        this.umpireDebut = umpireDebut;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getRetrosheetId() {
+        return retrosheetId;
+    }
+
+    public void setRetrosheetId(String retrosheetId) {
+        this.retrosheetId = retrosheetId;
     }
 }

@@ -1,7 +1,6 @@
 package com.buddhadata.sandbox.neo4j.baseball;
 
-import com.buddhadata.sandbox.neo4j.baseball.functions.*;
-import com.buddhadata.sandbox.neo4j.baseball.relationship.TxnBase;
+import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -10,13 +9,16 @@ import org.neo4j.ogm.session.Session;
 import org.neo4j.ogm.session.SessionFactory;
 import org.neo4j.ogm.transaction.Transaction;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.regex.Pattern;
+
 
 /**
  * Created by scsosna on 5/19/18.
@@ -29,76 +31,67 @@ public class BaseballTransactions {
     private final SessionFactory sessionFactory;
 
     /**
-     * The base URL used for fetching pages.
+     * Date format for debut of player, manager, coach, and umpire, ready for parsing
      */
-    private URL BASE_URL = null;
+    private static DateFormat DATE_FORMAT_PLAYER = new SimpleDateFormat("MM/dd/yyyy");
 
     /**
-     * Collection of all known functions which may process/consume a transaction
+     * Field position for the players' raw data, after separated by commas
      */
-    private static final List<Map.Entry<Pattern, BaseFunction>> consumers;
-    static {
-        consumers = new ArrayList<>();
-        register (DraftedByFunction.INSTANCE);
-        register (DraftedFromFunction.INSTANCE);
-        register (FreeAgentFunction.INSTANCE);
-        register (PurchasesFunction.INSTANCE);
-        register (ReleasesFunction.INSTANCE);
-        register (RetiredFunction.INSTANCE);
-        register (SignsFunction.INSTANCE);
-        register (TradedFunction.INSTANCE);
-        register (UnknownFunction.INSTANCE);
-        register (WaiversFunction.INSTANCE);
-    }
+    private static int PLAYER_FIELD_COACH = 5;
+    private static int PLAYER_FIELD_DEBUT = 3;
+    private static int PLAYER_FIELD_ID = 0;
+    private static int PLAYER_FIELD_FIRST = 2;
+    private static int PLAYER_FIELD_LAST = 1;
+    private static int PLAYER_FIELD_MANAGER = 4;
+    private static int PLAYER_FIELD_UMPIRE = 6;
 
     /**
-     * Registers a function as a potential transaction consumer
-     * @param function function instance to register
+     * Field position for the transactions' raw data, after separated by commas
      */
-    private static void register (BaseFunction function) {
-        consumers.add (new AbstractMap.SimpleEntry<> (function.getRegexPattern(), function));
-    }
+    private static int TXN_FIELD_APPROXIMATE = 2;
+    private static int TXN_FIELD_APPROXIMATE_SECONDARY = 4;
+    private static int TXN_FIELD_DATE_PRIMARY = 0;
+    private static int TXN_FIELD_DATE_SECONDARY = 3;
+    private static int TXN_FIELD_DRAFT_PICK = 14;
+    private static int TXN_FIELD_DRAFT_RND = 13;
+    private static int TXN_FIELD_DRAFT_TYPE = 12;
+    private static int TXN_FIELD_FROM_LEAGUE = 9;
+    private static int TXN_FIELD_FROM_TEAM = 8;
+    private static int TXN_FIELD_ID = 5;
+    private static int TXN_FIELD_INFO = 15;
+    private static int TXN_FIELD_PLAYER = 6;
+    private static int TXN_FIELD_TIME = 1;
+    private static int TXN_FIELD_TO_LEAGUE = 11;
+    private static int TXN_FIELD_TO_TEAM = 10;
+    private static int TXN_FIELD_TYPE = 7;
+
 
     /**
      * Use for converting the text date into a usable date.
      */
     private static final SimpleDateFormat[] dateFormats = {
+        new SimpleDateFormat ("MM/dd/yyyy"),
         new SimpleDateFormat("MMM d, yyyy"),
-        new SimpleDateFormat ("MMM, yyyy")
+        new SimpleDateFormat ("MMM, yyyy"),
     };
 
     /**
-     * the HTML tag for list items, which is one per transaction date
+     * File contained in classpath containing all known players for whom transactions exist.
      */
-    private static final String HTML_TAG_BY_DAY_BREAKOUT = "li";
+    private static final String PLAYERS_RESOURCE_NAME = "players.txt";
 
     /**
-     * the HTML tag in which the transaction date can be found.
+     * Neo4J Connection Information
      */
-    private static final String HTML_TAG_TXN_DATE = "span";
-
-    /**
-     * Within a single li item, each transaction is a separate <p>
-     */
-    private static final String HTML_TAG_TXNS_PER_DAY = "p";
-
-    /**
-     * Base URL from which all yearly transactional pages are derived
-     */
-    private static final String BBREF_BASE_URL = "https://www.baseball-reference.com/leagues/MLB";
-
-    //  Configuration info for connecting to the Neo4J database
     static private final String SERVER_URI = "bolt://localhost";
     static private final String SERVER_USERNAME = "neo4j";
     static private final String SERVER_PASSWORD = "password";
 
     /**
-     * the relative URL for all Wikipedia topics.
+     * File contianed in classpath of all transactions to be published.
      */
-    static private final String BBREF_TXN_URL = "%d-transactions.shtml";
-
-    private int countUnprocessed = 0;
-    private int countTransactions = 0;
+    private static final String TRANSACTIONS_RESOURCE_NAME = "transactions.txt";
 
 
     /**
@@ -108,19 +101,12 @@ public class BaseballTransactions {
     public static void main (String[] args) {
 
         new BaseballTransactions().process();
-
     }
 
     /**
      * Constructor
      */
     public BaseballTransactions() {
-
-        try {
-            BASE_URL = new URL(BBREF_BASE_URL);
-        } catch (MalformedURLException e) {
-            System.out.println ("Exception creating URL: " + e);
-        }
 
         //  Define session factory for connecting to Neo4j database
         Configuration configuration = new Configuration.Builder().uri(SERVER_URI).credentials(SERVER_USERNAME, SERVER_PASSWORD).build();
@@ -129,33 +115,174 @@ public class BaseballTransactions {
 
 
     /**
-     * Use JSoup to get the requested transaction page into a usable Document.
-     * @param season the season for which transactions are being retrieved
-     * @return the JSoup document
+     * Pre-load all the players inro the database.
+     * @param session connection/session to the Neo4J database
      */
-    private Document getTxnPageForSeason(final int season) {
+    private void loadPlayers (Session session) {
 
-        Document toReturn = null;
-        try {
-            toReturn = Jsoup.parse (
-                    Thread.currentThread().getContextClassLoader().getResourceAsStream(String.format(BBREF_TXN_URL, season)),
-                    "UTF-8",
-                    BBREF_BASE_URL);
-        } catch (IOException e) {
-            System.out.println ("Exception retrieving page: " + e);
+        //  Load all players in its own transaction
+        try (Transaction txn = session.beginTransaction();
+
+             // Each line contains one player
+             BufferedReader br = new BufferedReader (new InputStreamReader(
+                Thread.currentThread().getContextClassLoader().getResourceAsStream(PLAYERS_RESOURCE_NAME)))){
+
+            //  Process line by line
+            while (br.ready()) {
+                //  No need to check for already-existing player, assumes we've just cleared the database and are
+                //  loading players before doing anything else.
+                String[] fields = br.readLine().split(",", -1);
+                unquoteFields(fields);
+                Player p = new Player (fields[PLAYER_FIELD_ID],
+                    fields[PLAYER_FIELD_LAST],
+                    fields[PLAYER_FIELD_FIRST],
+                    parsePlayerDate(fields[PLAYER_FIELD_DEBUT]),
+                    parsePlayerDate(fields[PLAYER_FIELD_MANAGER]),
+                    parsePlayerDate(fields[PLAYER_FIELD_COACH]),
+                    parsePlayerDate(fields[PLAYER_FIELD_UMPIRE]));
+                session.save(p);
+            }
+
+            //  Commit players to the database.
+            txn.commit();
+        } catch (IOException ioe) {
+            System.out.println ("Exception reading player data: " + ioe);
+        }
+    }
+
+
+    /**
+     * Process all the transactions into the database.
+     * @param session
+     */
+    private void loadTransactions (Session session) {
+
+        try (Transaction txn = session.beginTransaction();
+
+             // Each line contains one player
+             BufferedReader br = new BufferedReader(new InputStreamReader(
+                     Thread.currentThread().getContextClassLoader().getResourceAsStream(TRANSACTIONS_RESOURCE_NAME)))) {
+
+            //  Proccess line by line
+            while (br.ready()) {
+
+                String[] fields = br.readLine().split(",", -1);
+                unquoteFields (fields);
+
+                //  Determine what transaction type we're dealing with.
+                switch (fields[TXN_FIELD_TYPE]) {
+                    case "A":  // assigned from one team to another without compensation
+                    case "C":  // conditional deal
+                    case "Cr": // returned to original team after conditional deal
+                    case "D":  // rule 5 draft pick
+                    case "Da": // amateur draft pick
+                    case "Df": // first year draft pick
+                    case "Dm": // minor league draft pick
+                    case "Dn": // selected in amateur draft but did not sign
+                    case "Dr": // returned to original team after draft selection
+                    case "Ds": // special draft pick
+                    case "Dv": // amateur draft pick voided
+                    case "F":  // free agent signing
+                    case "Fa": // amateur free agent signing
+                    case "Fb": // amateur free agent "bonus baby" signing under the 1953-57 rule requiring player to stay on ML roster
+                    case "Fc": // free agent compensation pick
+                    case "Fg": // free agent granted
+                    case "Fo": // free agent signing with first ML team
+                    case "Fv": // free agent signing voided
+                    case "Hb":  // went on the bereavement list
+                    case "Hbr": // came off the bereavement list
+                    case "Hd":  // declared ineligible
+                    case "Hdr": // reinistated from the ineligible list
+                    case "Hf":  // demoted to the minor league
+                    case "Hfr": // promoted from the minor league
+                    case "Hh":  // held out
+                    case "Hhr": // ended hold out
+                    case "Hi":  // went on the disabled list
+                    case "Hir": // came off the disabled list
+                    case "Hm":  // went into military service
+                    case "Hmr": // returned from military service
+                    case "Hs":  // suspended
+                    case "Hsr": // reinstated after a suspension
+                    case "Hu":  // unavailable but not on DL
+                    case "Hur": // returned from being unavailable
+                    case "Hv":  // voluntarity retired
+                    case "Hvr": // unretired
+                    case "J":  // jumped teams
+                    case "Jr": // returned to original team after jumping
+                    case "L":  // loaned to another team
+                    case "Lr": // returned to original team after loan
+                    case "M":  // obtained rights when entering into working agreement with minor league team
+                    case "Mr": // rights returned when working agreement with minor league team ended
+                    case "P":  // purchase
+                    case "Pr": // returned to original team after purchase
+                    case "Pv": // purchase voided
+                    case "R":  // release
+                    case "T":  // trade
+                    case "Tn": // traded but refused to report
+                    case "Tp": // added to trade (usually because one of the original players refused to report or retired)
+                    case "Tr": // returned to original team after trade
+                    case "Tv": // trade voided
+                    case "U":  // unknown (could have been two separate transactions)
+                    case "Vg": // player assigned to league control
+                    case "V":  // player purchased or assigned to team from league
+                    case "W":  // waiver pick
+                    case "Wf": // first year waiver pick
+                    case "Wr": // returned to original team after waiver pick
+                    case "Wv": // waiver pick voided
+                    case "X":  // expansion draft
+                    case "Xe": // premium phase of expansion draft
+                    case "Xm": // either the 1960 AL minor league expansion draft or the premium phase of the 1961 NL draft
+                    case "Xp": // added as expansion pick at a later date
+                    case "Xr": // returned to original team after expansion draft
+                    case "Z":  // voluntarily retired
+                    case "Zr": // returned from voluntarily retired list
+                        break;
+
+                    default:
+                        System.out.println ("Unknown transaction type: " + fields[TXN_FIELD_TYPE]);
+                }
+            }
+
+        } catch (IOException ioe) {
+            System.out.println("Exception reading transaction data: " + ioe);
+        }
+    }
+
+    /**
+     * Parse a string representing the debut date of the player
+     * @param date the string representation in the raw data
+     * @return Date object that can stored.
+     */
+    private Date parsePlayerDate (String date) {
+
+        if (date != null && !date.isEmpty()) {
+            try {
+                return DATE_FORMAT_PLAYER.parse(date);
+            } catch (ParseException pe) {
+                System.out.println ("Unable to parse player date: " + date);
+            }
         }
 
 
-        return toReturn;
+        //  If no initial string was provided or the parsing failed, return null.
+        return null;
     }
 
+
+    /**
+     * Parse the string into a date based on expected date formats.
+     * @param date
+     * @return
+     */
     private Date parseTxnDate(String date) {
 
-        for (SimpleDateFormat one : dateFormats) {
-            try {
-                return one.parse (date);
-            } catch (ParseException pe) {
-                //  Catch but ignore exception, go on to next available format
+        if (date != null && !date.isEmpty()) {
+            for (SimpleDateFormat one : dateFormats) {
+                try {
+                    return one.parse(date);
+                } catch (ParseException pe) {
+                    //  Catch but ignore exception, go on to next available format
+                }
             }
         }
 
@@ -163,96 +290,37 @@ public class BaseballTransactions {
         return null;
     }
 
+    /**
+     * Process all the data and create a graph out of it.
+     */
     private void process() {
 
         //  When creating a session, always clean up the database by purging the database.
         Session session = sessionFactory.openSession();
         session.purgeDatabase();
-        session.query("CREATE CONSTRAINT ON (player:Player) ASSERT player.url IS UNIQUE", Collections.EMPTY_MAP);
+        session.query("CREATE CONSTRAINT ON (player:Player) ASSERT player.retrosheetId IS UNIQUE", Collections.EMPTY_MAP);
 
-        //  Fetch/processSeason all the transaction from previous full season to 1901
-        for (int season = 1901; season < 2018; season++) {
-            processSeason(season, session);
-        }
+        //  Load all known players from retrosheet: https://www.retrosheet.org/retroID.htm
+//        loadPlayers(session);
 
-        System.out.println (countUnprocessed + "/" + countTransactions + " unprocessed.");
+        //  process all the transactions, loading them into the database based on type.
+        loadTransactions(session);
     }
 
     /**
-     * Method for doing the work
-     * @param season for which transactions are being retrieved.
+     * Remove all double-quotes from fields.
+     * @param fields array of fields from parsed raw data.
      */
-    private void processSeason(int season,
-                               Session session) {
+    private void unquoteFields (String[] fields) {
 
-        System.out.println ("Processing season " + season);
-        Transaction txn = null;
-        try {
-            //  New transaction for each season
-            txn = session.beginTransaction();
-
-            //  For the given season, retrieve the transactions from baseball-reference.com
-            Document doc = getTxnPageForSeason(season);
-
-            //  Get the transactional section of the document
-            Element element = doc.getElementById("div_trxs");
-
-            //  Each list tag is a specific day to processSeason.
-            element.getElementsByTag(HTML_TAG_BY_DAY_BREAKOUT).forEach (item -> processDate(item, session));
-
-            txn.commit();
-            txn = null;
-        } catch (Throwable t) {
-            System.out.println("Something bad happened: " + t);
-            t.printStackTrace();
-        } finally {
-            if (txn != null) {
-                txn.rollback();
+        for (int i = 0; i < fields.length; i++) {
+            String tmp = fields[i];
+            if (tmp != null && !tmp.isEmpty() && tmp.startsWith("\"")) {
+                fields[i] = tmp.replace("\"", "").trim();
+            } else {
+                fields[i] = tmp.trim();
             }
         }
-    }
-
-
-    private void processDate(Element oneDate,
-                             Session session) {
-
-        //  The date is in the <span> tag, should only be one of them, turn into date field.
-        Date txnDate = parseTxnDate(oneDate.getElementsByTag(HTML_TAG_TXN_DATE).first().text());
-
-        //  Process the transactions for the date.
-        processTransactions (oneDate, txnDate, session);
-    }
-
-
-    private void processTransactions (Element oneDate,
-                                      Date txnDate,
-                                      Session session) {
-
-        //  The individual transaction are individual <p> within each <li> element (what's passed in)
-        List<TxnBase> created = new ArrayList<>(20);
-        oneDate.getElementsByTag(HTML_TAG_TXNS_PER_DAY).forEach (one -> {
-
-            //  Iterate through known patterns looking for a match.  Could be multiple matches, such as
-            //  for a purchase where there's a selling and buying team each with their own transaction part
-            int before = created.size();
-            for (Map.Entry<Pattern,BaseFunction> function : consumers) {
-                if (function.getKey().matcher(one.text()).matches()) {
-                    created.addAll (function.getValue().apply(one, session));
-                }
-            }
-
-            //  For debugging, if the countUnprocessed hasn't changed, nothing generated and we need to look at the transaction
-            countTransactions++;
-            if (created.size() == before) {
-                System.out.println (one.text());
-                countUnprocessed++;
-            }
-        });
-
-        created.forEach (one -> {
-            one.setTransactionDate (txnDate);
-            session.save(one);
-        });
     }
 }
 
