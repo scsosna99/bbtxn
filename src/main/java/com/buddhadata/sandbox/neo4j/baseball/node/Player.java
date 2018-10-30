@@ -40,7 +40,6 @@ public class Player {
      */
     private Date umpireDebut;
 
-
     /**
      * First name of player
      */
@@ -50,6 +49,11 @@ public class Player {
      * Last name of player
      */
     private String lastName;
+
+    /**
+     * Complete name of player
+     */
+    private String name;
 
     /**
      * Player ID from retrosheet download
@@ -81,6 +85,7 @@ public class Player {
         this.coachDebut = coachDebut;
         this.managerDebut = managerDebut;
         this.umpireDebut = umpireDebut;
+        this.name = firstName + " " + lastName;
     }
 
     public Long getId() {
@@ -137,6 +142,14 @@ public class Player {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getRetrosheetId() {

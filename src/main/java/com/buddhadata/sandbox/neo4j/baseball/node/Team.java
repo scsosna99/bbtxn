@@ -19,15 +19,24 @@ public class Team {
     private Long id;
 
     /**
-     * The name of the player
+     * The city in which the team/franchise is located.
+     */
+    private String city;
+
+    /**
+     * The league name
+     */
+    private String league;
+
+    /**
+     * The name of the team
      */
     private String name;
 
     /**
-     * The baseball-reference.com URL for the player
+     * The unique identifier from the Retrosheet data
      */
-    @Index (unique = true)
-    private String url;
+    private String retrosheetId;
 
     /**
      * Constructor
@@ -38,18 +47,72 @@ public class Team {
 
     /**
      * Constructor
-     * @param name name of the team
-     * @param bbrefUrl baseball-reference.com URL for the player
+     * @param retrosheetId unique ID from the Retrosheet data
+     * @param name team's name
+     * @param city team's city
+     * @param league team's league
      */
-    public Team(String name,
-                String bbrefUrl) {
+    public Team(String retrosheetId,
+                String name,
+                String city,
+                String league) {
+        this.retrosheetId = retrosheetId;
         this.name = name;
-        this.url = bbrefUrl;
+        this.city = city;
+        this.league = league;
     }
 
     /**
      * getter
-     * @return team's name
+     * @return internal Neo4J ID
+     */
+    public Long getId() {
+        return id;
+    }
+
+    /**
+     * setter
+     * @param id internal Neo4J ID
+     */
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    /**
+     * getter
+     * @return the city in which the team/franchise is located
+     */
+    public String getCity() {
+        return city;
+    }
+
+    /**
+     * setter
+     * @param city the city in which the team/franchise is located
+     */
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    /**
+     * getter
+     * @return the league in which the team plays
+     */
+    public String getLeague() {
+        return league;
+    }
+
+    /**
+     * setter
+     * @param league the league in which the team plays
+     */
+    public void setLeague(String league) {
+        this.league = league;
+    }
+
+    /**
+     * getter
+     * @return the name/nickname of the team
      */
     public String getName() {
         return name;
@@ -57,7 +120,7 @@ public class Team {
 
     /**
      * setter
-     * @param name team's name
+     * @param name the name/nickname of the team
      */
     public void setName(String name) {
         this.name = name;
@@ -65,18 +128,18 @@ public class Team {
 
     /**
      * getter
-     * @return baseball-reference.com URL for the team
+     * @return the unique ID from the Restrosheet data
      */
-    public String getUrl() {
-        return url;
+    public String getRetrosheetId() {
+        return retrosheetId;
     }
 
     /**
      * setter
-     * @param url baseball-reference.com URL for the team
+     * @param retrosheetId the unique ID from the retrosheet data
      */
-    public void setUrl(String url) {
-        this.url = url;
+    public void setRetrosheetId(String retrosheetId) {
+        this.retrosheetId = retrosheetId;
     }
 
     @Override
@@ -84,17 +147,19 @@ public class Team {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Team player = (Team) o;
+        Team team = (Team) o;
 
-        if (url != null ? !url.equals(player.url) : player.url != null) return false;
-        return name != null ? name.equals(player.name) : player.name == null;
+        if (!league.equals(team.league)) return false;
+        if (!name.equals(team.name)) return false;
+        return retrosheetId != null ? retrosheetId.equals(team.retrosheetId) : team.retrosheetId == null;
 
     }
 
     @Override
     public int hashCode() {
-        int result = url != null ? url.hashCode() : 0;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
+        int result = league.hashCode();
+        result = 31 * result + name.hashCode();
+        result = 31 * result + (retrosheetId != null ? retrosheetId.hashCode() : 0);
         return result;
     }
 }

@@ -1,9 +1,10 @@
 package com.buddhadata.sandbox.neo4j.baseball;
 
 import com.buddhadata.sandbox.neo4j.baseball.node.Player;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
+import com.buddhadata.sandbox.neo4j.baseball.node.Team;
+import com.buddhadata.sandbox.neo4j.baseball.processor.FromToTransactionProcessor;
+import com.buddhadata.sandbox.neo4j.baseball.processor.FromTransactionProcessor;
+import com.buddhadata.sandbox.neo4j.baseball.processor.ToTransactionProcessor;
 import org.neo4j.ogm.config.Configuration;
 import org.neo4j.ogm.session.Session;
 import org.neo4j.ogm.session.SessionFactory;
@@ -12,8 +13,6 @@ import org.neo4j.ogm.transaction.Transaction;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -21,7 +20,7 @@ import java.util.*;
 
 
 /**
- * Created by scsosna on 5/19/18.
+ * Loads baseball transactions of interest into a Neo4J database
  */
 public class BaseballTransactions {
 
@@ -36,7 +35,7 @@ public class BaseballTransactions {
     private static DateFormat DATE_FORMAT_PLAYER = new SimpleDateFormat("MM/dd/yyyy");
 
     /**
-     * Field position for the players' raw data, after separated by commas
+     * Field position for the players' raw data, separated by commas
      */
     private static int PLAYER_FIELD_COACH = 5;
     private static int PLAYER_FIELD_DEBUT = 3;
@@ -47,7 +46,17 @@ public class BaseballTransactions {
     private static int PLAYER_FIELD_UMPIRE = 6;
 
     /**
-     * Field position for the transactions' raw data, after separated by commas
+     * Field position for the teams' raw data, separated by commas
+     */
+    private static int TEAM_FIELD_ID = 0;
+    private static int TEAM_FIELD_LEAGUE = 1;
+    private static int TEAM_FIELD_CITY = 2;
+    private static int TEAM_FIELD_NAME = 3;
+    private static int TEAM_FIELD_START = 4;
+    private static int TEAM_FIELD_END = 5;
+
+    /**
+     * Field position for the transactions' raw data, separated by commas
      */
     private static int TXN_FIELD_APPROXIMATE = 2;
     private static int TXN_FIELD_APPROXIMATE_SECONDARY = 4;
@@ -77,9 +86,19 @@ public class BaseballTransactions {
     };
 
     /**
-     * File contained in classpath containing all known players for whom transactions exist.
+     * Classpath resource containing all known players for whom transactions exist.
      */
-    private static final String PLAYERS_RESOURCE_NAME = "players.txt";
+    private static final String RESOURCE_NAME_PLAYERS = "players.txt";
+
+    /**
+     * Classpath resource containing all top-level teams/franchises of major leagues (i.e., not containing moves)
+     */
+    private static final String RESOURCE_NAME_TEAMS = "teams.txt";
+
+    /**
+     * Classpath resource containing all transactional data to process.
+     */
+    private static final String RESOURCE_NAME_TRANSACTIONS = "txnsmod.txt";
 
     /**
      * Neo4J Connection Information
@@ -87,11 +106,6 @@ public class BaseballTransactions {
     static private final String SERVER_URI = "bolt://localhost";
     static private final String SERVER_USERNAME = "neo4j";
     static private final String SERVER_PASSWORD = "password";
-
-    /**
-     * File contianed in classpath of all transactions to be published.
-     */
-    private static final String TRANSACTIONS_RESOURCE_NAME = "transactions.txt";
 
 
     /**
@@ -125,7 +139,7 @@ public class BaseballTransactions {
 
              // Each line contains one player
              BufferedReader br = new BufferedReader (new InputStreamReader(
-                Thread.currentThread().getContextClassLoader().getResourceAsStream(PLAYERS_RESOURCE_NAME)))){
+                Thread.currentThread().getContextClassLoader().getResourceAsStream(RESOURCE_NAME_PLAYERS)))) {
 
             //  Process line by line
             while (br.ready()) {
@@ -150,21 +164,60 @@ public class BaseballTransactions {
         }
     }
 
+    /**
+     * Loads classpath resource comtaining all known franchises for the three major leagues since the modern age of
+     * baseball.  The nodes are considered teams because other, non-major league teams will be included in some transaction
+     * which we'll want to track.
+     * @param session active connection to Neo4J database
+     */
+    private void loadTeams (Session session) {
+
+        //  Load all teams in its own transaction
+        try (Transaction txn = session.beginTransaction();
+
+            //  Each line contains one team
+            BufferedReader br = new BufferedReader (new InputStreamReader(
+                Thread.currentThread().getContextClassLoader().getResourceAsStream(RESOURCE_NAME_TEAMS)))) {
+
+            //  Process line by line
+            while (br.ready()) {
+                //  No need to check for already-existing team, assumes we've just cleared the database and are
+                //  loading teams before doing any transaction processing.
+                String[] fields = br.readLine().split(",", -1);
+                unquoteFields(fields);
+                Team t = new Team (fields[TEAM_FIELD_ID], fields[TEAM_FIELD_NAME],
+                    fields[TEAM_FIELD_CITY], fields[TEAM_FIELD_LEAGUE]);
+                session.save(t);
+            }
+
+            //  Commit all teams to the database
+            txn.commit();
+        } catch (IOException ioe) {
+            System.out.println ("Exception reading team data: " + ioe);
+        }
+    }
+
 
     /**
      * Process all the transactions into the database.
-     * @param session
+     * @param session active connection to Neo4J database
      */
     private void loadTransactions (Session session) {
 
-        try (Transaction txn = session.beginTransaction();
+        int count = 0;
+        Transaction txn = session.beginTransaction();
 
-             // Each line contains one player
-             BufferedReader br = new BufferedReader(new InputStreamReader(
-                     Thread.currentThread().getContextClassLoader().getResourceAsStream(TRANSACTIONS_RESOURCE_NAME)))) {
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(
+                     Thread.currentThread().getContextClassLoader().getResourceAsStream(RESOURCE_NAME_TRANSACTIONS)))) {
 
-            //  Proccess line by line
+            // Each line contains one transaction, process line by line.
             while (br.ready()) {
+
+                //  Every n transactions, commit the data to the database.
+                if (++count % 1000 == 0) {
+                    txn.commit();
+                    txn = session.beginTransaction();
+                }
 
                 String[] fields = br.readLine().split(",", -1);
                 unquoteFields (fields);
@@ -175,20 +228,60 @@ public class BaseballTransactions {
                     case "C":  // conditional deal
                     case "Cr": // returned to original team after conditional deal
                     case "D":  // rule 5 draft pick
-                    case "Da": // amateur draft pick
                     case "Df": // first year draft pick
                     case "Dm": // minor league draft pick
-                    case "Dn": // selected in amateur draft but did not sign
                     case "Dr": // returned to original team after draft selection
                     case "Ds": // special draft pick
-                    case "Dv": // amateur draft pick voided
+                    case "Fc": // free agent compensation pick
+                    case "J":  // jumped teams
+                    case "Jr": // returned to original team after jumping
+                    case "L":  // loaned to another team
+                    case "Lr": // returned to original team after loan
+                    case "M":  // obtained rights when entering into working agreement with minor league team
+                    case "Mr": // rights returned when working agreement with minor league team ended
+                    case "P":  // purchase
+                    case "Pr": // returned to original team after purchase
+                    case "Pv": // purchase voided
+                    case "T":  // traded from one team to another team
+                    case "Tn": // traded but refused to report
+                    case "Tp": // added to trade (usually because one of the original players refused to report or retired)
+                    case "Tr": // returned to original team after trade
+                    case "Tv": // trade voided
+                    case "U":  // unknown (could have been two separate transactions)
+                    case "Wr": // returned to original team after waiver pick
+                    case "W":  // waiver pick
+                    case "Wf": // first year waiver pick
+                    case "Wv": // waiver pick voided
+                    case "X":  // expansion draft
+                    case "Xe": // premium phase of expansion draft
+                    case "Xm": // either the 1960 AL minor league expansion draft or the premium phase of the 1961 NL draft
+                    case "Xp": // added as expansion pick at a later date
+                    case "Xr": // returned to original team after expansion draft
+                        FromToTransactionProcessor.instance.process(session, fields);
+                        break;
+
+                    case "Fg": // free agent granted
+                    case "Fv": // free agent signing voided
+                    case "R":  // released
+                    case "Z":  // voluntarily retired
+                        FromTransactionProcessor.instance.process(session, fields);
+                        break;
+
+                    case "Da": // amateur draft pick
                     case "F":  // free agent signing
                     case "Fa": // amateur free agent signing
                     case "Fb": // amateur free agent "bonus baby" signing under the 1953-57 rule requiring player to stay on ML roster
-                    case "Fc": // free agent compensation pick
-                    case "Fg": // free agent granted
                     case "Fo": // free agent signing with first ML team
-                    case "Fv": // free agent signing voided
+                    case "Zr": // returned from voluntarily retired list
+                        ToTransactionProcessor.instance.process(session, fields);
+                        break;
+
+                    //  Intentionally not processing
+                    case "Dn": // selected in amateur draft but did not sign
+                    case "Dv": // amateur draft pick voided
+                        break;
+
+                    //  Don't expect any transactions of these types
                     case "Hb":  // went on the bereavement list
                     case "Hbr": // came off the bereavement list
                     case "Hd":  // declared ineligible
@@ -207,35 +300,9 @@ public class BaseballTransactions {
                     case "Hur": // returned from being unavailable
                     case "Hv":  // voluntarity retired
                     case "Hvr": // unretired
-                    case "J":  // jumped teams
-                    case "Jr": // returned to original team after jumping
-                    case "L":  // loaned to another team
-                    case "Lr": // returned to original team after loan
-                    case "M":  // obtained rights when entering into working agreement with minor league team
-                    case "Mr": // rights returned when working agreement with minor league team ended
-                    case "P":  // purchase
-                    case "Pr": // returned to original team after purchase
-                    case "Pv": // purchase voided
-                    case "R":  // release
-                    case "T":  // trade
-                    case "Tn": // traded but refused to report
-                    case "Tp": // added to trade (usually because one of the original players refused to report or retired)
-                    case "Tr": // returned to original team after trade
-                    case "Tv": // trade voided
-                    case "U":  // unknown (could have been two separate transactions)
                     case "Vg": // player assigned to league control
                     case "V":  // player purchased or assigned to team from league
-                    case "W":  // waiver pick
-                    case "Wf": // first year waiver pick
-                    case "Wr": // returned to original team after waiver pick
-                    case "Wv": // waiver pick voided
-                    case "X":  // expansion draft
-                    case "Xe": // premium phase of expansion draft
-                    case "Xm": // either the 1960 AL minor league expansion draft or the premium phase of the 1961 NL draft
-                    case "Xp": // added as expansion pick at a later date
-                    case "Xr": // returned to original team after expansion draft
-                    case "Z":  // voluntarily retired
-                    case "Zr": // returned from voluntarily retired list
+                        System.out.println ("Unexpected transaction type: " + fields[TXN_FIELD_TYPE]);
                         break;
 
                     default:
@@ -243,6 +310,8 @@ public class BaseballTransactions {
                 }
             }
 
+            //  Do a final commit on the transactions in the last batch
+            txn.commit();
         } catch (IOException ioe) {
             System.out.println("Exception reading transaction data: " + ioe);
         }
@@ -268,28 +337,6 @@ public class BaseballTransactions {
         return null;
     }
 
-
-    /**
-     * Parse the string into a date based on expected date formats.
-     * @param date
-     * @return
-     */
-    private Date parseTxnDate(String date) {
-
-        if (date != null && !date.isEmpty()) {
-            for (SimpleDateFormat one : dateFormats) {
-                try {
-                    return one.parse(date);
-                } catch (ParseException pe) {
-                    //  Catch but ignore exception, go on to next available format
-                }
-            }
-        }
-
-        //  Nothing parsed, so return null.
-        return null;
-    }
-
     /**
      * Process all the data and create a graph out of it.
      */
@@ -301,7 +348,10 @@ public class BaseballTransactions {
         session.query("CREATE CONSTRAINT ON (player:Player) ASSERT player.retrosheetId IS UNIQUE", Collections.EMPTY_MAP);
 
         //  Load all known players from retrosheet: https://www.retrosheet.org/retroID.htm
-//        loadPlayers(session);
+        loadPlayers(session);
+
+        //  Load all known teams from retrosheet data (though munged together to create franchises and not just teams.
+        loadTeams(session);
 
         //  process all the transactions, loading them into the database based on type.
         loadTransactions(session);

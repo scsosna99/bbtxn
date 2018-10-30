@@ -2,18 +2,44 @@ package com.buddhadata.sandbox.neo4j.baseball.relationship;
 
 import java.util.Date;
 
-/**
- * Created by scsosna on 7/19/18.
- */
 public class TxnBase {
+
+    /**
+     * Neo4j Primary Key
+     */
+    private Long id;
+
+    private int retrosheetId;
 
     private Date transactionDate;
 
     protected TxnBase() {
     }
 
-    protected TxnBase(Date transactionDate) {
+    protected TxnBase (Date transactionDate) {
+        this (0, transactionDate);
+    }
+
+    protected TxnBase(int retrosheetId,
+                      Date transactionDate) {
+        this.retrosheetId = retrosheetId;
         this.transactionDate = transactionDate;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public int getRetrosheetId() {
+        return retrosheetId;
+    }
+
+    public void setRetrosheetId(int retrosheetId) {
+        this.retrosheetId = retrosheetId;
     }
 
     public Date getTransactionDate() {

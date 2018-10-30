@@ -9,84 +9,15 @@ import org.neo4j.ogm.annotation.StartNode;
 import java.util.Date;
 
 /**
- * Created by scsosna on 7/17/18.
+ * Represents the player being traded from the team specified
  */
 @RelationshipEntity(type = "TRADED_FROM")
-public class TradedFromTxn extends TxnBase {
+public class TradedFromTxn extends FromTxn {
 
-    /**
-     * Neo4j Primary Key
-     */
-    private Long id;
-
-    /**
-     * the player being drafted from one team to another
-     */
-    @EndNode
-    private Player player;
-
-    /**
-     * the team from which the player is drafted
-     */
-    @StartNode
-    private Team from;
-
-    /**
-     * Constructor
-     */
-    public TradedFromTxn() {
-        super();
-    }
-
-    public TradedFromTxn(Team from,
+    public TradedFromTxn(int retrosheetId,
                          Player player,
+                         Team from,
                          Date transactionDate) {
-        super (transactionDate);
-        this.from = from;
-        this.player = player;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Team getFrom() {
-        return from;
-    }
-
-    public void setFrom(Team from) {
-        this.from = from;
-    }
-
-    public Player getPlayer() {
-        return player;
-    }
-
-    public void setPlayer(Player player) {
-        this.player = player;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        TradedFromTxn released = (TradedFromTxn) o;
-
-        if (id != null ? !id.equals(released.id) : released.id != null) return false;
-        if (from != null ? !from.equals(released.from) : released.from != null) return false;
-        return player != null ? player.equals(released.player) : released.player == null;
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = from != null ? from.hashCode() : 0;
-        result = 31 * result + (player != null ? player.hashCode() : 0);
-        return result;
+        super(retrosheetId, player, from, transactionDate);
     }
 }
