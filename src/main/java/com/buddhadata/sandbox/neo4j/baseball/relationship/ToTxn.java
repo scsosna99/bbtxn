@@ -6,6 +6,7 @@ import org.neo4j.ogm.annotation.EndNode;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -32,11 +33,12 @@ public class ToTxn extends TxnBase {
         super();
     }
 
-    public ToTxn(int retrosheetId,
+    public ToTxn(TransactionType transactionType,
+                 int retrosheetId,
                  Player player,
                  Team team,
-                 Date transactionDate) {
-        super (retrosheetId, transactionDate);
+                 LocalDate transactionDate) {
+        super (transactionType, retrosheetId, transactionDate);
         this.player = player;
         this.team = team;
     }

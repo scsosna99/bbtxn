@@ -2,13 +2,11 @@ package com.buddhadata.sandbox.neo4j.baseball.processor;
 
 import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
-import com.buddhadata.sandbox.neo4j.baseball.relationship.DraftedByTxn;
-import com.buddhadata.sandbox.neo4j.baseball.relationship.ReleasedTxn;
-import com.buddhadata.sandbox.neo4j.baseball.relationship.ReturnedToTxn;
-import com.buddhadata.sandbox.neo4j.baseball.relationship.SignedTxn;
+import com.buddhadata.sandbox.neo4j.baseball.relationship.*;
 import org.neo4j.ogm.session.Session;
 
 import java.lang.reflect.Constructor;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -20,16 +18,17 @@ public class ToTransactionProcessor extends TransactionProcessor {
 
     public static final ToTransactionProcessor instance = new ToTransactionProcessor();
 
-    private static final Map<String,Constructor[]> constructors = loadConstructors();
+    private static final Map<TransactionType, Constructor[]> constructors = loadConstructors();
 
     private ToTransactionProcessor() {};
 
     public void process (Session session,
+                         TransactionType transactionType,
                          String[] fields) {
 
         try {
             //  Get the constructors for this transaction type.
-            Constructor[] c = constructors.get(fields[TXN_FIELD_TYPE]);
+            Constructor[] c = constructors.get(transactionType);
             if (c != null && c.length == 1) {
 
                 //  Find player
@@ -41,10 +40,10 @@ public class ToTransactionProcessor extends TransactionProcessor {
 
                     //  Parse the transaction id and date fields
                     int txnId = Integer.valueOf(fields[TXN_FIELD_ID]);
-                    Date txnDate = parseTxnDate(fields[TXN_FIELD_DATE_PRIMARY]);
+                    LocalDate txnDate = parseTxnDate(fields[TXN_FIELD_DATE_PRIMARY]);
 
                     //  Create the transactions for the single constructor.
-                    session.save(c[0].newInstance(txnId, player, toTeam, txnDate));
+                    session.save(c[0].newInstance(transactionType, txnId, player, toTeam, txnDate));
                 }
             } else {
                 System.out.println ("Inappropriate number of constructors.");
@@ -58,16 +57,16 @@ public class ToTransactionProcessor extends TransactionProcessor {
      * Load the map of constructor(s) appropriate for the specific transaction type.
      * @return
      */
-    private static Map<String,Constructor[]> loadConstructors() {
+    private static Map<TransactionType, Constructor[]> loadConstructors() {
 
-        Map<String, Constructor[]> toReturn = new HashMap<>();
+        Map<TransactionType, Constructor[]> toReturn = new HashMap<>();
 
-        toReturn.put ("Da", new Constructor[] {getConstructor(DraftedByTxn.class)});
-        toReturn.put ("F", new Constructor[] {getConstructor(SignedTxn.class)});
-        toReturn.put ("Fa", new Constructor[] {getConstructor(SignedTxn.class)});
-        toReturn.put ("Fb", new Constructor[] {getConstructor(SignedTxn.class)});
-        toReturn.put ("Fo", new Constructor[] {getConstructor(SignedTxn.class)});
-        toReturn.put ("Zr", new Constructor[] {getConstructor(ReturnedToTxn.class)});
+        toReturn.put (TransactionType.Da, new Constructor[] {getConstructor(DraftedByTxn.class)});
+        toReturn.put (TransactionType.F, new Constructor[] {getConstructor(SignedTxn.class)});
+        toReturn.put (TransactionType.Fa, new Constructor[] {getConstructor(SignedTxn.class)});
+        toReturn.put (TransactionType.Fb, new Constructor[] {getConstructor(SignedTxn.class)});
+        toReturn.put (TransactionType.Fo, new Constructor[] {getConstructor(SignedTxn.class)});
+        toReturn.put (TransactionType.Zr, new Constructor[] {getConstructor(ReturnedToTxn.class)});
 
         return toReturn;
     }

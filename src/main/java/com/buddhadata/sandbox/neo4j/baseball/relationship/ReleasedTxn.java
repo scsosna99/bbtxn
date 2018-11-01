@@ -4,6 +4,7 @@ import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -12,10 +13,11 @@ import java.util.Date;
 @RelationshipEntity(type = "RELEASED")
 public class ReleasedTxn extends FromTxn {
 
-    public ReleasedTxn(int retrosheetId,
+    public ReleasedTxn(TransactionType transactionType,
+                       int retrosheetId,
                        Player player,
                        Team from,
-                       Date transactionDate) {
-        super(retrosheetId, player, from, transactionDate);
+                       LocalDate transactionDate) {
+        super(transactionType, retrosheetId, player, from, transactionDate);
     }
 }

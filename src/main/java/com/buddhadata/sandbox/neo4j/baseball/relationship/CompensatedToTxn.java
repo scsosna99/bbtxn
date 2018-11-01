@@ -4,6 +4,7 @@ import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -19,10 +20,11 @@ public class CompensatedToTxn extends ToTxn {
         super();
     }
 
-    public CompensatedToTxn(int retrosheetId,
+    public CompensatedToTxn(TransactionType transactionType,
+                            int retrosheetId,
                             Player player,
                             Team team,
-                            Date transactionDate) {
-        super (retrosheetId, player, team, transactionDate);
+                            LocalDate transactionDate) {
+        super (transactionType, retrosheetId, player, team, transactionDate);
     }
 }

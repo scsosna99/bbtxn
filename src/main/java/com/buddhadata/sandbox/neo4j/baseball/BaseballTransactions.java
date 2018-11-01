@@ -5,6 +5,7 @@ import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import com.buddhadata.sandbox.neo4j.baseball.processor.FromToTransactionProcessor;
 import com.buddhadata.sandbox.neo4j.baseball.processor.FromTransactionProcessor;
 import com.buddhadata.sandbox.neo4j.baseball.processor.ToTransactionProcessor;
+import com.buddhadata.sandbox.neo4j.baseball.relationship.TransactionType;
 import org.neo4j.ogm.config.Configuration;
 import org.neo4j.ogm.session.Session;
 import org.neo4j.ogm.session.SessionFactory;
@@ -16,6 +17,9 @@ import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.*;
 
 
@@ -32,7 +36,7 @@ public class BaseballTransactions {
     /**
      * Date format for debut of player, manager, coach, and umpire, ready for parsing
      */
-    private static DateFormat DATE_FORMAT_PLAYER = new SimpleDateFormat("MM/dd/yyyy");
+    private static DateTimeFormatter DATE_FORMAT_PLAYER = DateTimeFormatter.ofPattern ("M/d/yyyy");
 
     /**
      * Field position for the players' raw data, separated by commas
@@ -223,90 +227,91 @@ public class BaseballTransactions {
                 unquoteFields (fields);
 
                 //  Determine what transaction type we're dealing with.
-                switch (fields[TXN_FIELD_TYPE]) {
-                    case "A":  // assigned from one team to another without compensation
-                    case "C":  // conditional deal
-                    case "Cr": // returned to original team after conditional deal
-                    case "D":  // rule 5 draft pick
-                    case "Df": // first year draft pick
-                    case "Dm": // minor league draft pick
-                    case "Dr": // returned to original team after draft selection
-                    case "Ds": // special draft pick
-                    case "Fc": // free agent compensation pick
-                    case "J":  // jumped teams
-                    case "Jr": // returned to original team after jumping
-                    case "L":  // loaned to another team
-                    case "Lr": // returned to original team after loan
-                    case "M":  // obtained rights when entering into working agreement with minor league team
-                    case "Mr": // rights returned when working agreement with minor league team ended
-                    case "P":  // purchase
-                    case "Pr": // returned to original team after purchase
-                    case "Pv": // purchase voided
-                    case "T":  // traded from one team to another team
-                    case "Tn": // traded but refused to report
-                    case "Tp": // added to trade (usually because one of the original players refused to report or retired)
-                    case "Tr": // returned to original team after trade
-                    case "Tv": // trade voided
-                    case "U":  // unknown (could have been two separate transactions)
-                    case "Wr": // returned to original team after waiver pick
-                    case "W":  // waiver pick
-                    case "Wf": // first year waiver pick
-                    case "Wv": // waiver pick voided
-                    case "X":  // expansion draft
-                    case "Xe": // premium phase of expansion draft
-                    case "Xm": // either the 1960 AL minor league expansion draft or the premium phase of the 1961 NL draft
-                    case "Xp": // added as expansion pick at a later date
-                    case "Xr": // returned to original team after expansion draft
-                        FromToTransactionProcessor.instance.process(session, fields);
+                TransactionType type = TransactionType.valueOf(fields[TXN_FIELD_TYPE]);
+                switch (type) {
+                    case A:  // assigned from one team to another without compensation
+                    case C:  // conditional deal
+                    case Cr: // returned to original team after conditional deal
+                    case D:  // rule 5 draft pick
+                    case Df: // first year draft pick
+                    case Dm: // minor league draft pick
+                    case Dr: // returned to original team after draft selection
+                    case Ds: // special draft pick
+                    case Fc: // free agent compensation pick
+                    case J:  // jumped teams
+                    case Jr: // returned to original team after jumping
+                    case L:  // loaned to another team
+                    case Lr: // returned to original team after loan
+                    case M:  // obtained rights when entering into working agreement with minor league team
+                    case Mr: // rights returned when working agreement with minor league team ended
+                    case P:  // purchase
+                    case Pr: // returned to original team after purchase
+                    case Pv: // purchase voided
+                    case T:  // traded from one team to another team
+                    case Tn: // traded but refused to report
+                    case Tp: // added to trade (usually because one of the original players refused to report or retired)
+                    case Tr: // returned to original team after trade
+                    case Tv: // trade voided
+                    case U:  // unknown (could have been two separate transactions)
+                    case Wr: // returned to original team after waiver pick
+                    case W:  // waiver pick
+                    case Wf: // first year waiver pick
+                    case Wv: // waiver pick voided
+                    case X:  // expansion draft
+                    case Xe: // premium phase of expansion draft
+                    case Xm: // either the 1960 AL minor league expansion draft or the premium phase of the 1961 NL draft
+                    case Xp: // added as expansion pick at a later date
+                    case Xr: // returned to original team after expansion draft
+                        FromToTransactionProcessor.instance.process(session, type, fields);
                         break;
 
-                    case "Fg": // free agent granted
-                    case "Fv": // free agent signing voided
-                    case "R":  // released
-                    case "Z":  // voluntarily retired
-                        FromTransactionProcessor.instance.process(session, fields);
+                    case Fg: // free agent granted
+                    case Fv: // free agent signing voided
+                    case R:  // released
+                    case Z:  // voluntarily retired
+                        FromTransactionProcessor.instance.process(session, type, fields);
                         break;
 
-                    case "Da": // amateur draft pick
-                    case "F":  // free agent signing
-                    case "Fa": // amateur free agent signing
-                    case "Fb": // amateur free agent "bonus baby" signing under the 1953-57 rule requiring player to stay on ML roster
-                    case "Fo": // free agent signing with first ML team
-                    case "Zr": // returned from voluntarily retired list
-                        ToTransactionProcessor.instance.process(session, fields);
+                    case Da: // amateur draft pick
+                    case F:  // free agent signing
+                    case Fa: // amateur free agent signing
+                    case Fb: // amateur free agent "bonus baby" signing under the 1953-57 rule requiring player to stay on ML roster
+                    case Fo: // free agent signing with first ML team
+                    case Zr: // returned from voluntarily retired list
+                        ToTransactionProcessor.instance.process(session, type, fields);
                         break;
 
                     //  Intentionally not processing
-                    case "Dn": // selected in amateur draft but did not sign
-                    case "Dv": // amateur draft pick voided
+                    case Dn: // selected in amateur draft but did not sign
+                    case Dv: // amateur draft pick voided
                         break;
 
                     //  Don't expect any transactions of these types
-                    case "Hb":  // went on the bereavement list
-                    case "Hbr": // came off the bereavement list
-                    case "Hd":  // declared ineligible
-                    case "Hdr": // reinistated from the ineligible list
-                    case "Hf":  // demoted to the minor league
-                    case "Hfr": // promoted from the minor league
-                    case "Hh":  // held out
-                    case "Hhr": // ended hold out
-                    case "Hi":  // went on the disabled list
-                    case "Hir": // came off the disabled list
-                    case "Hm":  // went into military service
-                    case "Hmr": // returned from military service
-                    case "Hs":  // suspended
-                    case "Hsr": // reinstated after a suspension
-                    case "Hu":  // unavailable but not on DL
-                    case "Hur": // returned from being unavailable
-                    case "Hv":  // voluntarity retired
-                    case "Hvr": // unretired
-                    case "Vg": // player assigned to league control
-                    case "V":  // player purchased or assigned to team from league
-                        System.out.println ("Unexpected transaction type: " + fields[TXN_FIELD_TYPE]);
+                    case Hb:  // went on the bereavement list
+                    case Hbr: // came off the bereavement list
+                    case Hd:  // declared ineligible
+                    case Hdr: // reinistated from the ineligible list
+                    case Hf:  // demoted to the minor league
+                    case Hfr: // promoted from the minor league
+                    case Hh:  // held out
+                    case Hhr: // ended hold out
+                    case Hi:  // went on the disabled list
+                    case Hir: // came off the disabled list
+                    case Hm:  // went into military service
+                    case Hmr: // returned from military service
+                    case Hs:  // suspended
+                    case Hsr: // reinstated after a suspension
+                    case Hu:  // unavailable but not on DL
+                    case Hur: // returned from being unavailable
+                    case Hv:  // voluntarity retired
+                    case Hvr: // unretired
+                    case Vg: // player assigned to league control
+                    case V:  // player purchased or assigned to team from league
+                        System.out.println ("Unexpected transaction type: " + type);
                         break;
 
                     default:
-                        System.out.println ("Unknown transaction type: " + fields[TXN_FIELD_TYPE]);
+                        System.out.println ("Unknown transaction type: " + type);
                 }
             }
 
@@ -322,12 +327,12 @@ public class BaseballTransactions {
      * @param date the string representation in the raw data
      * @return Date object that can stored.
      */
-    private Date parsePlayerDate (String date) {
+    private LocalDate parsePlayerDate (String date) {
 
         if (date != null && !date.isEmpty()) {
             try {
-                return DATE_FORMAT_PLAYER.parse(date);
-            } catch (ParseException pe) {
+                return LocalDate.parse(date, DATE_FORMAT_PLAYER);
+            } catch (DateTimeParseException pe) {
                 System.out.println ("Unable to parse player date: " + date);
             }
         }

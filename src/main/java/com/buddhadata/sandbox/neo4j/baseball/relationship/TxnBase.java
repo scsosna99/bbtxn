@@ -1,5 +1,6 @@
 package com.buddhadata.sandbox.neo4j.baseball.relationship;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class TxnBase {
@@ -9,45 +10,99 @@ public class TxnBase {
      */
     private Long id;
 
+    /**
+     * Unique identifier of transaction in retrosheet raw data
+     */
     private int retrosheetId;
 
-    private Date transactionDate;
+    /**
+     * Date on which transaction occurred
+     */
+    private LocalDate transactionDate;
 
-    protected TxnBase() {
-    }
+    /**
+     * Type of transaction
+     */
+    private TransactionType transactionType;
 
-    protected TxnBase (Date transactionDate) {
-        this (0, transactionDate);
-    }
+    protected TxnBase() {}
 
-    protected TxnBase(int retrosheetId,
-                      Date transactionDate) {
+    /**
+     * Constructor
+     * @param transactionType type of transaction
+     * @param retrosheetId unique identifier in retrosheet raw data
+     * @param transactionDate date on which transaction occurred
+     */
+    protected TxnBase(TransactionType transactionType,
+                      int retrosheetId,
+                      LocalDate transactionDate) {
+        this.transactionType = transactionType;
         this.retrosheetId = retrosheetId;
         this.transactionDate = transactionDate;
     }
 
+    /**
+     * getter
+     * @return Neo4J primary key
+     */
     public Long getId() {
         return id;
     }
 
+    /**
+     * setter
+     * @param id Neo4J primary key
+     */
     public void setId(Long id) {
         this.id = id;
     }
 
+    /**
+     * getter
+     * @return unique identifier in retrosheet raw data
+     */
     public int getRetrosheetId() {
         return retrosheetId;
     }
 
+    /**
+     * setter
+     * @param retrosheetId unique identifier in retrosheet raw data
+     */
     public void setRetrosheetId(int retrosheetId) {
         this.retrosheetId = retrosheetId;
     }
 
-    public Date getTransactionDate() {
+    /**
+     * getter
+     * @return date on which transaction occurred
+     */
+    public LocalDate getTransactionDate() {
         return transactionDate;
     }
 
-    public void setTransactionDate(Date transactionDate) {
+    /**
+     * setter
+     * @param transactionDate date on which transaction occurred
+     */
+    public void setTransactionDate(LocalDate transactionDate) {
         this.transactionDate = transactionDate;
+    }
+
+    /**
+     * getter
+     * @return type of transaction
+     */
+    public TransactionType getTransactionType() {
+        return transactionType;
+    }
+
+    /**
+     * setter
+     * @param transactionType type of transaction
+     */
+    public void setTransactionType(TransactionType transactionType) {
+        this.transactionType = transactionType;
     }
 
     @Override
@@ -55,14 +110,17 @@ public class TxnBase {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        TxnBase that = (TxnBase) o;
+        TxnBase txnBase = (TxnBase) o;
 
-        return transactionDate != null ? transactionDate.equals(that.transactionDate) : that.transactionDate == null;
+        if (retrosheetId != txnBase.retrosheetId) return false;
+        return transactionType == txnBase.transactionType;
 
     }
 
     @Override
     public int hashCode() {
-        return transactionDate != null ? transactionDate.hashCode() : 0;
+        int result = retrosheetId;
+        result = 31 * result + (transactionType != null ? transactionType.hashCode() : 0);
+        return result;
     }
 }

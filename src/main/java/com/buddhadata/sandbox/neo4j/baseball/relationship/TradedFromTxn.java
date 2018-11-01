@@ -6,6 +6,7 @@ import org.neo4j.ogm.annotation.EndNode;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -14,10 +15,11 @@ import java.util.Date;
 @RelationshipEntity(type = "TRADED_FROM")
 public class TradedFromTxn extends FromTxn {
 
-    public TradedFromTxn(int retrosheetId,
+    public TradedFromTxn(TransactionType transactionType,
+                         int retrosheetId,
                          Player player,
                          Team from,
-                         Date transactionDate) {
-        super(retrosheetId, player, from, transactionDate);
+                         LocalDate transactionDate) {
+        super(transactionType, retrosheetId, player, from, transactionDate);
     }
 }

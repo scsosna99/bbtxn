@@ -2,6 +2,7 @@ package com.buddhadata.sandbox.neo4j.baseball.processor;
 
 import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
+import com.buddhadata.sandbox.neo4j.baseball.relationship.TransactionType;
 import org.neo4j.ogm.cypher.BooleanOperator;
 import org.neo4j.ogm.cypher.ComparisonOperator;
 import org.neo4j.ogm.cypher.Filter;
@@ -15,6 +16,9 @@ import java.lang.reflect.Constructor;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.*;
 
 /**
@@ -25,7 +29,7 @@ abstract public class TransactionProcessor {
     /**
      * Date format for debut of player, manager, coach, and umpire, ready for parsing
      */
-    private static final DateFormat DATE_FORMAT_TXN = new SimpleDateFormat("YYYYMMDD");
+    private static final DateTimeFormatter DATE_FORMAT_TXN = DateTimeFormatter.ofPattern("yyyyMMdd");
 
     /**
      * Field position for the transactions' raw data, after separated by commas
@@ -58,7 +62,7 @@ abstract public class TransactionProcessor {
     private static final String RESOURCE_NAME_TEAM_MAPPINGS = "teammap.txt";
 
 
-    abstract public void process (Session session, String[] fields);
+    abstract public void process (Session session, TransactionType transactionType, String[] fields);
 
     /**
      * Find the player identified by the transaction
@@ -133,13 +137,20 @@ abstract public class TransactionProcessor {
      * @param date the string representation in the raw data
      * @return Date object that can stored.
      */
-    protected Date parseTxnDate(String date) {
+    protected LocalDate parseTxnDate(final String date) {
 
         if (date != null && !date.isEmpty()) {
+
+            //  Special cases are zeros for month/day or day when exact transaction date isn't known
+            String temp;
+            if (date.endsWith("0000")) temp = date.substring(0,4) + "0101";
+            else if (date.endsWith("00")) temp = date.substring(0,6) + "01";
+            else temp = date;
+
             try {
-                return DATE_FORMAT_TXN.parse(date);
-            } catch (ParseException pe) {
-                System.out.println ("Unable to parse player date: " + date);
+                return LocalDate.parse(temp, DATE_FORMAT_TXN);
+            } catch (DateTimeParseException pe) {
+                System.out.println ("Unable to parse transaction date: " + date);
             }
         }
 
@@ -225,7 +236,7 @@ abstract public class TransactionProcessor {
      */
     public static Constructor getConstructor (Class clazz) {
         try {
-            return clazz.getConstructor(int.class, Player.class, Team.class, Date.class);
+            return clazz.getConstructor(TransactionType.class, int.class, Player.class, Team.class, LocalDate.class);
         } catch (NoSuchMethodException nsme) {
             System.out.println ("Exception getting constructor: " + clazz.getName());
             return null;

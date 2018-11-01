@@ -5,6 +5,7 @@ import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.Index;
 import org.neo4j.ogm.annotation.NodeEntity;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -23,22 +24,22 @@ public class Player {
     /**
      * The date of his coaching debut
      */
-    private Date coachDebut;
+    private LocalDate coachDebut;
 
     /**
      * The date of his managerial debut.
      */
-    private Date managerDebut;
+    private LocalDate managerDebut;
 
     /**
      * The date of his playing debut
      */
-    private Date playerDebut;
+    private LocalDate playerDebut;
 
     /**
      * The datae of his umpiring debut
      */
-    private Date umpireDebut;
+    private LocalDate umpireDebut;
 
     /**
      * First name of player
@@ -74,10 +75,10 @@ public class Player {
     public Player (String retrosheetId,
                    String lastName,
                    String firstName,
-                   Date playerDebut,
-                   Date coachDebut,
-                   Date managerDebut,
-                   Date umpireDebut) {
+                   LocalDate playerDebut,
+                   LocalDate coachDebut,
+                   LocalDate managerDebut,
+                   LocalDate umpireDebut) {
         this.retrosheetId = retrosheetId;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -96,35 +97,35 @@ public class Player {
         this.id = id;
     }
 
-    public Date getCoachDebut() {
+    public LocalDate getCoachDebut() {
         return coachDebut;
     }
 
-    public void setCoachDebut(Date coachDebut) {
+    public void setCoachDebut(LocalDate coachDebut) {
         this.coachDebut = coachDebut;
     }
 
-    public Date getManagerDebut() {
+    public LocalDate getManagerDebut() {
         return managerDebut;
     }
 
-    public void setManagerDebut(Date managerDebut) {
+    public void setManagerDebut(LocalDate managerDebut) {
         this.managerDebut = managerDebut;
     }
 
-    public Date getPlayerDebut() {
+    public LocalDate getPlayerDebut() {
         return playerDebut;
     }
 
-    public void setPlayerDebut(Date playerDebut) {
+    public void setPlayerDebut(LocalDate playerDebut) {
         this.playerDebut = playerDebut;
     }
 
-    public Date getUmpireDebut() {
+    public LocalDate getUmpireDebut() {
         return umpireDebut;
     }
 
-    public void setUmpireDebut(Date umpireDebut) {
+    public void setUmpireDebut(LocalDate umpireDebut) {
         this.umpireDebut = umpireDebut;
     }
 

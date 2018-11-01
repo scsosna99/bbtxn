@@ -5,7 +5,10 @@ import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import com.buddhadata.sandbox.neo4j.baseball.relationship.*;
 import org.neo4j.ogm.session.Session;
 
+import javax.swing.text.DateFormatter;
 import java.lang.reflect.Constructor;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -17,16 +20,17 @@ public class FromToTransactionProcessor extends TransactionProcessor {
 
     public static final FromToTransactionProcessor instance = new FromToTransactionProcessor();
 
-    private static final Map<String,Constructor[]> constructors = loadConstructors();
+    private static final Map<TransactionType, Constructor[]> constructors = loadConstructors();
 
     private FromToTransactionProcessor() {};
 
     public void process (Session session,
+                         TransactionType transactionType,
                          String[] fields) {
 
         try {
             //  Get the constructors for this transaction type.
-            Constructor[] c = constructors.get(fields[TXN_FIELD_TYPE]);
+            Constructor[] c = constructors.get(transactionType);
             if (c != null && c.length == 2) {
 
                 //  Find player
@@ -39,11 +43,11 @@ public class FromToTransactionProcessor extends TransactionProcessor {
 
                     //  Parse the transaction id and date fields
                     int txnId = Integer.valueOf(fields[TXN_FIELD_ID]);
-                    Date txnDate = parseTxnDate(fields[TXN_FIELD_DATE_PRIMARY]);
+                    LocalDate txnDate = parseTxnDate(fields[TXN_FIELD_DATE_PRIMARY]);
 
                     //  Create the transactions for all constructors available.
-                    if (fromTeam != null) session.save(c[0].newInstance(txnId, player, fromTeam, txnDate));
-                    if (toTeam != null) session.save(c[1].newInstance(txnId, player, toTeam, txnDate));
+                    if (fromTeam != null) session.save(c[0].newInstance(transactionType, txnId, player, fromTeam, txnDate));
+                    if (toTeam != null) session.save(c[1].newInstance(transactionType, txnId, player, toTeam, txnDate));
                 }
             } else {
                 System.out.println ("Inappropriate number of constructors.");
@@ -57,43 +61,43 @@ public class FromToTransactionProcessor extends TransactionProcessor {
      * Load the map of constructor(s) appropriate for the specific transaction type.
      * @return
      */
-    private static Map<String,Constructor[]> loadConstructors() {
+    private static Map<TransactionType, Constructor[]> loadConstructors() {
 
-        Map<String, Constructor[]> toReturn = new HashMap<>();
+        Map<TransactionType, Constructor[]> toReturn = new HashMap<>();
 
-        toReturn.put ("A", new Constructor[] {getConstructor(AssignedFromTxn.class), getConstructor(AssignedToTxn.class)});
-        toReturn.put ("C", new Constructor[] {getConstructor(ConditionalFromTxn.class), getConstructor(ConditionalToTxn.class)});
-        toReturn.put ("Cr", new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
-        toReturn.put ("D", new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
-        toReturn.put ("Df", new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
-        toReturn.put ("Dm", new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
-        toReturn.put ("Dr", new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
-        toReturn.put ("Ds", new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
-        toReturn.put ("Fc", new Constructor[] {getConstructor(CompensatedFromTxn.class), getConstructor(CompensatedToTxn.class)});
-        toReturn.put ("J", new Constructor[] {getConstructor(JumpedFromTxn.class), getConstructor(JumpedToTxn.class)});
-        toReturn.put ("Jr", new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
-        toReturn.put ("L", new Constructor[] {getConstructor(LoanedFromTxn.class), getConstructor(LoanedToTxn.class)});
-        toReturn.put ("Lr", new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
-        toReturn.put ("M", new Constructor[] {getConstructor(RightsFromTxn.class), getConstructor(RightsToTxn.class)});
-        toReturn.put ("Mr", new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
-        toReturn.put ("P", new Constructor[] {getConstructor(PurchasedFromTxn.class), getConstructor(PurchasedToTxn.class)});
-        toReturn.put ("Pr", new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
-        toReturn.put ("Pv", new Constructor[] {getConstructor(VoidedFromTxn.class), getConstructor(VoidedToTxn.class)});
-        toReturn.put ("T", new Constructor[] {getConstructor(TradedFromTxn.class), getConstructor(TradedToTxn.class)});
-        toReturn.put ("Tn", new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
-        toReturn.put ("Tp", new Constructor[] {getConstructor(TradedFromTxn.class), getConstructor(TradedToTxn.class)});
-        toReturn.put ("Tr", new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
-        toReturn.put ("Tv", new Constructor[] {getConstructor(VoidedFromTxn.class), getConstructor(VoidedToTxn.class)});
-        toReturn.put ("U", new Constructor[] {getConstructor(UnknownFromTxn.class), getConstructor(UnknownFromTxn.class)});
-        toReturn.put ("W", new Constructor[] {getConstructor(WaiverFromTxn.class), getConstructor(WaiverFromTxn.class)});
-        toReturn.put ("Wf", new Constructor[] {getConstructor(WaiverFromTxn.class), getConstructor(WaiverFromTxn.class)});
-        toReturn.put ("Wr", new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
-        toReturn.put ("Wv", new Constructor[] {getConstructor(VoidedFromTxn.class), getConstructor(VoidedToTxn.class)});
-        toReturn.put ("X", new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
-        toReturn.put ("Xe", new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
-        toReturn.put ("Xm", new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
-        toReturn.put ("Xp", new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
-        toReturn.put ("Xr", new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
+        toReturn.put (TransactionType.A, new Constructor[] {getConstructor(AssignedFromTxn.class), getConstructor(AssignedToTxn.class)});
+        toReturn.put (TransactionType.C, new Constructor[] {getConstructor(ConditionalFromTxn.class), getConstructor(ConditionalToTxn.class)});
+        toReturn.put (TransactionType.Cr, new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
+        toReturn.put (TransactionType.D, new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
+        toReturn.put (TransactionType.Df, new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
+        toReturn.put (TransactionType.Dm, new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
+        toReturn.put (TransactionType.Dr, new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
+        toReturn.put (TransactionType.Ds, new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
+        toReturn.put (TransactionType.Fc, new Constructor[] {getConstructor(CompensatedFromTxn.class), getConstructor(CompensatedToTxn.class)});
+        toReturn.put (TransactionType.J, new Constructor[] {getConstructor(JumpedFromTxn.class), getConstructor(JumpedToTxn.class)});
+        toReturn.put (TransactionType.Jr, new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
+        toReturn.put (TransactionType.L, new Constructor[] {getConstructor(LoanedFromTxn.class), getConstructor(LoanedToTxn.class)});
+        toReturn.put (TransactionType.Lr, new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
+        toReturn.put (TransactionType.M, new Constructor[] {getConstructor(RightsFromTxn.class), getConstructor(RightsToTxn.class)});
+        toReturn.put (TransactionType.Mr, new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
+        toReturn.put (TransactionType.P, new Constructor[] {getConstructor(PurchasedFromTxn.class), getConstructor(PurchasedToTxn.class)});
+        toReturn.put (TransactionType.Pr, new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
+        toReturn.put (TransactionType.Pv, new Constructor[] {getConstructor(VoidedFromTxn.class), getConstructor(VoidedToTxn.class)});
+        toReturn.put (TransactionType.T, new Constructor[] {getConstructor(TradedFromTxn.class), getConstructor(TradedToTxn.class)});
+        toReturn.put (TransactionType.Tn, new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
+        toReturn.put (TransactionType.Tp, new Constructor[] {getConstructor(TradedFromTxn.class), getConstructor(TradedToTxn.class)});
+        toReturn.put (TransactionType.Tr, new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
+        toReturn.put (TransactionType.Tv, new Constructor[] {getConstructor(VoidedFromTxn.class), getConstructor(VoidedToTxn.class)});
+        toReturn.put (TransactionType.U, new Constructor[] {getConstructor(UnknownFromTxn.class), getConstructor(UnknownFromTxn.class)});
+        toReturn.put (TransactionType.W, new Constructor[] {getConstructor(WaiverFromTxn.class), getConstructor(WaiverFromTxn.class)});
+        toReturn.put (TransactionType.Wf, new Constructor[] {getConstructor(WaiverFromTxn.class), getConstructor(WaiverFromTxn.class)});
+        toReturn.put (TransactionType.Wr, new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
+        toReturn.put (TransactionType.Wv, new Constructor[] {getConstructor(VoidedFromTxn.class), getConstructor(VoidedToTxn.class)});
+        toReturn.put (TransactionType.X, new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
+        toReturn.put (TransactionType.Xe, new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
+        toReturn.put (TransactionType.Xm, new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
+        toReturn.put (TransactionType.Xp, new Constructor[] {getConstructor(DraftedFromTxn.class), getConstructor(DraftedToTxn.class)});
+        toReturn.put (TransactionType.Xr, new Constructor[] {getConstructor(ReturnedFromTxn.class), getConstructor(ReturnedToTxn.class)});
 
         return toReturn;
     }
