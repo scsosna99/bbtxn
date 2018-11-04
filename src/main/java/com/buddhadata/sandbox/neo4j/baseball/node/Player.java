@@ -5,8 +5,7 @@ import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.Index;
 import org.neo4j.ogm.annotation.NodeEntity;
 
-import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * Domain Object for baseball players
@@ -21,25 +20,30 @@ public class Player {
     @GeneratedValue
     private Long id;
 
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
     /**
      * The date of his coaching debut
      */
-    private LocalDate coachDebut;
+    private LocalDateTime coachDebut;
 
     /**
      * The date of his managerial debut.
      */
-    private LocalDate managerDebut;
+    private LocalDateTime managerDebut;
 
     /**
      * The date of his playing debut
      */
-    private LocalDate playerDebut;
+    private LocalDateTime playerDebut;
 
     /**
      * The datae of his umpiring debut
      */
-    private LocalDate umpireDebut;
+    private LocalDateTime umpireDebut;
 
     /**
      * First name of player
@@ -75,10 +79,10 @@ public class Player {
     public Player (String retrosheetId,
                    String lastName,
                    String firstName,
-                   LocalDate playerDebut,
-                   LocalDate coachDebut,
-                   LocalDate managerDebut,
-                   LocalDate umpireDebut) {
+                   LocalDateTime playerDebut,
+                   LocalDateTime coachDebut,
+                   LocalDateTime managerDebut,
+                   LocalDateTime umpireDebut) {
         this.retrosheetId = retrosheetId;
         this.lastName = lastName;
         this.firstName = firstName;
@@ -97,35 +101,35 @@ public class Player {
         this.id = id;
     }
 
-    public LocalDate getCoachDebut() {
+    public LocalDateTime getCoachDebut() {
         return coachDebut;
     }
 
-    public void setCoachDebut(LocalDate coachDebut) {
+    public void setCoachDebut(LocalDateTime coachDebut) {
         this.coachDebut = coachDebut;
     }
 
-    public LocalDate getManagerDebut() {
+    public LocalDateTime getManagerDebut() {
         return managerDebut;
     }
 
-    public void setManagerDebut(LocalDate managerDebut) {
+    public void setManagerDebut(LocalDateTime managerDebut) {
         this.managerDebut = managerDebut;
     }
 
-    public LocalDate getPlayerDebut() {
+    public LocalDateTime getPlayerDebut() {
         return playerDebut;
     }
 
-    public void setPlayerDebut(LocalDate playerDebut) {
+    public void setPlayerDebut(LocalDateTime playerDebut) {
         this.playerDebut = playerDebut;
     }
 
-    public LocalDate getUmpireDebut() {
+    public LocalDateTime getUmpireDebut() {
         return umpireDebut;
     }
 
-    public void setUmpireDebut(LocalDate umpireDebut) {
+    public void setUmpireDebut(LocalDateTime umpireDebut) {
         this.umpireDebut = umpireDebut;
     }
 

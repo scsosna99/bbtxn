@@ -4,8 +4,7 @@ import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 
-import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * Represents a player being returned to his original team, such as a loan or purchase review
@@ -24,7 +23,7 @@ public class ReturnedToTxn extends ToTxn {
                          int retrosheetId,
                          Player player,
                          Team team,
-                         LocalDate transactionDate) {
+                         LocalDateTime transactionDate) {
         super (transactionType, retrosheetId, player, team, transactionDate);
     }
 }

@@ -14,13 +14,10 @@ import org.neo4j.ogm.transaction.Transaction;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.util.*;
+import java.util.Collections;
 
 
 /**
@@ -36,7 +33,7 @@ public class BaseballTransactions {
     /**
      * Date format for debut of player, manager, coach, and umpire, ready for parsing
      */
-    private static DateTimeFormatter DATE_FORMAT_PLAYER = DateTimeFormatter.ofPattern ("M/d/yyyy");
+    private static DateTimeFormatter DATE_FORMAT_PLAYER = DateTimeFormatter.ofPattern ("M/d/yyyy HH:mm");
 
     /**
      * Field position for the players' raw data, separated by commas
@@ -79,15 +76,6 @@ public class BaseballTransactions {
     private static int TXN_FIELD_TO_TEAM = 10;
     private static int TXN_FIELD_TYPE = 7;
 
-
-    /**
-     * Use for converting the text date into a usable date.
-     */
-    private static final SimpleDateFormat[] dateFormats = {
-        new SimpleDateFormat ("MM/dd/yyyy"),
-        new SimpleDateFormat("MMM d, yyyy"),
-        new SimpleDateFormat ("MMM, yyyy"),
-    };
 
     /**
      * Classpath resource containing all known players for whom transactions exist.
@@ -327,11 +315,11 @@ public class BaseballTransactions {
      * @param date the string representation in the raw data
      * @return Date object that can stored.
      */
-    private LocalDate parsePlayerDate (String date) {
+    private LocalDateTime parsePlayerDate (String date) {
 
         if (date != null && !date.isEmpty()) {
             try {
-                return LocalDate.parse(date, DATE_FORMAT_PLAYER);
+                return LocalDateTime.parse(date + " 00:00", DATE_FORMAT_PLAYER);
             } catch (DateTimeParseException pe) {
                 System.out.println ("Unable to parse player date: " + date);
             }

@@ -5,11 +5,8 @@ import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import com.buddhadata.sandbox.neo4j.baseball.relationship.*;
 import org.neo4j.ogm.session.Session;
 
-import javax.swing.text.DateFormatter;
 import java.lang.reflect.Constructor;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -43,7 +40,7 @@ public class FromToTransactionProcessor extends TransactionProcessor {
 
                     //  Parse the transaction id and date fields
                     int txnId = Integer.valueOf(fields[TXN_FIELD_ID]);
-                    LocalDate txnDate = parseTxnDate(fields[TXN_FIELD_DATE_PRIMARY]);
+                    LocalDateTime txnDate = parseTxnDate(fields[TXN_FIELD_DATE_PRIMARY]);
 
                     //  Create the transactions for all constructors available.
                     if (fromTeam != null) session.save(c[0].newInstance(transactionType, txnId, player, fromTeam, txnDate));

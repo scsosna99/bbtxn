@@ -4,8 +4,7 @@ import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 
-import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * Represents the player is a free-agency compensation from the team
@@ -17,7 +16,7 @@ public class CompensatedFromTxn extends FromTxn {
                               int retrosheetId,
                               Player player,
                               Team from,
-                              LocalDate transactionDate) {
+                              LocalDateTime transactionDate) {
         super(transactionType, retrosheetId, player, from, transactionDate);
     }
 }

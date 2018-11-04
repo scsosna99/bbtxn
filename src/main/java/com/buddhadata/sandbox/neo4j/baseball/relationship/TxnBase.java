@@ -1,7 +1,6 @@
 package com.buddhadata.sandbox.neo4j.baseball.relationship;
 
-import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class TxnBase {
 
@@ -18,7 +17,7 @@ public class TxnBase {
     /**
      * Date on which transaction occurred
      */
-    private LocalDate transactionDate;
+    private LocalDateTime transactionDate;
 
     /**
      * Type of transaction
@@ -35,7 +34,8 @@ public class TxnBase {
      */
     protected TxnBase(TransactionType transactionType,
                       int retrosheetId,
-                      LocalDate transactionDate) {
+                      LocalDateTime
+                              transactionDate) {
         this.transactionType = transactionType;
         this.retrosheetId = retrosheetId;
         this.transactionDate = transactionDate;
@@ -77,7 +77,7 @@ public class TxnBase {
      * getter
      * @return date on which transaction occurred
      */
-    public LocalDate getTransactionDate() {
+    public LocalDateTime getTransactionDate() {
         return transactionDate;
     }
 
@@ -85,7 +85,7 @@ public class TxnBase {
      * setter
      * @param transactionDate date on which transaction occurred
      */
-    public void setTransactionDate(LocalDate transactionDate) {
+    public void setTransactionDate(LocalDateTime transactionDate) {
         this.transactionDate = transactionDate;
     }
 

@@ -3,11 +3,9 @@ package com.buddhadata.sandbox.neo4j.baseball.relationship;
 import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import org.neo4j.ogm.annotation.EndNode;
-import org.neo4j.ogm.annotation.RelationshipEntity;
 import org.neo4j.ogm.annotation.StartNode;
 
-import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * All "from" transactions represent a player leaving a team in some way.
@@ -37,7 +35,7 @@ public class FromTxn extends TxnBase {
                       int retrosheetId,
                       Player player,
                       Team from,
-                      LocalDate transactionDate) {
+                      LocalDateTime transactionDate) {
         super (transactionType, retrosheetId, transactionDate);
         this.from = from;
         this.player = player;

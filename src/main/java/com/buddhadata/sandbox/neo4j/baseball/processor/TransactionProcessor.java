@@ -13,13 +13,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.Constructor;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by scsosna on 10/27/18.
@@ -29,7 +29,7 @@ abstract public class TransactionProcessor {
     /**
      * Date format for debut of player, manager, coach, and umpire, ready for parsing
      */
-    private static final DateTimeFormatter DATE_FORMAT_TXN = DateTimeFormatter.ofPattern("yyyyMMdd");
+    private static final DateTimeFormatter DATE_FORMAT_TXN = DateTimeFormatter.ofPattern("yyyyMMdd HH:mm");
 
     /**
      * Field position for the transactions' raw data, after separated by commas
@@ -137,18 +137,19 @@ abstract public class TransactionProcessor {
      * @param date the string representation in the raw data
      * @return Date object that can stored.
      */
-    protected LocalDate parseTxnDate(final String date) {
+    protected LocalDateTime parseTxnDate(final String date) {
 
         if (date != null && !date.isEmpty()) {
 
             //  Special cases are zeros for month/day or day when exact transaction date isn't known
             String temp;
-            if (date.endsWith("0000")) temp = date.substring(0,4) + "0101";
-            else if (date.endsWith("00")) temp = date.substring(0,6) + "01";
-            else temp = date;
+            if (date.endsWith("0000")) temp = date.substring(0,4) + "0101 00:00";
+            else if (date.endsWith("00")) temp = date.substring(0,6) + "01 00:00";
+            else if (date.substring(4,6).equals("00")) temp = date.substring(0,4) + "0101 00:00";
+            else temp = date + " 00:00";
 
             try {
-                return LocalDate.parse(temp, DATE_FORMAT_TXN);
+                return LocalDateTime.parse(temp, DATE_FORMAT_TXN);
             } catch (DateTimeParseException pe) {
                 System.out.println ("Unable to parse transaction date: " + date);
             }
@@ -236,7 +237,7 @@ abstract public class TransactionProcessor {
      */
     public static Constructor getConstructor (Class clazz) {
         try {
-            return clazz.getConstructor(TransactionType.class, int.class, Player.class, Team.class, LocalDate.class);
+            return clazz.getConstructor(TransactionType.class, int.class, Player.class, Team.class, LocalDateTime.class);
         } catch (NoSuchMethodException nsme) {
             System.out.println ("Exception getting constructor: " + clazz.getName());
             return null;
