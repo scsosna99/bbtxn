@@ -1,57 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java" line="369" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb500528-d744-4c1e-88f5-dec57ba0c860" name="Default" comment="">
+    <list default="true" id="386c7949-322a-4b47-affc-e054b78c002a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/bbtxn2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Player.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Team.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Unassigned.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedByTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FreeAgentVoidedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromToTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/GrantedFreeAgencyTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReleasedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RetiredTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/SignedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ToTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TransactionType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TxnBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnretiredTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverPickTxn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/resources/players.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/resources/teammap.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/resources/teams.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/resources/txns.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbtxn2/src/main/resources/txnsmod.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bbtxnj.iml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/bbtxn1/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Player.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Player.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Team.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Team.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedByTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedByTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/GrantedFreeAgencyTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/GrantedFreeAgencyTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReleasedTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReleasedTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RetiredTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RetiredTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/SignedTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/SignedTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TransactionType.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TransactionType.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TxnBase.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TxnBase.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverFromTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverFromTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverToTxn.java" afterPath="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverToTxn.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/players.txt" afterPath="$PROJECT_DIR$/bbtxn1/src/main/resources/players.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/teammap.txt" afterPath="$PROJECT_DIR$/bbtxn1/src/main/resources/teammap.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/teams.txt" afterPath="$PROJECT_DIR$/bbtxn1/src/main/resources/teams.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/txns.txt" afterPath="$PROJECT_DIR$/bbtxn1/src/main/resources/txns.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/txnsmod.txt" afterPath="$PROJECT_DIR$/bbtxn1/src/main/resources/txnsmod.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Player.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Player.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Team.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Team.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedByTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedByTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/GrantedFreeAgencyTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/GrantedFreeAgencyTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReleasedTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReleasedTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RetiredTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RetiredTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/SignedTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/SignedTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TxnBase.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TxnBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedToTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverFromTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverFromTxn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverToTxn.java" afterPath="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverToTxn.java" />
     </list>
-    <ignored path="bbtxnj.iws" />
+    <ignored path="bbtxn.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/bbtxn1/target/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/bbtxn2/target/" />
+    <ignored path="$PROJECT_DIR$/bbtxn3/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,182 +116,112 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1396386419">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="2" />
-          <entry key="txt" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="2" />
-          <entry key="PLAIN_TEXT" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="6758" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="6758" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
-    <favorites_list name="bbtxnj" />
+    <favorites_list name="bbtxn" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BaseballTransactions.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java">
+    <leaf>
+      <file leaf-file-name="TransactionType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TransactionType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4180791">
-              <caret line="221" column="11" selection-start-line="221" selection-start-column="11" selection-end-line="221" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToTransactionProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java">
+      <file leaf-file-name="WaiverPickTxn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverPickTxn.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="TransactionProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java">
+        <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+              <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FromToTransactionProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java">
+      <file leaf-file-name="ToTransactionProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="71" column="69" selection-start-line="71" selection-start-column="69" selection-end-line="71" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="FromTransactionProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java">
+        <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnknownToTxn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownToTxn.java">
+      <file leaf-file-name="BaseballTransactions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <caret line="281" column="48" selection-start-line="281" selection-start-column="24" selection-end-line="281" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VoidedFromTxn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedFromTxn.java">
+      <file leaf-file-name="UnretiredTxn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnretiredTxn.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VoidedToTxn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedToTxn.java">
+      <file leaf-file-name="DraftedByTxn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedByTxn.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <caret line="27" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WaiverFromTxn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverFromTxn.java">
+      <file leaf-file-name="ReturnedTxn.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedTxn.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WaiverToTxn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverToTxn.java">
+      <file leaf-file-name="FromToTransactionProcessor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.4371002">
+              <caret line="50" column="125" selection-start-line="50" selection-start-column="125" selection-end-line="50" selection-end-column="125" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-        <option value="Enum" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>rule</find>
-      <find>drafte</find>
-      <find>drafted</find>
-      <find>system.out.println</find>
-      <find>purchased</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -250,61 +232,50 @@
         <entry key="$PROJECT_DIR$/../../minecraft/forge" value="1467002172000" />
       </map>
     </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromOnlyTransactionProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/SigningTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionallyToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionallyFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalReturnFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalReturnedToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedFreeAgencyTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedSigningTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/TestEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TransactionType.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/txnsmod.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Player.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedByTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/GrantedFreeAgencyTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReleasedTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RetiredTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/SignedTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TxnBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverFromTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverToTxn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java" />
+        <option value="$PROJECT_DIR$/bbtxn1/pom.xml" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/resources/txnsmod.txt" />
+        <option value="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Unsigned.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TxnBase.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/GrantedFreeAgencyTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReleasedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RetiredTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromToTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ToTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedByTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/SignedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedToTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java" />
+        <option value="$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TransactionType.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FreeAgentVoided.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FreeAgentVoidedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverPickTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnretiredTxn.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java" />
+        <option value="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java" />
       </list>
     </option>
   </component>
@@ -327,14 +298,6 @@
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="bbtxnj" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Dependencies" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
-        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
@@ -342,7 +305,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="bbtxnj" />
+          <option name="myItemId" value="bbtxn2" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -352,7 +315,7 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="bbtxnj" />
+          <option name="myItemId" value="bbtxn2" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -363,12 +326,12 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1633" />
-    <option name="y" value="146" />
-    <option name="width" value="1549" />
+    <option name="x" value="-1909" />
+    <option name="y" value="198" />
+    <option name="width" value="1765" />
     <option name="height" value="1910" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -393,33 +356,65 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxnj" />
+              <option name="myItemId" value="bbtxn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxnj" />
+              <option name="myItemId" value="bbtxn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxn" />
+              <option name="myItemId" value="bbtxn3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxnj" />
+              <option name="myItemId" value="bbtxn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bbtxn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -437,11 +432,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxnj" />
+              <option name="myItemId" value="bbtxn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxn" />
+              <option name="myItemId" value="bbtxn2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -463,11 +458,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxnj" />
+              <option name="myItemId" value="bbtxn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxn" />
+              <option name="myItemId" value="bbtxn2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -493,11 +488,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxnj" />
+              <option name="myItemId" value="bbtxn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxn" />
+              <option name="myItemId" value="bbtxn2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -523,11 +518,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxnj" />
+              <option name="myItemId" value="bbtxn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bbtxn" />
+              <option name="myItemId" value="bbtxn2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -551,46 +546,149 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="baseball" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="baseball" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="relationship" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbtxn1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="baseball" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="processor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="copyright.profiles" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/scsosna/data/src/java/bbtxn/src/main/resources/teammap.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bbtxn3/pom.xml" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.buddhadata.sandbox.neo4j.baseball.relationship" />
       <recent name="com.buddhadata.sandbox.neo4j.baseball.processor" />
-      <recent name="com.buddhadata.sandbox.neo4j.baseball.functions" />
       <recent name="com.buddhadata.sandbox.neo4j.baseball.node" />
+      <recent name="com.buddhadata.sandbox.neo4j.baseball" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship" />
+      <recent name="$PROJECT_DIR$/bbtxn2/src/main/resources" />
+      <recent name="$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.BaseballTransactions">
+  <component name="RunManager" selected="Application.BaseballTransactions (part 2)">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -598,9 +696,10 @@
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="WIDTH" value="0" />
-      <option name="HEIGHT" value="0" />
       <module />
       <method />
     </configuration>
@@ -781,7 +880,7 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
+      <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
@@ -885,6 +984,14 @@
       </MavenSettings>
       <method />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -902,7 +1009,7 @@
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
+      <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" />
@@ -948,11 +1055,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -967,23 +1069,25 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="BaseballTransactions" type="Application" factoryName="Application">
+    <configuration default="false" name="BaseballTransactions (part 2)" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.buddhadata.sandbox.neo4j.baseball.BaseballTransactions" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="bbtxnj" />
+      <module name="bbtxn2" />
       <envs />
-      <method />
+      <method>
+        <option name="Make" enabled="false" />
+      </method>
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.BaseballTransactions" />
+      <item index="0" class="java.lang.String" itemvalue="Application.BaseballTransactions (part 2)" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -992,150 +1096,94 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bb500528-d744-4c1e-88f5-dec57ba0c860" name="Default" comment="" />
-      <created>1531690270847</created>
+      <changelist id="386c7949-322a-4b47-affc-e054b78c002a" name="Default" comment="" />
+      <created>1543001954369</created>
       <option name="number" value="Default" />
-      <updated>1531690270847</updated>
-      <workItem from="1531690272003" duration="5941000" />
-      <workItem from="1531876415362" duration="4127000" />
-      <workItem from="1532049688260" duration="9890000" />
-      <workItem from="1532142207423" duration="607000" />
-      <workItem from="1532183685529" duration="2258000" />
-      <workItem from="1532221800698" duration="2575000" />
-      <workItem from="1532224917852" duration="3611000" />
-      <workItem from="1532478852883" duration="1250000" />
-      <workItem from="1532718603999" duration="2934000" />
-      <workItem from="1532867743837" duration="6347000" />
-      <workItem from="1532953267319" duration="5998000" />
-      <workItem from="1533046299961" duration="1147000" />
-      <workItem from="1533212974887" duration="1892000" />
-      <workItem from="1533254154091" duration="1357000" />
-      <workItem from="1533383355336" duration="1169000" />
-      <workItem from="1533464890842" duration="3665000" />
-      <workItem from="1533509093933" duration="2443000" />
-      <workItem from="1533621647223" duration="2254000" />
-      <workItem from="1540697657912" duration="12135000" />
-      <workItem from="1540762027229" duration="12656000" />
-      <workItem from="1540779680328" duration="6257000" />
-      <workItem from="1540857669112" duration="4381000" />
-      <workItem from="1540867305375" duration="1722000" />
-      <workItem from="1540940477697" duration="11402000" />
+      <updated>1543001954369</updated>
+      <workItem from="1543001955496" duration="11379000" />
     </task>
-    <task id="LOCAL-00001" summary="first complete version, all transactions enabled, convert dates to LocalDate, enum for transaction type, and overall get it to work end-to-end.">
-      <created>1541036177596</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1541036177596</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108018000" />
+    <option name="totallyTimeSpent" value="11379000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1633" y="146" width="1549" height="1910" extended-state="0" />
+    <frame x="-1909" y="198" width="1765" height="1910" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20881543" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19110817" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1922865" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25746515" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24950232" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08429752" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24950232" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15147997" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21763085" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495647" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294766" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2044077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2093664" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965758" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2495647" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294766" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="first complete version, all transactions enabled, convert dates to LocalDate, enum for transaction type, and overall get it to work end-to-end." />
-    <option name="LAST_COMMIT_MESSAGE" value="first complete version, all transactions enabled, convert dates to LocalDate, enum for transaction type, and overall get it to work end-to-end." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/functions/UnknownFunction.java</url>
-          <line>82</line>
+          <url>file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java</url>
+          <line>249</line>
           <properties />
-          <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java</url>
-          <line>306</line>
+          <url>file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java</url>
+          <line>323</line>
           <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java</url>
-          <line>52</line>
+          <url>file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java</url>
+          <line>319</line>
           <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java</url>
-          <line>297</line>
-          <properties />
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java</url>
-          <line>152</line>
-          <properties />
-          <option name="timeStamp" value="53" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="62" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1143,461 +1191,453 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="breakpointCondition">
-      <expression>
-        <expression-string>date != null &amp;&amp; !date.isEmpty()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>children.size() == 6</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>children.size() != 7</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>separatorPos &lt; 0</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>((Element)element.parentNode).shadowChildrenRef</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>org.jsoup.nodes.Element</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>elem.attributes</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar!/org/jsoup/nodes/Element.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-ogm-api/3.0.2/neo4j-ogm-api-3.0.2.jar!/org/neo4j/ogm/transaction/Transaction.class">
+    <entry file="file://$PROJECT_DIR$/bbtxn1/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/neo4j/neo4j-ogm-core/3.0.2/neo4j-ogm-core-3.0.2-sources.jar!/org/neo4j/ogm/context/EntityGraphMapper.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="529" column="0" selection-start-line="529" selection-start-column="0" selection-end-line="529" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/teammap.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11811024">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/txnsmod.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.537037">
-          <caret line="88684" column="30" selection-start-line="88684" selection-start-column="22" selection-end-line="88684" selection-end-column="30" />
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/players.txt">
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3703704">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/teams.txt">
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Team.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Team.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/resources/players.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="15" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="15" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Player.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TxnBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="17" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="17" />
-          <folding>
-            <element signature="e#2901#2902#0" expanded="true" />
-            <element signature="e#2947#2948#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedFromTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedToTxn.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/resources/txnsmod.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        <state vertical-scroll-proportion="-26.11111">
+          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedFromTxn.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/resources/txnsmod.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedToTxn.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TransactionType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalFromTxn.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromTxn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalToTxn.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Team.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedByTxn.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Unassigned.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedFromTxn.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/node/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedToTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/GrantedFreeAgencyTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedFromTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedToTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedFromTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedToTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedFromTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedToTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReleasedTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RetiredTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedFromTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedToTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsFromTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsToTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/SignedTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ToTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedFromTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedToTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TransactionType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="49" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_71.jdk/Contents/Home/src.zip!/java/time/LocalDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TxnBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="48" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
-          <folding>
-            <element signature="e#1264#1265#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownFromTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownToTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
+            <element signature="e#2116#2117#0" expanded="false" />
+            <element signature="e#2141#2142#0" expanded="false" />
+            <element signature="e#2175#2176#0" expanded="false" />
+            <element signature="e#2203#2204#0" expanded="false" />
+            <element signature="e#2247#2248#0" expanded="false" />
+            <element signature="e#2280#2281#0" expanded="false" />
+            <element signature="e#2339#2340#0" expanded="false" />
+            <element signature="e#2383#2384#0" expanded="false" />
+            <element signature="e#2429#2430#0" expanded="false" />
+            <element signature="e#2464#2465#0" expanded="false" />
+            <element signature="e#2527#2528#0" expanded="false" />
+            <element signature="e#2575#2576#0" expanded="false" />
+            <element signature="e#2620#2621#0" expanded="false" />
+            <element signature="e#2654#2655#0" expanded="false" />
+            <element signature="e#2715#2716#0" expanded="false" />
+            <element signature="e#2761#2762#0" expanded="false" />
+            <element signature="e#2806#2807#0" expanded="false" />
+            <element signature="e#2840#2841#0" expanded="false" />
+            <element signature="e#2901#2902#0" expanded="false" />
+            <element signature="e#2947#2948#0" expanded="false" />
+            <element signature="e#2983#2984#0" expanded="false" />
+            <element signature="e#3015#3016#0" expanded="false" />
+            <element signature="e#3065#3066#0" expanded="false" />
+            <element signature="e#3107#3108#0" expanded="false" />
+            <element signature="e#3142#3143#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
+            <element signature="e#3221#3222#0" expanded="false" />
+            <element signature="e#3261#3262#0" expanded="false" />
+            <element signature="e#3292#3293#0" expanded="false" />
+            <element signature="e#3319#3320#0" expanded="false" />
+            <element signature="e#3359#3360#0" expanded="false" />
+            <element signature="e#3391#3392#0" expanded="false" />
+            <element signature="e#3430#3431#0" expanded="false" />
+            <element signature="e#3465#3466#0" expanded="false" />
+            <element signature="e#3521#3522#0" expanded="false" />
+            <element signature="e#3569#3570#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedFromTxn.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TxnBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedToTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverFromTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverToTxn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2433#2434#0" expanded="true" />
+            <element signature="e#2474#2475#0" expanded="true" />
+            <element signature="e#2640#2641#0" expanded="true" />
+            <element signature="e#2700#2701#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java">
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4180791">
-          <caret line="221" column="11" selection-start-line="221" selection-start-column="11" selection-end-line="221" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="75" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1621#1622#0" expanded="true" />
+            <element signature="e#1652#1653#0" expanded="true" />
+            <element signature="e#1777#1778#0" expanded="true" />
+            <element signature="e#1817#1818#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="239" column="117" selection-start-line="239" selection-start-column="40" selection-end-line="239" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedByTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedToTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedToTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06715165">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73866814">
+          <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/AssignedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/CompensatedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ConditionalTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FreeAgentVoidedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/FromToTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/GrantedFreeAgencyTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/JumpedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/LoanedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/PurchasedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn1/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="39" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReleasedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RetiredTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/RightsTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/SignedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="66" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ToTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="44" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TradedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnknownTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/VoidedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/WaiverPickTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/ReturnedTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/DraftedByTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/UnretiredTxn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/TransactionProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/ToTransactionProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="69" selection-start-line="71" selection-start-column="69" selection-end-line="71" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/relationship/TransactionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/BaseballTransactions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="281" column="48" selection-start-line="281" selection-start-column="24" selection-end-line="281" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromTransactionProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbtxn2/src/main/java/com/buddhadata/sandbox/neo4j/baseball/processor/FromToTransactionProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4371002">
+          <caret line="50" column="125" selection-start-line="50" selection-start-column="125" selection-end-line="50" selection-end-column="125" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1690,7 +1730,6 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

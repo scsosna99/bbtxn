@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/bbtxnj.iml" filepath="$PROJECT_DIR$/bbtxnj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbtxn2/bbtxn2.iml" filepath="$PROJECT_DIR$/bbtxn2/bbtxn2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbtxn3/bbtxn3.iml" filepath="$PROJECT_DIR$/bbtxn3/bbtxn3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbtxn1/bbtxnj.iml" filepath="$PROJECT_DIR$/bbtxn1/bbtxnj.iml" />
     </modules>
   </component>
 </project>
