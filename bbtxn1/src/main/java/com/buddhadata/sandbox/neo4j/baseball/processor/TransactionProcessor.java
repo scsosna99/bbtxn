@@ -1,5 +1,6 @@
 package com.buddhadata.sandbox.neo4j.baseball.processor;
 
+import com.buddhadata.sandbox.neo4j.baseball.BaseballTransactions;
 import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import com.buddhadata.sandbox.neo4j.baseball.relationship.TransactionType;
@@ -34,22 +35,22 @@ abstract public class TransactionProcessor {
     /**
      * Field position for the transactions' raw data, after separated by commas
      */
-    protected static int TXN_FIELD_APPROXIMATE = 2;
-    protected static int TXN_FIELD_APPROXIMATE_SECONDARY = 4;
-    protected static int TXN_FIELD_DATE_PRIMARY = 0;
-    protected static int TXN_FIELD_DATE_SECONDARY = 3;
-    protected static int TXN_FIELD_DRAFT_PICK = 14;
-    protected static int TXN_FIELD_DRAFT_RND = 13;
-    protected static int TXN_FIELD_DRAFT_TYPE = 12;
-    protected static int TXN_FIELD_FROM_LEAGUE = 9;
-    protected static int TXN_FIELD_FROM_TEAM = 8;
-    protected static int TXN_FIELD_ID = 5;
-    protected static int TXN_FIELD_INFO = 15;
-    protected static int TXN_FIELD_PLAYER = 6;
-    protected static int TXN_FIELD_TIME = 1;
-    protected static int TXN_FIELD_TO_LEAGUE = 11;
-    protected static int TXN_FIELD_TO_TEAM = 10;
-    protected static int TXN_FIELD_TYPE = 7;
+    protected static int TXN_APPROXIMATE = BaseballTransactions.TXN_APPROXIMATE;
+    protected static int TXN_APPROXIMATE_SECONDARY = BaseballTransactions.TXN_APPROXIMATE_SECONDARY;
+    protected static int TXN_DATE_PRIMARY = BaseballTransactions.TXN_DATE_PRIMARY;
+    protected static int TXN_DATE_SECONDARY = BaseballTransactions.TXN_DATE_SECONDARY;
+    protected static int TXN_DRAFT_PICK = BaseballTransactions.TXN_DRAFT_PICK;
+    protected static int TXN_DRAFT_RND = BaseballTransactions.TXN_DRAFT_RND;
+    protected static int TXN_DRAFT_TYPE = BaseballTransactions.TXN_DRAFT_TYPE;
+    protected static int TXN_FROM_LEAGUE = BaseballTransactions.TXN_FROM_LEAGUE;
+    protected static int TXN_FROM_TEAM = BaseballTransactions.TXN_FROM_TEAM;
+    protected static int TXN_INFO = BaseballTransactions.TXN_INFO;
+    protected static int TXN_PLAYER = BaseballTransactions.TXN_PLAYER;
+    protected static int TXN_RETROSHEET_ID = BaseballTransactions.TXN_RETROSHEET_ID;
+    protected static int TXN_TIME = BaseballTransactions.TXN_TIME;
+    protected static int TXN_TO_LEAGUE = BaseballTransactions.TXN_TO_LEAGUE;
+    protected static int TXN_TO_TEAM = BaseballTransactions.TXN_TO_TEAM;
+    protected static int TXN_TYPE = BaseballTransactions.TXN_TYPE;
 
     /**
      * Cache to map legacy team to current team within a franchise.

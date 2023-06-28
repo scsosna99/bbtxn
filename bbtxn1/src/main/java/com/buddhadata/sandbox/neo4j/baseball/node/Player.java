@@ -1,5 +1,7 @@
 package com.buddhadata.sandbox.neo4j.baseball.node;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
 import org.neo4j.ogm.annotation.Index;
@@ -20,30 +22,10 @@ public class Player {
     @GeneratedValue
     private Long id;
 
-    @Override
-    protected void finalize() throws Throwable {
-        super.finalize();
-    }
-
-    /**
-     * The date of his coaching debut
-     */
-    private LocalDateTime coachDebut;
-
-    /**
-     * The date of his managerial debut.
-     */
-    private LocalDateTime managerDebut;
-
     /**
      * The date of his playing debut
      */
     private LocalDateTime playerDebut;
-
-    /**
-     * The datae of his umpiring debut
-     */
-    private LocalDateTime umpireDebut;
 
     /**
      * First name of player
@@ -67,29 +49,27 @@ public class Player {
     private String retrosheetId;
 
     /**
+     * Default constructor
+     */
+    public Player() {
+        return;
+    }
+
+    /**
      * Constructor
      * @param retrosheetId
      * @param lastName
      * @param firstName
      * @param playerDebut
-     * @param coachDebut
-     * @param managerDebut
-     * @param umpireDebut
      */
     public Player (String retrosheetId,
                    String lastName,
                    String firstName,
-                   LocalDateTime playerDebut,
-                   LocalDateTime coachDebut,
-                   LocalDateTime managerDebut,
-                   LocalDateTime umpireDebut) {
+                   LocalDateTime playerDebut) {
         this.retrosheetId = retrosheetId;
         this.lastName = lastName;
         this.firstName = firstName;
         this.playerDebut = playerDebut;
-        this.coachDebut = coachDebut;
-        this.managerDebut = managerDebut;
-        this.umpireDebut = umpireDebut;
         this.name = firstName + " " + lastName;
     }
 
@@ -101,36 +81,12 @@ public class Player {
         this.id = id;
     }
 
-    public LocalDateTime getCoachDebut() {
-        return coachDebut;
-    }
-
-    public void setCoachDebut(LocalDateTime coachDebut) {
-        this.coachDebut = coachDebut;
-    }
-
-    public LocalDateTime getManagerDebut() {
-        return managerDebut;
-    }
-
-    public void setManagerDebut(LocalDateTime managerDebut) {
-        this.managerDebut = managerDebut;
-    }
-
     public LocalDateTime getPlayerDebut() {
         return playerDebut;
     }
 
     public void setPlayerDebut(LocalDateTime playerDebut) {
         this.playerDebut = playerDebut;
-    }
-
-    public LocalDateTime getUmpireDebut() {
-        return umpireDebut;
-    }
-
-    public void setUmpireDebut(LocalDateTime umpireDebut) {
-        this.umpireDebut = umpireDebut;
     }
 
     public String getFirstName() {
@@ -163,5 +119,21 @@ public class Player {
 
     public void setRetrosheetId(String retrosheetId) {
         this.retrosheetId = retrosheetId;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Player player = (Player) o;
+
+        return new EqualsBuilder().append(id, player.id).append(playerDebut, player.playerDebut).append(firstName, player.firstName).append(lastName, player.lastName).append(name, player.name).append(retrosheetId, player.retrosheetId).isEquals();
+    }
+
+    @Override
+    public int hashCode() {
+        return new HashCodeBuilder(17, 37).append(id).append(playerDebut).append(firstName).append(lastName).append(name).append(retrosheetId).toHashCode();
     }
 }

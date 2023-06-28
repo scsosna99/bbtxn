@@ -31,15 +31,15 @@ public class FromTransactionProcessor extends TransactionProcessor {
             if (c != null && c.length == 1) {
 
                 //  Find player
-                Player player = getPlayer(session, fields[TXN_FIELD_PLAYER]);
+                Player player = getPlayer(session, fields[TXN_PLAYER]);
                 if (player != null) {
 
                     //  Find team
-                    Team fromTeam = getTeam(session, fields[TXN_FIELD_FROM_TEAM], fields[TXN_FIELD_FROM_LEAGUE]);
+                    Team fromTeam = getTeam(session, fields[TXN_FROM_TEAM], fields[TXN_FROM_LEAGUE]);
 
                     //  Parse the transaction id and date fields
-                    int txnId = Integer.valueOf(fields[TXN_FIELD_ID]);
-                    LocalDateTime txnDate = parseTxnDate(fields[TXN_FIELD_DATE_PRIMARY]);
+                    int txnId = Integer.valueOf(fields[TXN_RETROSHEET_ID]);
+                    LocalDateTime txnDate = parseTxnDate(fields[TXN_DATE_PRIMARY]);
 
                     //  Create the transactions for the single constructor.
                     session.save(c[0].newInstance(transactionType, txnId, player, fromTeam, txnDate));
