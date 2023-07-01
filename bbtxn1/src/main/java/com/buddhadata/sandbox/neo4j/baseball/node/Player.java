@@ -8,12 +8,31 @@ import org.neo4j.ogm.annotation.Index;
 import org.neo4j.ogm.annotation.NodeEntity;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 /**
  * Domain Object for baseball players
  */
 @NodeEntity
-public class Player {
+public class Player extends BaseNode {
+
+    /**
+     * Field position for the players' raw data, separated by commas
+     * https://www.retrosheet.org/retroID.htm
+     */
+    protected static int PLAYER_DEBUT_COACH = 5;
+    protected static int PLAYER_DEBUT_MANAGER = 4;
+    protected static int PLAYER_DEBUT_PLAYER = 3;
+    protected static int PLAYER_DEBUT_UMPIRE = 6;
+    protected static int PLAYER_NAME_FIRST = 2;
+    protected static int PLAYER_NAME_LAST = 1;
+    protected static int PLAYER_RETROSHEET_ID = 0;
+
+    /**
+     * Date format for debut of player, manager, coach, and umpire, ready for parsing
+     */
+    private static DateTimeFormatter DATE_FORMAT_PLAYER = DateTimeFormatter.ofPattern ("M/d/yyyy HH:mm");
 
     /**
      * Internal Neo4J id of the node
@@ -48,10 +67,26 @@ public class Player {
     @Index (unique = true)
     private String retrosheetId;
 
+    public static Player fromRaw (String line) {
+        String[] fields = line.split(",", -1);
+        unquoteFields(fields);
+        LocalDateTime debut = parsePlayerDate(fields[PLAYER_DEBUT_PLAYER]);
+        if (debut != null) {
+            Player p = new Player();
+            p.setRetrosheetId(fields[PLAYER_RETROSHEET_ID]);
+            p.setLastName(fields[PLAYER_NAME_LAST]);
+            p.setFirstName(fields[PLAYER_NAME_FIRST]);
+            p.setPlayerDebut(debut);
+            return p;
+        } else {
+            return null;
+        }
+    }
+
     /**
      * Default constructor
      */
-    public Player() {
+    protected Player() {
         return;
     }
 
@@ -136,4 +171,26 @@ public class Player {
     public int hashCode() {
         return new HashCodeBuilder(17, 37).append(id).append(playerDebut).append(firstName).append(lastName).append(name).append(retrosheetId).toHashCode();
     }
+
+
+    /**
+     * Parse a string representing the debut date of the player
+     * @param date the string representation in the raw data
+     * @return Date object that can stored.
+     */
+    protected static LocalDateTime parsePlayerDate (String date) {
+
+        if (date != null && !date.isEmpty()) {
+            try {
+                return LocalDateTime.parse(date + " 00:00", DATE_FORMAT_PLAYER);
+            } catch (DateTimeParseException pe) {
+                System.out.println ("Unable to parse player date: " + date);
+            }
+        }
+
+
+        //  If no initial string was provided or the parsing failed, return null.
+        return null;
+    }
+
 }

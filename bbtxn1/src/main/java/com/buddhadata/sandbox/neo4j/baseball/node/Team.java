@@ -8,7 +8,17 @@ import org.neo4j.ogm.annotation.NodeEntity;
  * Domain Object for the baseball team
  */
 @NodeEntity
-public class Team {
+public class Team extends BaseNode {
+
+    /**
+     * Field position for the teams' raw data, separated by commas
+     */
+    private static int TEAM_CITY = 2;
+    private static int TEAM_END_DATE = 5;
+    private static int TEAM_LEAGUE = 1;
+    private static int TEAM_NAME = 3;
+    private static int TEAM_RETROSHEET_ID = 0;
+    private static int TEAM_START_DATE = 4;
 
     /**
      * Internal Neo4J id of the node
@@ -37,6 +47,15 @@ public class Team {
      */
     private String retrosheetId;
 
+    public static Team fromRaw(String line) {
+        //  No need to check for already-existing team, assumes we've just cleared the database and are
+        //  loading teams before doing any transaction processing.
+        String[] fields = line.split(",", -1);
+        unquoteFields(fields);
+        return new Team (fields[TEAM_RETROSHEET_ID], fields[TEAM_NAME],
+                fields[TEAM_CITY], fields[TEAM_LEAGUE]);
+    }
+
     /**
      * Constructor
      */
@@ -52,9 +71,9 @@ public class Team {
      * @param league team's league
      */
     public Team(String retrosheetId,
-                String name,
-                String city,
-                String league) {
+                 String name,
+                 String city,
+                 String league) {
         this.retrosheetId = retrosheetId;
         this.name = name;
         this.city = city;

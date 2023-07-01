@@ -4,6 +4,7 @@ import com.buddhadata.sandbox.neo4j.baseball.BaseballTransactions;
 import com.buddhadata.sandbox.neo4j.baseball.node.Player;
 import com.buddhadata.sandbox.neo4j.baseball.node.Team;
 import com.buddhadata.sandbox.neo4j.baseball.relationship.TransactionType;
+import com.buddhadata.sandbox.neo4j.baseball.relationship.TxnBase;
 import org.neo4j.ogm.cypher.BooleanOperator;
 import org.neo4j.ogm.cypher.ComparisonOperator;
 import org.neo4j.ogm.cypher.Filter;
@@ -35,22 +36,22 @@ abstract public class TransactionProcessor {
     /**
      * Field position for the transactions' raw data, after separated by commas
      */
-    protected static int TXN_APPROXIMATE = BaseballTransactions.TXN_APPROXIMATE;
-    protected static int TXN_APPROXIMATE_SECONDARY = BaseballTransactions.TXN_APPROXIMATE_SECONDARY;
-    protected static int TXN_DATE_PRIMARY = BaseballTransactions.TXN_DATE_PRIMARY;
-    protected static int TXN_DATE_SECONDARY = BaseballTransactions.TXN_DATE_SECONDARY;
-    protected static int TXN_DRAFT_PICK = BaseballTransactions.TXN_DRAFT_PICK;
-    protected static int TXN_DRAFT_RND = BaseballTransactions.TXN_DRAFT_RND;
-    protected static int TXN_DRAFT_TYPE = BaseballTransactions.TXN_DRAFT_TYPE;
-    protected static int TXN_FROM_LEAGUE = BaseballTransactions.TXN_FROM_LEAGUE;
-    protected static int TXN_FROM_TEAM = BaseballTransactions.TXN_FROM_TEAM;
-    protected static int TXN_INFO = BaseballTransactions.TXN_INFO;
-    protected static int TXN_PLAYER = BaseballTransactions.TXN_PLAYER;
-    protected static int TXN_RETROSHEET_ID = BaseballTransactions.TXN_RETROSHEET_ID;
-    protected static int TXN_TIME = BaseballTransactions.TXN_TIME;
-    protected static int TXN_TO_LEAGUE = BaseballTransactions.TXN_TO_LEAGUE;
-    protected static int TXN_TO_TEAM = BaseballTransactions.TXN_TO_TEAM;
-    protected static int TXN_TYPE = BaseballTransactions.TXN_TYPE;
+    protected static int TXN_APPROXIMATE = TxnBase.TXN_APPROXIMATE;
+    protected static int TXN_APPROXIMATE_SECONDARY = TxnBase.TXN_APPROXIMATE_SECONDARY;
+    protected static int TXN_DATE_PRIMARY = TxnBase.TXN_DATE_PRIMARY;
+    protected static int TXN_DATE_SECONDARY = TxnBase.TXN_DATE_SECONDARY;
+    protected static int TXN_DRAFT_PICK = TxnBase.TXN_DRAFT_PICK;
+    protected static int TXN_DRAFT_RND = TxnBase.TXN_DRAFT_RND;
+    protected static int TXN_DRAFT_TYPE = TxnBase.TXN_DRAFT_TYPE;
+    protected static int TXN_FROM_LEAGUE = TxnBase.TXN_FROM_LEAGUE;
+    protected static int TXN_FROM_TEAM = TxnBase.TXN_FROM_TEAM;
+    protected static int TXN_INFO = TxnBase.TXN_INFO;
+    protected static int TXN_PLAYER = TxnBase.TXN_PLAYER;
+    protected static int TXN_RETROSHEET_ID = TxnBase.TXN_RETROSHEET_ID;
+    protected static int TXN_TIME = TxnBase.TXN_TIME;
+    protected static int TXN_TO_LEAGUE = TxnBase.TXN_TO_LEAGUE;
+    protected static int TXN_TO_TEAM = TxnBase.TXN_TO_TEAM;
+    protected static int TXN_TYPE = TxnBase.TXN_TYPE;
 
     /**
      * Cache to map legacy team to current team within a franchise.
@@ -79,7 +80,7 @@ abstract public class TransactionProcessor {
 
         //  If the ID has any whitespace, it's likely because the player never played in the major league and therefore
         //  didn't get a retrosheet ID, so just skip.
-        if (retrosheetId.indexOf(" ") == -1) {
+        if (!retrosheetId.contains(" ")) {
 
             //  Create an OGM filter for the provided retrosheetId
             Filter filter = new Filter("retrosheetId", ComparisonOperator.EQUALS, retrosheetId);
