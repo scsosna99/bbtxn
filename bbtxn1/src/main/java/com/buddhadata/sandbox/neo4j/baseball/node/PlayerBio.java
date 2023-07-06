@@ -97,6 +97,7 @@ public class PlayerBio extends Player {
             p.setRetrosheetId(fields[BIO_RETROSHEET_ID]);
             p.setLastName(fields[BIO_NAME_LAST]);
             p.setFirstName(fields[BIO_NAME_FIRST]);
+            p.setName(fields[BIO_NAME_NICK]);
             p.setPlayerDebut(debut);
             p.setPlayerRetire(parsePlayerDate(fields[BIO_PLAYER_RETIRE]));
             p.setHallOfFame(HALL_OF_FAME.equals(fields[BIO_HALL_OF_FAME]));
